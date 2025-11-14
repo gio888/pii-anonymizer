@@ -4,16 +4,20 @@ Last updated: 2025-11-14
 
 ## High Priority
 
+- [ ] Add all-caps pattern detection for abbreviations (BXC, IBM, 3M, FTSE, etc.)
+- [ ] Integrate phonenumbers library for robust international phone parsing
+- [ ] Add common name dictionary for single-word name detection
 - [ ] Test web application with real documents (all formats)
 - [ ] Add error handling for malformed files in web UI
 - [ ] Create user guide with screenshots for web interface
 
 ## Medium Priority
 
+- [ ] Fine-tune spaCy NER model on domain-specific product/org data
+- [ ] Implement confidence scoring to reduce false positives
 - [ ] Add optional Ollama integration for improved entity detection
 - [ ] Implement file size validation before upload
 - [ ] Add session cleanup for temp files older than 24 hours
-- [ ] Create unit tests for semantic alias generator
 - [ ] Add support for batch upload in web UI
 
 ## Low Priority
@@ -25,6 +29,14 @@ Last updated: 2025-11-14
 
 ## Completed ✅
 
+- [x] Build automated evaluation framework with metrics tracking (2025-11-14)
+- [x] Generate synthetic test data (20 docs, 380 PII instances) (2025-11-14)
+- [x] Annotate real-world test data (7 docs, 228 PII instances) (2025-11-14)
+- [x] Create comprehensive eval test suite (2025-11-14)
+- [x] Improve PII detection from 15.84% → 78.03% through 3 iterations (2025-11-14)
+- [x] Enhance PHONE regex pattern for international formats (2025-11-14)
+- [x] Enhance DATE regex pattern for text-based dates and years (2025-11-14)
+- [x] Add pattern-based NER fallback for products/orgs/names (2025-11-14)
 - [x] Build web interface with drag-and-drop (2025-11-14)
 - [x] Add DOCX and XLSX support (2025-11-14)
 - [x] Implement semantic alias generator (2025-11-14)

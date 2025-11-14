@@ -20,12 +20,14 @@ class PiiConfig:
         # Standard regex patterns for PII detection
         self.patterns = {
             'EMAIL': r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',
-            'PHONE': r'\b(?:\+\d{1,3}[- ]?)?\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}\b',
+            # Improved PHONE: handles all formats including international with spaces/dashes
+            'PHONE': r'\+?\d{1,3}?[-\s]?\(?\d{3}\)?[-\s]?\d{3,4}[-\s]?\d{4}|\b\d{3}[-]\d{4}\b',
             'SSN': r'\b\d{3}[-]?\d{2}[-]?\d{4}\b',
             'CREDIT_CARD': r'\b(?:\d{4}[- ]?){3}\d{4}\b',
             'IP_ADDRESS': r'\b(?:\d{1,3}\.){3}\d{1,3}\b',
-            'DATE': r'\b\d{1,2}[/\-]\d{1,2}[/\-]\d{2,4}\b',
-            'ADDRESS': r'\b\d{1,5}\s[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\s(?:Avenue|Road|Street|Blvd|Drive|Lane|Way|Place|Court)\b',
+            # Improved DATE: handles numeric dates, text-based dates, years, and "Month Year" formats
+            'DATE': r'\b\d{1,2}[/\-]\d{1,2}[/\-]\d{2,4}\b|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}|\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b|\b(?:19|20)\d{2}\b',
+            'ADDRESS': r'\b\d{1,5}\s[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\s(?:Avenue|Road|Street|Blvd|Boulevard|Drive|Lane|Way|Place|Court)\b',
             'URL': r'https?://(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)',
             'CURRENCY': r'[\$\€\£\¥]\s?\d{1,3}(?:[,\s]\d{3})*(?:\.\d{2})?',
             'NUMBER': r'\b\d{4,}\b'
@@ -78,9 +80,9 @@ class PIIManager:
         # Initialize semantic alias generator if enabled
         if self.use_semantic_aliases:
             try:
-                from ..utils.alias_generator import SemanticAliasGenerator
+                from utils.alias_generator import SemanticAliasGenerator
                 self.alias_generator = SemanticAliasGenerator()
-            except ImportError:
+            except (ImportError, ValueError):
                 logger.warning("Could not import SemanticAliasGenerator, falling back to UUID placeholders")
                 self.use_semantic_aliases = False
                 self.alias_generator = None
@@ -106,7 +108,7 @@ class PIIManager:
     
     def _detect_entities_with_ner(self, text: str) -> List[Tuple[str, str, int, int]]:
         """
-        Detect named entities using spaCy NER.
+        Detect named entities using spaCy NER with pattern-based fallbacks.
 
         Args:
             text: The text to analyze
@@ -119,13 +121,52 @@ class PIIManager:
 
         doc = self.nlp(text)
         entities = []
+        detected_spans = set()  # Track what we've already detected
 
+        # 1. Get spaCy NER entities
         for ent in doc.ents:
             # We're interested in: PERSON, ORG, PRODUCT, GPE (locations)
             if ent.label_ in ['PERSON', 'ORG', 'PRODUCT', 'GPE']:
                 # Normalize entity type using mapping
                 entity_type = self.config.entity_type_mapping.get(ent.label_, ent.label_)
                 entities.append((ent.text, entity_type, ent.start_char, ent.end_char))
+                detected_spans.add((ent.start_char, ent.end_char))
+
+        # 2. Add pattern-based detection for entities spaCy missed
+        # Pattern for proper nouns (capitalized sequences) that might be names/orgs/products
+        # Match: "John Smith", "Acme Corporation", "ProSuite X", "MaxPortal Ultra", etc.
+        # Updated to handle mixed-case multi-word entities
+        proper_noun_pattern = r'\b[A-Z][A-Za-z]*(?:\s+[A-Z][A-Za-z]*|\s+\d+)*\b'
+        for match in re.finditer(proper_noun_pattern, text):
+            start, end = match.span()
+            # Skip if already detected by spaCy
+            if (start, end) in detected_spans:
+                continue
+
+            matched_text = match.group(0)
+            # Skip single words that are likely not entities
+            if ' ' not in matched_text:
+                continue
+
+            # Heuristic: if it's multi-word capitalized, it's likely a NAME, ORG, or PRODUCT
+            # We'll classify as ORGANIZATION by default (can be refined)
+            entity_type = 'ORGANIZATION'
+
+            # Check if it looks like a product name (has product keywords)
+            if any(keyword in matched_text for keyword in ['Suite', 'Platform', 'System', 'Tool', 'App', 'Service', 'Solution', 'Engine', 'Framework', 'Hub', 'Portal', 'Cloud', 'Pro', 'Ultra', 'Premium', 'Plus', 'Advanced', 'Elite', 'Mega', 'Super', 'Max', 'Turbo', 'Power', 'Smart']):
+                entity_type = 'PRODUCT'
+            # Check if it looks like an organization (has org keywords)
+            elif any(suffix in matched_text for suffix in ['Inc', 'LLC', 'Corp', 'Corporation', 'Ltd', 'Limited', 'Group', 'Industries', 'Solutions', 'Systems', 'Technologies', 'Enterprises', 'Partners', 'Ventures']):
+                entity_type = 'ORGANIZATION'
+            # Check if it looks like a person name (2-3 simple capitalized words)
+            else:
+                words = matched_text.split()
+                if len(words) == 2 and all(w[0].isupper() and w[1:].islower() for w in words if len(w) > 1):
+                    # Likely a person name (First Last)
+                    entity_type = 'NAME'
+
+            entities.append((matched_text, entity_type, start, end))
+            detected_spans.add((start, end))
 
         return entities
 

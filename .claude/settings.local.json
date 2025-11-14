@@ -3,7 +3,22 @@
     "allow": [
       "Bash(python -m pytest:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(python3:*)",
+      "WebSearch",
+      "WebFetch(domain:about.starbucks.com)",
+      "WebFetch(domain:www.bp.com)",
+      "WebFetch(domain:www.elcompanies.com)",
+      "WebFetch(domain:corporate.vanguard.com)",
+      "WebFetch(domain:investors.envistaco.com)",
+      "WebFetch(domain:www.businesswire.com)",
+      "WebFetch(domain:www.prnewswire.com)",
+      "Bash(source venv/bin/activate)",
+      "Bash(pip install:*)",
+      "Bash(=3.6.0)",
+      "Bash(python -m spacy download:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,23 @@
+Document ID: synthetic_018
+Generated on: 2025-11-14 18:26:13
+
+
+Contact email: alice.williams@email.com
+Contact email: charlie.brown@domain.co
+Phone number: (555) 123-4567
+Phone number: 555-1234
+Social Security Number: 333-44-5555
+Social Security Number: 000-11-2222
+Credit card: 4012888888881881
+Credit card: 4532-1234-5678-9010
+Employee: Jack Thomas
+Employee: David Miller
+Company: Acme Corporation
+Company: Acme Corporation
+Using product: PlusFramework Pro
+Located in: San Diego
+Server IP: 192.168.100.1
+Date of birth: 10/31/1995
+Address: 789 Elm Road, Portland, OR 97201
+Website: https://www.example.com
+Amount: ¥5000

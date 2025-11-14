@@ -1,0 +1,2482 @@
+[
+  {
+    "document_id": "synthetic_001",
+    "text": "Document ID: synthetic_001\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: ivy.anderson@service.net\nContact email: jane.smith@company.org\nPhone number: 555-1234\nPhone number: +1-555-890-1234\nSocial Security Number: 999-88-7777\nSocial Security Number: 111-22-3333\nCredit card: 6011-1234-5678-9012\nCredit card: 3782 822463 10005\nEmployee: Jack Thomas\nEmployee: Jane Smith\nCompany: Nexus Industries\nCompany: Quantum Systems\nUsing product: MaxPortal Ultra\nLocated in: Los Angeles\nServer IP: 10.20.30.40\nDate of birth: 07/04/1776\nAddress: 123 Main Street, Anytown, CA 90210\nWebsite: https://www.example.com\nAmount: $999,999.99",
+    "pii_entities": [
+      {
+        "text": "ivy.anderson@service.net",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 101
+      },
+      {
+        "text": "jane.smith@company.org",
+        "type": "EMAIL",
+        "start": 117,
+        "end": 139
+      },
+      {
+        "text": "555-1234",
+        "type": "PHONE",
+        "start": 154,
+        "end": 162
+      },
+      {
+        "text": "+1-555-890-1234",
+        "type": "PHONE",
+        "start": 177,
+        "end": 192
+      },
+      {
+        "text": "999-88-7777",
+        "type": "SSN",
+        "start": 217,
+        "end": 228
+      },
+      {
+        "text": "111-22-3333",
+        "type": "SSN",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "text": "6011-1234-5678-9012",
+        "type": "CREDIT_CARD",
+        "start": 278,
+        "end": 297
+      },
+      {
+        "text": "3782 822463 10005",
+        "type": "CREDIT_CARD",
+        "start": 311,
+        "end": 328
+      },
+      {
+        "text": "Jack Thomas",
+        "type": "PERSON",
+        "start": 339,
+        "end": 350
+      },
+      {
+        "text": "Jane Smith",
+        "type": "PERSON",
+        "start": 361,
+        "end": 371
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 381,
+        "end": 397
+      },
+      {
+        "text": "Quantum Systems",
+        "type": "ORG",
+        "start": 407,
+        "end": 422
+      },
+      {
+        "text": "MaxPortal Ultra",
+        "type": "PRODUCT",
+        "start": 438,
+        "end": 453
+      },
+      {
+        "text": "Los Angeles",
+        "type": "GPE",
+        "start": 466,
+        "end": 477
+      },
+      {
+        "text": "10.20.30.40",
+        "type": "IP_ADDRESS",
+        "start": 489,
+        "end": 500
+      },
+      {
+        "text": "07/04/1776",
+        "type": "DATE",
+        "start": 516,
+        "end": 526
+      },
+      {
+        "text": "123 Main Street, Anytown, CA 90210",
+        "type": "ADDRESS",
+        "start": 536,
+        "end": 570
+      },
+      {
+        "text": "https://www.example.com",
+        "type": "URL",
+        "start": 580,
+        "end": 603
+      },
+      {
+        "text": "$999,999.99",
+        "type": "CURRENCY",
+        "start": 612,
+        "end": 623
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365194",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_002",
+    "text": "Document ID: synthetic_002\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: alice.williams@email.com\nContact email: alice.williams@email.com\nPhone number: 555-567-8901\nPhone number: (555) 678-9012\nSocial Security Number: 123-45-6789\nSocial Security Number: 777-88-9999\nCredit card: 6011-1234-5678-9012\nCredit card: 6011111111111117\nEmployee: Ivy Anderson\nEmployee: Jack Thomas\nCompany: Beta Ventures Inc\nCompany: Prime Solutions Group\nUsing product: MegaTool Plus\nLocated in: San Diego\nServer IP: 10.20.30.40\nDate of birth: 09-10-1988\nAddress: 123 Main Street, Anytown, CA 90210\nWebsite: https://site.net/login\nAmount: \u00a3999.99",
+    "pii_entities": [
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 101
+      },
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 117,
+        "end": 141
+      },
+      {
+        "text": "555-567-8901",
+        "type": "PHONE",
+        "start": 156,
+        "end": 168
+      },
+      {
+        "text": "(555) 678-9012",
+        "type": "PHONE",
+        "start": 183,
+        "end": 197
+      },
+      {
+        "text": "123-45-6789",
+        "type": "SSN",
+        "start": 222,
+        "end": 233
+      },
+      {
+        "text": "777-88-9999",
+        "type": "SSN",
+        "start": 258,
+        "end": 269
+      },
+      {
+        "text": "6011-1234-5678-9012",
+        "type": "CREDIT_CARD",
+        "start": 283,
+        "end": 302
+      },
+      {
+        "text": "6011111111111117",
+        "type": "CREDIT_CARD",
+        "start": 316,
+        "end": 332
+      },
+      {
+        "text": "Ivy Anderson",
+        "type": "PERSON",
+        "start": 343,
+        "end": 355
+      },
+      {
+        "text": "Jack Thomas",
+        "type": "PERSON",
+        "start": 366,
+        "end": 377
+      },
+      {
+        "text": "Beta Ventures Inc",
+        "type": "ORG",
+        "start": 387,
+        "end": 404
+      },
+      {
+        "text": "Prime Solutions Group",
+        "type": "ORG",
+        "start": 414,
+        "end": 435
+      },
+      {
+        "text": "MegaTool Plus",
+        "type": "PRODUCT",
+        "start": 451,
+        "end": 464
+      },
+      {
+        "text": "San Diego",
+        "type": "GPE",
+        "start": 477,
+        "end": 486
+      },
+      {
+        "text": "10.20.30.40",
+        "type": "IP_ADDRESS",
+        "start": 498,
+        "end": 509
+      },
+      {
+        "text": "09-10-1988",
+        "type": "DATE",
+        "start": 525,
+        "end": 535
+      },
+      {
+        "text": "123 Main Street, Anytown, CA 90210",
+        "type": "ADDRESS",
+        "start": 545,
+        "end": 579
+      },
+      {
+        "text": "https://site.net/login",
+        "type": "URL",
+        "start": 589,
+        "end": 611
+      },
+      {
+        "text": "\u00a3999.99",
+        "type": "CURRENCY",
+        "start": 620,
+        "end": 627
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365360",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_003",
+    "text": "Document ID: synthetic_003\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: emma.davis@provider.com\nContact email: david.miller@site.io\nPhone number: +1-555-987-6543\nPhone number: 555-9012\nSocial Security Number: 111-22-3333\nSocial Security Number: 444-55-6666\nCredit card: 5425 2334 4455 6677\nCredit card: 5425 2334 4455 6677\nEmployee: Emma Davis\nEmployee: Jane Smith\nCompany: Mega Technologies\nCompany: Mega Technologies\nUsing product: PlusFramework Pro\nLocated in: Phoenix\nServer IP: 192.168.1.1\nDate of birth: 05/17/2018\nAddress: 258 Willow Way, Boston, MA 02101\nWebsite: https://app.org/settings\nAmount: $999,999.99",
+    "pii_entities": [
+      {
+        "text": "emma.davis@provider.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 100
+      },
+      {
+        "text": "david.miller@site.io",
+        "type": "EMAIL",
+        "start": 116,
+        "end": 136
+      },
+      {
+        "text": "+1-555-987-6543",
+        "type": "PHONE",
+        "start": 151,
+        "end": 166
+      },
+      {
+        "text": "555-9012",
+        "type": "PHONE",
+        "start": 181,
+        "end": 189
+      },
+      {
+        "text": "111-22-3333",
+        "type": "SSN",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "text": "444-55-6666",
+        "type": "SSN",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "text": "5425 2334 4455 6677",
+        "type": "CREDIT_CARD",
+        "start": 275,
+        "end": 294
+      },
+      {
+        "text": "5425 2334 4455 6677",
+        "type": "CREDIT_CARD",
+        "start": 308,
+        "end": 327
+      },
+      {
+        "text": "Emma Davis",
+        "type": "PERSON",
+        "start": 338,
+        "end": 348
+      },
+      {
+        "text": "Jane Smith",
+        "type": "PERSON",
+        "start": 359,
+        "end": 369
+      },
+      {
+        "text": "Mega Technologies",
+        "type": "ORG",
+        "start": 379,
+        "end": 396
+      },
+      {
+        "text": "Mega Technologies",
+        "type": "ORG",
+        "start": 406,
+        "end": 423
+      },
+      {
+        "text": "PlusFramework Pro",
+        "type": "PRODUCT",
+        "start": 439,
+        "end": 456
+      },
+      {
+        "text": "Phoenix",
+        "type": "GPE",
+        "start": 469,
+        "end": 476
+      },
+      {
+        "text": "192.168.1.1",
+        "type": "IP_ADDRESS",
+        "start": 488,
+        "end": 499
+      },
+      {
+        "text": "05/17/2018",
+        "type": "DATE",
+        "start": 515,
+        "end": 525
+      },
+      {
+        "text": "258 Willow Way, Boston, MA 02101",
+        "type": "ADDRESS",
+        "start": 535,
+        "end": 567
+      },
+      {
+        "text": "https://app.org/settings",
+        "type": "URL",
+        "start": 577,
+        "end": 601
+      },
+      {
+        "text": "$999,999.99",
+        "type": "CURRENCY",
+        "start": 610,
+        "end": 621
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365476",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_004",
+    "text": "Document ID: synthetic_004\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: emma.davis@provider.com\nContact email: jane.smith@company.org\nPhone number: 555-567-8901\nPhone number: +1-555-987-6543\nSocial Security Number: 666-77-8888\nSocial Security Number: 333-44-5555\nCredit card: 5500000000000004\nCredit card: 5105105105105100\nEmployee: Alice Williams\nEmployee: Jack Thomas\nCompany: Global Industries Inc\nCompany: Acme Corporation\nUsing product: EliteCloud Suite\nLocated in: Houston\nServer IP: 192.168.0.254\nDate of birth: 12/31/2020\nAddress: 321 Pine Boulevard, Austin, TX 78701\nWebsite: http://test.org/page\nAmount: \u00a375.25",
+    "pii_entities": [
+      {
+        "text": "emma.davis@provider.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 100
+      },
+      {
+        "text": "jane.smith@company.org",
+        "type": "EMAIL",
+        "start": 116,
+        "end": 138
+      },
+      {
+        "text": "555-567-8901",
+        "type": "PHONE",
+        "start": 153,
+        "end": 165
+      },
+      {
+        "text": "+1-555-987-6543",
+        "type": "PHONE",
+        "start": 180,
+        "end": 195
+      },
+      {
+        "text": "666-77-8888",
+        "type": "SSN",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "text": "333-44-5555",
+        "type": "SSN",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "text": "5500000000000004",
+        "type": "CREDIT_CARD",
+        "start": 281,
+        "end": 297
+      },
+      {
+        "text": "5105105105105100",
+        "type": "CREDIT_CARD",
+        "start": 311,
+        "end": 327
+      },
+      {
+        "text": "Alice Williams",
+        "type": "PERSON",
+        "start": 338,
+        "end": 352
+      },
+      {
+        "text": "Jack Thomas",
+        "type": "PERSON",
+        "start": 363,
+        "end": 374
+      },
+      {
+        "text": "Global Industries Inc",
+        "type": "ORG",
+        "start": 384,
+        "end": 405
+      },
+      {
+        "text": "Acme Corporation",
+        "type": "ORG",
+        "start": 415,
+        "end": 431
+      },
+      {
+        "text": "EliteCloud Suite",
+        "type": "PRODUCT",
+        "start": 447,
+        "end": 463
+      },
+      {
+        "text": "Houston",
+        "type": "GPE",
+        "start": 476,
+        "end": 483
+      },
+      {
+        "text": "192.168.0.254",
+        "type": "IP_ADDRESS",
+        "start": 495,
+        "end": 508
+      },
+      {
+        "text": "12/31/2020",
+        "type": "DATE",
+        "start": 524,
+        "end": 534
+      },
+      {
+        "text": "321 Pine Boulevard, Austin, TX 78701",
+        "type": "ADDRESS",
+        "start": 544,
+        "end": 580
+      },
+      {
+        "text": "http://test.org/page",
+        "type": "URL",
+        "start": 590,
+        "end": 610
+      },
+      {
+        "text": "\u00a375.25",
+        "type": "CURRENCY",
+        "start": 619,
+        "end": 625
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365573",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_005",
+    "text": "Document ID: synthetic_005\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: charlie.brown@domain.co\nContact email: frank.wilson@mail.net\nPhone number: 555 789 0123\nPhone number: 555 234 5678\nSocial Security Number: 555-12-3456\nSocial Security Number: 444-55-6666\nCredit card: 5500000000000004\nCredit card: 6011-1234-5678-9012\nEmployee: Ivy Anderson\nEmployee: Charlie Brown\nCompany: Quantum Systems\nCompany: Nexus Industries\nUsing product: EliteCloud Suite\nLocated in: Los Angeles\nServer IP: 10.20.30.40\nDate of birth: 08-25-1990\nAddress: 789 Elm Road, Portland, OR 97201\nWebsite: https://app.org/settings\nAmount: \u00a3999.99",
+    "pii_entities": [
+      {
+        "text": "charlie.brown@domain.co",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 100
+      },
+      {
+        "text": "frank.wilson@mail.net",
+        "type": "EMAIL",
+        "start": 116,
+        "end": 137
+      },
+      {
+        "text": "555 789 0123",
+        "type": "PHONE",
+        "start": 152,
+        "end": 164
+      },
+      {
+        "text": "555 234 5678",
+        "type": "PHONE",
+        "start": 179,
+        "end": 191
+      },
+      {
+        "text": "555-12-3456",
+        "type": "SSN",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "text": "444-55-6666",
+        "type": "SSN",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "text": "5500000000000004",
+        "type": "CREDIT_CARD",
+        "start": 277,
+        "end": 293
+      },
+      {
+        "text": "6011-1234-5678-9012",
+        "type": "CREDIT_CARD",
+        "start": 307,
+        "end": 326
+      },
+      {
+        "text": "Ivy Anderson",
+        "type": "PERSON",
+        "start": 337,
+        "end": 349
+      },
+      {
+        "text": "Charlie Brown",
+        "type": "PERSON",
+        "start": 360,
+        "end": 373
+      },
+      {
+        "text": "Quantum Systems",
+        "type": "ORG",
+        "start": 383,
+        "end": 398
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 408,
+        "end": 424
+      },
+      {
+        "text": "EliteCloud Suite",
+        "type": "PRODUCT",
+        "start": 440,
+        "end": 456
+      },
+      {
+        "text": "Los Angeles",
+        "type": "GPE",
+        "start": 469,
+        "end": 480
+      },
+      {
+        "text": "10.20.30.40",
+        "type": "IP_ADDRESS",
+        "start": 492,
+        "end": 503
+      },
+      {
+        "text": "08-25-1990",
+        "type": "DATE",
+        "start": 519,
+        "end": 529
+      },
+      {
+        "text": "789 Elm Road, Portland, OR 97201",
+        "type": "ADDRESS",
+        "start": 539,
+        "end": 571
+      },
+      {
+        "text": "https://app.org/settings",
+        "type": "URL",
+        "start": 581,
+        "end": 605
+      },
+      {
+        "text": "\u00a3999.99",
+        "type": "CURRENCY",
+        "start": 614,
+        "end": 621
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365666",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_006",
+    "text": "Document ID: synthetic_006\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: alice.williams@email.com\nContact email: bob.johnson@test.net\nPhone number: +1 555 456 7890\nPhone number: (555)345-6789\nSocial Security Number: 999-88-7777\nSocial Security Number: 666-77-8888\nCredit card: 6011111111111117\nCredit card: 4012888888881881\nEmployee: Alice Williams\nEmployee: Ivy Anderson\nCompany: Mega Technologies\nCompany: Acme Corporation\nUsing product: MegaTool Plus\nLocated in: New York\nServer IP: 10.10.10.10\nDate of birth: 07/04/1776\nAddress: 654 Maple Drive, Seattle, WA 98101\nWebsite: http://test.org/page\nAmount: \u00a31,000.50",
+    "pii_entities": [
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 101
+      },
+      {
+        "text": "bob.johnson@test.net",
+        "type": "EMAIL",
+        "start": 117,
+        "end": 137
+      },
+      {
+        "text": "+1 555 456 7890",
+        "type": "PHONE",
+        "start": 152,
+        "end": 167
+      },
+      {
+        "text": "(555)345-6789",
+        "type": "PHONE",
+        "start": 182,
+        "end": 195
+      },
+      {
+        "text": "999-88-7777",
+        "type": "SSN",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "text": "666-77-8888",
+        "type": "SSN",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "text": "6011111111111117",
+        "type": "CREDIT_CARD",
+        "start": 281,
+        "end": 297
+      },
+      {
+        "text": "4012888888881881",
+        "type": "CREDIT_CARD",
+        "start": 311,
+        "end": 327
+      },
+      {
+        "text": "Alice Williams",
+        "type": "PERSON",
+        "start": 338,
+        "end": 352
+      },
+      {
+        "text": "Ivy Anderson",
+        "type": "PERSON",
+        "start": 363,
+        "end": 375
+      },
+      {
+        "text": "Mega Technologies",
+        "type": "ORG",
+        "start": 385,
+        "end": 402
+      },
+      {
+        "text": "Acme Corporation",
+        "type": "ORG",
+        "start": 412,
+        "end": 428
+      },
+      {
+        "text": "MegaTool Plus",
+        "type": "PRODUCT",
+        "start": 444,
+        "end": 457
+      },
+      {
+        "text": "New York",
+        "type": "GPE",
+        "start": 470,
+        "end": 478
+      },
+      {
+        "text": "10.10.10.10",
+        "type": "IP_ADDRESS",
+        "start": 490,
+        "end": 501
+      },
+      {
+        "text": "07/04/1776",
+        "type": "DATE",
+        "start": 517,
+        "end": 527
+      },
+      {
+        "text": "654 Maple Drive, Seattle, WA 98101",
+        "type": "ADDRESS",
+        "start": 537,
+        "end": 571
+      },
+      {
+        "text": "http://test.org/page",
+        "type": "URL",
+        "start": 581,
+        "end": 601
+      },
+      {
+        "text": "\u00a31,000.50",
+        "type": "CURRENCY",
+        "start": 610,
+        "end": 619
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365766",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_007",
+    "text": "Document ID: synthetic_007\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: henry.taylor@business.com\nContact email: jack.thomas@firm.com\nPhone number: 555 234 5678\nPhone number: (555) 123-4567\nSocial Security Number: 666-77-8888\nSocial Security Number: 888-99-0000\nCredit card: 3400 000000 00009\nCredit card: 3566002020360505\nEmployee: Frank Wilson\nEmployee: Bob Johnson\nCompany: Smart Enterprises\nCompany: Tech Solutions LLC\nUsing product: MegaTool Plus\nLocated in: Jacksonville\nServer IP: 192.168.100.1\nDate of birth: 10/31/1995\nAddress: 654 Maple Drive, Seattle, WA 98101\nWebsite: http://system.com/admin\nAmount: \u00a375.25",
+    "pii_entities": [
+      {
+        "text": "henry.taylor@business.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 102
+      },
+      {
+        "text": "jack.thomas@firm.com",
+        "type": "EMAIL",
+        "start": 118,
+        "end": 138
+      },
+      {
+        "text": "555 234 5678",
+        "type": "PHONE",
+        "start": 153,
+        "end": 165
+      },
+      {
+        "text": "(555) 123-4567",
+        "type": "PHONE",
+        "start": 180,
+        "end": 194
+      },
+      {
+        "text": "666-77-8888",
+        "type": "SSN",
+        "start": 219,
+        "end": 230
+      },
+      {
+        "text": "888-99-0000",
+        "type": "SSN",
+        "start": 255,
+        "end": 266
+      },
+      {
+        "text": "3400 000000 00009",
+        "type": "CREDIT_CARD",
+        "start": 280,
+        "end": 297
+      },
+      {
+        "text": "3566002020360505",
+        "type": "CREDIT_CARD",
+        "start": 311,
+        "end": 327
+      },
+      {
+        "text": "Frank Wilson",
+        "type": "PERSON",
+        "start": 338,
+        "end": 350
+      },
+      {
+        "text": "Bob Johnson",
+        "type": "PERSON",
+        "start": 361,
+        "end": 372
+      },
+      {
+        "text": "Smart Enterprises",
+        "type": "ORG",
+        "start": 382,
+        "end": 399
+      },
+      {
+        "text": "Tech Solutions LLC",
+        "type": "ORG",
+        "start": 409,
+        "end": 427
+      },
+      {
+        "text": "MegaTool Plus",
+        "type": "PRODUCT",
+        "start": 443,
+        "end": 456
+      },
+      {
+        "text": "Jacksonville",
+        "type": "GPE",
+        "start": 469,
+        "end": 481
+      },
+      {
+        "text": "192.168.100.1",
+        "type": "IP_ADDRESS",
+        "start": 493,
+        "end": 506
+      },
+      {
+        "text": "10/31/1995",
+        "type": "DATE",
+        "start": 522,
+        "end": 532
+      },
+      {
+        "text": "654 Maple Drive, Seattle, WA 98101",
+        "type": "ADDRESS",
+        "start": 542,
+        "end": 576
+      },
+      {
+        "text": "http://system.com/admin",
+        "type": "URL",
+        "start": 586,
+        "end": 609
+      },
+      {
+        "text": "\u00a375.25",
+        "type": "CURRENCY",
+        "start": 618,
+        "end": 624
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365856",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_008",
+    "text": "Document ID: synthetic_008\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: henry.taylor@business.com\nContact email: emma.davis@provider.com\nPhone number: 555 234 5678\nPhone number: (555) 123-4567\nSocial Security Number: 555-12-3456\nSocial Security Number: 777-88-9999\nCredit card: 6011000000000012\nCredit card: 5425 2334 4455 6677\nEmployee: John Doe\nEmployee: Jane Smith\nCompany: Tech Solutions LLC\nCompany: Nexus Industries\nUsing product: SuperSystem Pro\nLocated in: Austin\nServer IP: 172.31.255.255\nDate of birth: 04/01/2005\nAddress: 456 Oak Avenue, Springfield, IL 62701\nWebsite: https://portal.net/profile\nAmount: \u00a375.25",
+    "pii_entities": [
+      {
+        "text": "henry.taylor@business.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 102
+      },
+      {
+        "text": "emma.davis@provider.com",
+        "type": "EMAIL",
+        "start": 118,
+        "end": 141
+      },
+      {
+        "text": "555 234 5678",
+        "type": "PHONE",
+        "start": 156,
+        "end": 168
+      },
+      {
+        "text": "(555) 123-4567",
+        "type": "PHONE",
+        "start": 183,
+        "end": 197
+      },
+      {
+        "text": "555-12-3456",
+        "type": "SSN",
+        "start": 222,
+        "end": 233
+      },
+      {
+        "text": "777-88-9999",
+        "type": "SSN",
+        "start": 258,
+        "end": 269
+      },
+      {
+        "text": "6011000000000012",
+        "type": "CREDIT_CARD",
+        "start": 283,
+        "end": 299
+      },
+      {
+        "text": "5425 2334 4455 6677",
+        "type": "CREDIT_CARD",
+        "start": 313,
+        "end": 332
+      },
+      {
+        "text": "John Doe",
+        "type": "PERSON",
+        "start": 343,
+        "end": 351
+      },
+      {
+        "text": "Jane Smith",
+        "type": "PERSON",
+        "start": 362,
+        "end": 372
+      },
+      {
+        "text": "Tech Solutions LLC",
+        "type": "ORG",
+        "start": 382,
+        "end": 400
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 410,
+        "end": 426
+      },
+      {
+        "text": "SuperSystem Pro",
+        "type": "PRODUCT",
+        "start": 442,
+        "end": 457
+      },
+      {
+        "text": "Austin",
+        "type": "GPE",
+        "start": 470,
+        "end": 476
+      },
+      {
+        "text": "172.31.255.255",
+        "type": "IP_ADDRESS",
+        "start": 488,
+        "end": 502
+      },
+      {
+        "text": "04/01/2005",
+        "type": "DATE",
+        "start": 518,
+        "end": 528
+      },
+      {
+        "text": "456 Oak Avenue, Springfield, IL 62701",
+        "type": "ADDRESS",
+        "start": 538,
+        "end": 575
+      },
+      {
+        "text": "https://portal.net/profile",
+        "type": "URL",
+        "start": 585,
+        "end": 611
+      },
+      {
+        "text": "\u00a375.25",
+        "type": "CURRENCY",
+        "start": 620,
+        "end": 626
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.365948",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_009",
+    "text": "Document ID: synthetic_009\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: henry.taylor@business.com\nContact email: frank.wilson@mail.net\nPhone number: 555-567-8901\nPhone number: +1-555-987-6543\nSocial Security Number: 777-88-9999\nSocial Security Number: 123-45-6789\nCredit card: 3566002020360505\nCredit card: 6011111111111117\nEmployee: Jane Smith\nEmployee: Ivy Anderson\nCompany: Beta Ventures Inc\nCompany: Smart Enterprises\nUsing product: EliteCloud Suite\nLocated in: Philadelphia\nServer IP: 10.0.0.5\nDate of birth: 09-10-1988\nAddress: 147 Birch Court, Denver, CO 80201\nWebsite: https://site.net/login\nAmount: $10,000.00",
+    "pii_entities": [
+      {
+        "text": "henry.taylor@business.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 102
+      },
+      {
+        "text": "frank.wilson@mail.net",
+        "type": "EMAIL",
+        "start": 118,
+        "end": 139
+      },
+      {
+        "text": "555-567-8901",
+        "type": "PHONE",
+        "start": 154,
+        "end": 166
+      },
+      {
+        "text": "+1-555-987-6543",
+        "type": "PHONE",
+        "start": 181,
+        "end": 196
+      },
+      {
+        "text": "777-88-9999",
+        "type": "SSN",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "text": "123-45-6789",
+        "type": "SSN",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "text": "3566002020360505",
+        "type": "CREDIT_CARD",
+        "start": 282,
+        "end": 298
+      },
+      {
+        "text": "6011111111111117",
+        "type": "CREDIT_CARD",
+        "start": 312,
+        "end": 328
+      },
+      {
+        "text": "Jane Smith",
+        "type": "PERSON",
+        "start": 339,
+        "end": 349
+      },
+      {
+        "text": "Ivy Anderson",
+        "type": "PERSON",
+        "start": 360,
+        "end": 372
+      },
+      {
+        "text": "Beta Ventures Inc",
+        "type": "ORG",
+        "start": 382,
+        "end": 399
+      },
+      {
+        "text": "Smart Enterprises",
+        "type": "ORG",
+        "start": 409,
+        "end": 426
+      },
+      {
+        "text": "EliteCloud Suite",
+        "type": "PRODUCT",
+        "start": 442,
+        "end": 458
+      },
+      {
+        "text": "Philadelphia",
+        "type": "GPE",
+        "start": 471,
+        "end": 483
+      },
+      {
+        "text": "10.0.0.5",
+        "type": "IP_ADDRESS",
+        "start": 495,
+        "end": 503
+      },
+      {
+        "text": "09-10-1988",
+        "type": "DATE",
+        "start": 519,
+        "end": 529
+      },
+      {
+        "text": "147 Birch Court, Denver, CO 80201",
+        "type": "ADDRESS",
+        "start": 539,
+        "end": 572
+      },
+      {
+        "text": "https://site.net/login",
+        "type": "URL",
+        "start": 582,
+        "end": 604
+      },
+      {
+        "text": "$10,000.00",
+        "type": "CURRENCY",
+        "start": 613,
+        "end": 623
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366049",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_010",
+    "text": "Document ID: synthetic_010\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: john.doe@example.com\nContact email: jack.thomas@firm.com\nPhone number: +1-555-890-1234\nPhone number: +1-555-987-6543\nSocial Security Number: 777-88-9999\nSocial Security Number: 555-12-3456\nCredit card: 4012888888881881\nCredit card: 5425 2334 4455 6677\nEmployee: Ivy Anderson\nEmployee: Charlie Brown\nCompany: Nexus Industries\nCompany: Beta Ventures Inc\nUsing product: PlusFramework Pro\nLocated in: Houston\nServer IP: 172.16.0.100\nDate of birth: 11/05/2015\nAddress: 789 Elm Road, Portland, OR 97201\nWebsite: https://app.org/settings\nAmount: \u00a55000",
+    "pii_entities": [
+      {
+        "text": "john.doe@example.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 97
+      },
+      {
+        "text": "jack.thomas@firm.com",
+        "type": "EMAIL",
+        "start": 113,
+        "end": 133
+      },
+      {
+        "text": "+1-555-890-1234",
+        "type": "PHONE",
+        "start": 148,
+        "end": 163
+      },
+      {
+        "text": "+1-555-987-6543",
+        "type": "PHONE",
+        "start": 178,
+        "end": 193
+      },
+      {
+        "text": "777-88-9999",
+        "type": "SSN",
+        "start": 218,
+        "end": 229
+      },
+      {
+        "text": "555-12-3456",
+        "type": "SSN",
+        "start": 254,
+        "end": 265
+      },
+      {
+        "text": "4012888888881881",
+        "type": "CREDIT_CARD",
+        "start": 279,
+        "end": 295
+      },
+      {
+        "text": "5425 2334 4455 6677",
+        "type": "CREDIT_CARD",
+        "start": 309,
+        "end": 328
+      },
+      {
+        "text": "Ivy Anderson",
+        "type": "PERSON",
+        "start": 339,
+        "end": 351
+      },
+      {
+        "text": "Charlie Brown",
+        "type": "PERSON",
+        "start": 362,
+        "end": 375
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 385,
+        "end": 401
+      },
+      {
+        "text": "Beta Ventures Inc",
+        "type": "ORG",
+        "start": 411,
+        "end": 428
+      },
+      {
+        "text": "PlusFramework Pro",
+        "type": "PRODUCT",
+        "start": 444,
+        "end": 461
+      },
+      {
+        "text": "Houston",
+        "type": "GPE",
+        "start": 474,
+        "end": 481
+      },
+      {
+        "text": "172.16.0.100",
+        "type": "IP_ADDRESS",
+        "start": 493,
+        "end": 505
+      },
+      {
+        "text": "11/05/2015",
+        "type": "DATE",
+        "start": 521,
+        "end": 531
+      },
+      {
+        "text": "789 Elm Road, Portland, OR 97201",
+        "type": "ADDRESS",
+        "start": 541,
+        "end": 573
+      },
+      {
+        "text": "https://app.org/settings",
+        "type": "URL",
+        "start": 583,
+        "end": 607
+      },
+      {
+        "text": "\u00a55000",
+        "type": "CURRENCY",
+        "start": 616,
+        "end": 621
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366153",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_011",
+    "text": "Document ID: synthetic_011\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: john.doe@example.com\nContact email: henry.taylor@business.com\nPhone number: 555 234 5678\nPhone number: +1 555 456 7890\nSocial Security Number: 123-45-6789\nSocial Security Number: 987-65-4321\nCredit card: 5500000000000004\nCredit card: 4111111111111111\nEmployee: Alice Williams\nEmployee: John Doe\nCompany: Digital Systems Corp\nCompany: Omega Corporation\nUsing product: UltraPlatform 2000\nLocated in: Los Angeles\nServer IP: 208.67.222.222\nDate of birth: 02-14-2000\nAddress: 456 Oak Avenue, Springfield, IL 62701\nWebsite: https://app.org/settings\nAmount: \u20ac500.00",
+    "pii_entities": [
+      {
+        "text": "john.doe@example.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 97
+      },
+      {
+        "text": "henry.taylor@business.com",
+        "type": "EMAIL",
+        "start": 113,
+        "end": 138
+      },
+      {
+        "text": "555 234 5678",
+        "type": "PHONE",
+        "start": 153,
+        "end": 165
+      },
+      {
+        "text": "+1 555 456 7890",
+        "type": "PHONE",
+        "start": 180,
+        "end": 195
+      },
+      {
+        "text": "123-45-6789",
+        "type": "SSN",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "text": "987-65-4321",
+        "type": "SSN",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "text": "5500000000000004",
+        "type": "CREDIT_CARD",
+        "start": 281,
+        "end": 297
+      },
+      {
+        "text": "4111111111111111",
+        "type": "CREDIT_CARD",
+        "start": 311,
+        "end": 327
+      },
+      {
+        "text": "Alice Williams",
+        "type": "PERSON",
+        "start": 338,
+        "end": 352
+      },
+      {
+        "text": "John Doe",
+        "type": "PERSON",
+        "start": 363,
+        "end": 371
+      },
+      {
+        "text": "Digital Systems Corp",
+        "type": "ORG",
+        "start": 381,
+        "end": 401
+      },
+      {
+        "text": "Omega Corporation",
+        "type": "ORG",
+        "start": 411,
+        "end": 428
+      },
+      {
+        "text": "UltraPlatform 2000",
+        "type": "PRODUCT",
+        "start": 444,
+        "end": 462
+      },
+      {
+        "text": "Los Angeles",
+        "type": "GPE",
+        "start": 475,
+        "end": 486
+      },
+      {
+        "text": "208.67.222.222",
+        "type": "IP_ADDRESS",
+        "start": 498,
+        "end": 512
+      },
+      {
+        "text": "02-14-2000",
+        "type": "DATE",
+        "start": 528,
+        "end": 538
+      },
+      {
+        "text": "456 Oak Avenue, Springfield, IL 62701",
+        "type": "ADDRESS",
+        "start": 548,
+        "end": 585
+      },
+      {
+        "text": "https://app.org/settings",
+        "type": "URL",
+        "start": 595,
+        "end": 619
+      },
+      {
+        "text": "\u20ac500.00",
+        "type": "CURRENCY",
+        "start": 628,
+        "end": 635
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366261",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_012",
+    "text": "Document ID: synthetic_012\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: bob.johnson@test.net\nContact email: ivy.anderson@service.net\nPhone number: +1 555 456 7890\nPhone number: 555-567-8901\nSocial Security Number: 555-12-3456\nSocial Security Number: 999-88-7777\nCredit card: 4012888888881881\nCredit card: 5105105105105100\nEmployee: Emma Davis\nEmployee: Alice Williams\nCompany: Beta Ventures Inc\nCompany: Quantum Systems\nUsing product: AdvancedPlatform X\nLocated in: Houston\nServer IP: 208.67.222.222\nDate of birth: 09-10-1988\nAddress: 147 Birch Court, Denver, CO 80201\nWebsite: http://platform.co/home\nAmount: $10,000.00",
+    "pii_entities": [
+      {
+        "text": "bob.johnson@test.net",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 97
+      },
+      {
+        "text": "ivy.anderson@service.net",
+        "type": "EMAIL",
+        "start": 113,
+        "end": 137
+      },
+      {
+        "text": "+1 555 456 7890",
+        "type": "PHONE",
+        "start": 152,
+        "end": 167
+      },
+      {
+        "text": "555-567-8901",
+        "type": "PHONE",
+        "start": 182,
+        "end": 194
+      },
+      {
+        "text": "555-12-3456",
+        "type": "SSN",
+        "start": 219,
+        "end": 230
+      },
+      {
+        "text": "999-88-7777",
+        "type": "SSN",
+        "start": 255,
+        "end": 266
+      },
+      {
+        "text": "4012888888881881",
+        "type": "CREDIT_CARD",
+        "start": 280,
+        "end": 296
+      },
+      {
+        "text": "5105105105105100",
+        "type": "CREDIT_CARD",
+        "start": 310,
+        "end": 326
+      },
+      {
+        "text": "Emma Davis",
+        "type": "PERSON",
+        "start": 337,
+        "end": 347
+      },
+      {
+        "text": "Alice Williams",
+        "type": "PERSON",
+        "start": 358,
+        "end": 372
+      },
+      {
+        "text": "Beta Ventures Inc",
+        "type": "ORG",
+        "start": 382,
+        "end": 399
+      },
+      {
+        "text": "Quantum Systems",
+        "type": "ORG",
+        "start": 409,
+        "end": 424
+      },
+      {
+        "text": "AdvancedPlatform X",
+        "type": "PRODUCT",
+        "start": 440,
+        "end": 458
+      },
+      {
+        "text": "Houston",
+        "type": "GPE",
+        "start": 471,
+        "end": 478
+      },
+      {
+        "text": "208.67.222.222",
+        "type": "IP_ADDRESS",
+        "start": 490,
+        "end": 504
+      },
+      {
+        "text": "09-10-1988",
+        "type": "DATE",
+        "start": 520,
+        "end": 530
+      },
+      {
+        "text": "147 Birch Court, Denver, CO 80201",
+        "type": "ADDRESS",
+        "start": 540,
+        "end": 573
+      },
+      {
+        "text": "http://platform.co/home",
+        "type": "URL",
+        "start": 583,
+        "end": 606
+      },
+      {
+        "text": "$10,000.00",
+        "type": "CURRENCY",
+        "start": 615,
+        "end": 625
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366360",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_013",
+    "text": "Document ID: synthetic_013\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: grace.lee@tech.org\nContact email: frank.wilson@mail.net\nPhone number: 555-5678\nPhone number: (555) 123-4567\nSocial Security Number: 111-22-3333\nSocial Security Number: 987-65-4321\nCredit card: 5500000000000004\nCredit card: 4532-1234-5678-9010\nEmployee: Henry Taylor\nEmployee: Grace Lee\nCompany: Digital Systems Corp\nCompany: Omega Corporation\nUsing product: MegaTool Plus\nLocated in: New York\nServer IP: 10.0.0.5\nDate of birth: 05/17/2018\nAddress: 123 Main Street, Anytown, CA 90210\nWebsite: http://www.domain.com/api\nAmount: $999,999.99",
+    "pii_entities": [
+      {
+        "text": "grace.lee@tech.org",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 95
+      },
+      {
+        "text": "frank.wilson@mail.net",
+        "type": "EMAIL",
+        "start": 111,
+        "end": 132
+      },
+      {
+        "text": "555-5678",
+        "type": "PHONE",
+        "start": 147,
+        "end": 155
+      },
+      {
+        "text": "(555) 123-4567",
+        "type": "PHONE",
+        "start": 170,
+        "end": 184
+      },
+      {
+        "text": "111-22-3333",
+        "type": "SSN",
+        "start": 209,
+        "end": 220
+      },
+      {
+        "text": "987-65-4321",
+        "type": "SSN",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "text": "5500000000000004",
+        "type": "CREDIT_CARD",
+        "start": 270,
+        "end": 286
+      },
+      {
+        "text": "4532-1234-5678-9010",
+        "type": "CREDIT_CARD",
+        "start": 300,
+        "end": 319
+      },
+      {
+        "text": "Henry Taylor",
+        "type": "PERSON",
+        "start": 330,
+        "end": 342
+      },
+      {
+        "text": "Grace Lee",
+        "type": "PERSON",
+        "start": 353,
+        "end": 362
+      },
+      {
+        "text": "Digital Systems Corp",
+        "type": "ORG",
+        "start": 372,
+        "end": 392
+      },
+      {
+        "text": "Omega Corporation",
+        "type": "ORG",
+        "start": 402,
+        "end": 419
+      },
+      {
+        "text": "MegaTool Plus",
+        "type": "PRODUCT",
+        "start": 435,
+        "end": 448
+      },
+      {
+        "text": "New York",
+        "type": "GPE",
+        "start": 461,
+        "end": 469
+      },
+      {
+        "text": "10.0.0.5",
+        "type": "IP_ADDRESS",
+        "start": 481,
+        "end": 489
+      },
+      {
+        "text": "05/17/2018",
+        "type": "DATE",
+        "start": 505,
+        "end": 515
+      },
+      {
+        "text": "123 Main Street, Anytown, CA 90210",
+        "type": "ADDRESS",
+        "start": 525,
+        "end": 559
+      },
+      {
+        "text": "http://www.domain.com/api",
+        "type": "URL",
+        "start": 569,
+        "end": 594
+      },
+      {
+        "text": "$999,999.99",
+        "type": "CURRENCY",
+        "start": 603,
+        "end": 614
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366464",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_014",
+    "text": "Document ID: synthetic_014\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: john.doe@example.com\nContact email: david.miller@site.io\nPhone number: 555-5678\nPhone number: 555-567-8901\nSocial Security Number: 111-22-3333\nSocial Security Number: 999-88-7777\nCredit card: 3566002020360505\nCredit card: 6011000000000012\nEmployee: Alice Williams\nEmployee: Grace Lee\nCompany: Tech Solutions LLC\nCompany: Quantum Systems\nUsing product: PlusFramework Pro\nLocated in: San Jose\nServer IP: 1.1.1.1\nDate of birth: 03/22/2010\nAddress: 258 Willow Way, Boston, MA 02101\nWebsite: https://portal.net/profile\nAmount: \u00a31,000.50",
+    "pii_entities": [
+      {
+        "text": "john.doe@example.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 97
+      },
+      {
+        "text": "david.miller@site.io",
+        "type": "EMAIL",
+        "start": 113,
+        "end": 133
+      },
+      {
+        "text": "555-5678",
+        "type": "PHONE",
+        "start": 148,
+        "end": 156
+      },
+      {
+        "text": "555-567-8901",
+        "type": "PHONE",
+        "start": 171,
+        "end": 183
+      },
+      {
+        "text": "111-22-3333",
+        "type": "SSN",
+        "start": 208,
+        "end": 219
+      },
+      {
+        "text": "999-88-7777",
+        "type": "SSN",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "text": "3566002020360505",
+        "type": "CREDIT_CARD",
+        "start": 269,
+        "end": 285
+      },
+      {
+        "text": "6011000000000012",
+        "type": "CREDIT_CARD",
+        "start": 299,
+        "end": 315
+      },
+      {
+        "text": "Alice Williams",
+        "type": "PERSON",
+        "start": 326,
+        "end": 340
+      },
+      {
+        "text": "Grace Lee",
+        "type": "PERSON",
+        "start": 351,
+        "end": 360
+      },
+      {
+        "text": "Tech Solutions LLC",
+        "type": "ORG",
+        "start": 370,
+        "end": 388
+      },
+      {
+        "text": "Quantum Systems",
+        "type": "ORG",
+        "start": 398,
+        "end": 413
+      },
+      {
+        "text": "PlusFramework Pro",
+        "type": "PRODUCT",
+        "start": 429,
+        "end": 446
+      },
+      {
+        "text": "San Jose",
+        "type": "GPE",
+        "start": 459,
+        "end": 467
+      },
+      {
+        "text": "1.1.1.1",
+        "type": "IP_ADDRESS",
+        "start": 479,
+        "end": 486
+      },
+      {
+        "text": "03/22/2010",
+        "type": "DATE",
+        "start": 502,
+        "end": 512
+      },
+      {
+        "text": "258 Willow Way, Boston, MA 02101",
+        "type": "ADDRESS",
+        "start": 522,
+        "end": 554
+      },
+      {
+        "text": "https://portal.net/profile",
+        "type": "URL",
+        "start": 564,
+        "end": 590
+      },
+      {
+        "text": "\u00a31,000.50",
+        "type": "CURRENCY",
+        "start": 599,
+        "end": 608
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366559",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_015",
+    "text": "Document ID: synthetic_015\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: jane.smith@company.org\nContact email: jane.smith@company.org\nPhone number: 555 789 0123\nPhone number: (555)345-6789\nSocial Security Number: 444-55-6666\nSocial Security Number: 222-33-4444\nCredit card: 3400 000000 00009\nCredit card: 6011000000000012\nEmployee: Jack Thomas\nEmployee: John Doe\nCompany: Nexus Industries\nCompany: Nexus Industries\nUsing product: EliteCloud Suite\nLocated in: Los Angeles\nServer IP: 192.168.1.1\nDate of birth: 07/04/1776\nAddress: 987 Cedar Lane, Miami, FL 33101\nWebsite: http://test.org/page\nAmount: \u00a31,000.50",
+    "pii_entities": [
+      {
+        "text": "jane.smith@company.org",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 99
+      },
+      {
+        "text": "jane.smith@company.org",
+        "type": "EMAIL",
+        "start": 115,
+        "end": 137
+      },
+      {
+        "text": "555 789 0123",
+        "type": "PHONE",
+        "start": 152,
+        "end": 164
+      },
+      {
+        "text": "(555)345-6789",
+        "type": "PHONE",
+        "start": 179,
+        "end": 192
+      },
+      {
+        "text": "444-55-6666",
+        "type": "SSN",
+        "start": 217,
+        "end": 228
+      },
+      {
+        "text": "222-33-4444",
+        "type": "SSN",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "text": "3400 000000 00009",
+        "type": "CREDIT_CARD",
+        "start": 278,
+        "end": 295
+      },
+      {
+        "text": "6011000000000012",
+        "type": "CREDIT_CARD",
+        "start": 309,
+        "end": 325
+      },
+      {
+        "text": "Jack Thomas",
+        "type": "PERSON",
+        "start": 336,
+        "end": 347
+      },
+      {
+        "text": "John Doe",
+        "type": "PERSON",
+        "start": 358,
+        "end": 366
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 376,
+        "end": 392
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 402,
+        "end": 418
+      },
+      {
+        "text": "EliteCloud Suite",
+        "type": "PRODUCT",
+        "start": 434,
+        "end": 450
+      },
+      {
+        "text": "Los Angeles",
+        "type": "GPE",
+        "start": 463,
+        "end": 474
+      },
+      {
+        "text": "192.168.1.1",
+        "type": "IP_ADDRESS",
+        "start": 486,
+        "end": 497
+      },
+      {
+        "text": "07/04/1776",
+        "type": "DATE",
+        "start": 513,
+        "end": 523
+      },
+      {
+        "text": "987 Cedar Lane, Miami, FL 33101",
+        "type": "ADDRESS",
+        "start": 533,
+        "end": 564
+      },
+      {
+        "text": "http://test.org/page",
+        "type": "URL",
+        "start": 574,
+        "end": 594
+      },
+      {
+        "text": "\u00a31,000.50",
+        "type": "CURRENCY",
+        "start": 603,
+        "end": 612
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366657",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_016",
+    "text": "Document ID: synthetic_016\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: alice.williams@email.com\nContact email: alice.williams@email.com\nPhone number: 555-567-8901\nPhone number: +1 555 456 7890\nSocial Security Number: 555-12-3456\nSocial Security Number: 222-33-4444\nCredit card: 3782 822463 10005\nCredit card: 4111111111111111\nEmployee: Frank Wilson\nEmployee: Alice Williams\nCompany: Global Industries Inc\nCompany: Alpha Partners Ltd\nUsing product: MaxPortal Ultra\nLocated in: Los Angeles\nServer IP: 192.168.1.1\nDate of birth: 08-25-1990\nAddress: 369 Spruce Street, Phoenix, AZ 85001\nWebsite: https://www.example.com\nAmount: $999,999.99",
+    "pii_entities": [
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 101
+      },
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 117,
+        "end": 141
+      },
+      {
+        "text": "555-567-8901",
+        "type": "PHONE",
+        "start": 156,
+        "end": 168
+      },
+      {
+        "text": "+1 555 456 7890",
+        "type": "PHONE",
+        "start": 183,
+        "end": 198
+      },
+      {
+        "text": "555-12-3456",
+        "type": "SSN",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "text": "222-33-4444",
+        "type": "SSN",
+        "start": 259,
+        "end": 270
+      },
+      {
+        "text": "3782 822463 10005",
+        "type": "CREDIT_CARD",
+        "start": 284,
+        "end": 301
+      },
+      {
+        "text": "4111111111111111",
+        "type": "CREDIT_CARD",
+        "start": 315,
+        "end": 331
+      },
+      {
+        "text": "Frank Wilson",
+        "type": "PERSON",
+        "start": 342,
+        "end": 354
+      },
+      {
+        "text": "Alice Williams",
+        "type": "PERSON",
+        "start": 365,
+        "end": 379
+      },
+      {
+        "text": "Global Industries Inc",
+        "type": "ORG",
+        "start": 389,
+        "end": 410
+      },
+      {
+        "text": "Alpha Partners Ltd",
+        "type": "ORG",
+        "start": 420,
+        "end": 438
+      },
+      {
+        "text": "MaxPortal Ultra",
+        "type": "PRODUCT",
+        "start": 454,
+        "end": 469
+      },
+      {
+        "text": "Los Angeles",
+        "type": "GPE",
+        "start": 482,
+        "end": 493
+      },
+      {
+        "text": "192.168.1.1",
+        "type": "IP_ADDRESS",
+        "start": 505,
+        "end": 516
+      },
+      {
+        "text": "08-25-1990",
+        "type": "DATE",
+        "start": 532,
+        "end": 542
+      },
+      {
+        "text": "369 Spruce Street, Phoenix, AZ 85001",
+        "type": "ADDRESS",
+        "start": 552,
+        "end": 588
+      },
+      {
+        "text": "https://www.example.com",
+        "type": "URL",
+        "start": 598,
+        "end": 621
+      },
+      {
+        "text": "$999,999.99",
+        "type": "CURRENCY",
+        "start": 630,
+        "end": 641
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366760",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_017",
+    "text": "Document ID: synthetic_017\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: alice.williams@email.com\nContact email: bob.johnson@test.net\nPhone number: (555)345-6789\nPhone number: +1 555 456 7890\nSocial Security Number: 888-99-0000\nSocial Security Number: 111-22-3333\nCredit card: 3400 000000 00009\nCredit card: 4532-1234-5678-9010\nEmployee: Bob Johnson\nEmployee: Emma Davis\nCompany: Acme Corporation\nCompany: Prime Solutions Group\nUsing product: PremiumApp Elite\nLocated in: San Diego\nServer IP: 192.168.0.254\nDate of birth: 07/04/1776\nAddress: 369 Spruce Street, Phoenix, AZ 85001\nWebsite: http://www.website.com/search\nAmount: \u20ac500.00",
+    "pii_entities": [
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 101
+      },
+      {
+        "text": "bob.johnson@test.net",
+        "type": "EMAIL",
+        "start": 117,
+        "end": 137
+      },
+      {
+        "text": "(555)345-6789",
+        "type": "PHONE",
+        "start": 152,
+        "end": 165
+      },
+      {
+        "text": "+1 555 456 7890",
+        "type": "PHONE",
+        "start": 180,
+        "end": 195
+      },
+      {
+        "text": "888-99-0000",
+        "type": "SSN",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "text": "111-22-3333",
+        "type": "SSN",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "text": "3400 000000 00009",
+        "type": "CREDIT_CARD",
+        "start": 281,
+        "end": 298
+      },
+      {
+        "text": "4532-1234-5678-9010",
+        "type": "CREDIT_CARD",
+        "start": 312,
+        "end": 331
+      },
+      {
+        "text": "Bob Johnson",
+        "type": "PERSON",
+        "start": 342,
+        "end": 353
+      },
+      {
+        "text": "Emma Davis",
+        "type": "PERSON",
+        "start": 364,
+        "end": 374
+      },
+      {
+        "text": "Acme Corporation",
+        "type": "ORG",
+        "start": 384,
+        "end": 400
+      },
+      {
+        "text": "Prime Solutions Group",
+        "type": "ORG",
+        "start": 410,
+        "end": 431
+      },
+      {
+        "text": "PremiumApp Elite",
+        "type": "PRODUCT",
+        "start": 447,
+        "end": 463
+      },
+      {
+        "text": "San Diego",
+        "type": "GPE",
+        "start": 476,
+        "end": 485
+      },
+      {
+        "text": "192.168.0.254",
+        "type": "IP_ADDRESS",
+        "start": 497,
+        "end": 510
+      },
+      {
+        "text": "07/04/1776",
+        "type": "DATE",
+        "start": 526,
+        "end": 536
+      },
+      {
+        "text": "369 Spruce Street, Phoenix, AZ 85001",
+        "type": "ADDRESS",
+        "start": 546,
+        "end": 582
+      },
+      {
+        "text": "http://www.website.com/search",
+        "type": "URL",
+        "start": 592,
+        "end": 621
+      },
+      {
+        "text": "\u20ac500.00",
+        "type": "CURRENCY",
+        "start": 630,
+        "end": 637
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366849",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_018",
+    "text": "Document ID: synthetic_018\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: alice.williams@email.com\nContact email: charlie.brown@domain.co\nPhone number: (555) 123-4567\nPhone number: 555-1234\nSocial Security Number: 333-44-5555\nSocial Security Number: 000-11-2222\nCredit card: 4012888888881881\nCredit card: 4532-1234-5678-9010\nEmployee: Jack Thomas\nEmployee: David Miller\nCompany: Acme Corporation\nCompany: Acme Corporation\nUsing product: PlusFramework Pro\nLocated in: San Diego\nServer IP: 192.168.100.1\nDate of birth: 10/31/1995\nAddress: 789 Elm Road, Portland, OR 97201\nWebsite: https://www.example.com\nAmount: \u00a55000",
+    "pii_entities": [
+      {
+        "text": "alice.williams@email.com",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 101
+      },
+      {
+        "text": "charlie.brown@domain.co",
+        "type": "EMAIL",
+        "start": 117,
+        "end": 140
+      },
+      {
+        "text": "(555) 123-4567",
+        "type": "PHONE",
+        "start": 155,
+        "end": 169
+      },
+      {
+        "text": "555-1234",
+        "type": "PHONE",
+        "start": 184,
+        "end": 192
+      },
+      {
+        "text": "333-44-5555",
+        "type": "SSN",
+        "start": 217,
+        "end": 228
+      },
+      {
+        "text": "000-11-2222",
+        "type": "SSN",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "text": "4012888888881881",
+        "type": "CREDIT_CARD",
+        "start": 278,
+        "end": 294
+      },
+      {
+        "text": "4532-1234-5678-9010",
+        "type": "CREDIT_CARD",
+        "start": 308,
+        "end": 327
+      },
+      {
+        "text": "Jack Thomas",
+        "type": "PERSON",
+        "start": 338,
+        "end": 349
+      },
+      {
+        "text": "David Miller",
+        "type": "PERSON",
+        "start": 360,
+        "end": 372
+      },
+      {
+        "text": "Acme Corporation",
+        "type": "ORG",
+        "start": 382,
+        "end": 398
+      },
+      {
+        "text": "Acme Corporation",
+        "type": "ORG",
+        "start": 408,
+        "end": 424
+      },
+      {
+        "text": "PlusFramework Pro",
+        "type": "PRODUCT",
+        "start": 440,
+        "end": 457
+      },
+      {
+        "text": "San Diego",
+        "type": "GPE",
+        "start": 470,
+        "end": 479
+      },
+      {
+        "text": "192.168.100.1",
+        "type": "IP_ADDRESS",
+        "start": 491,
+        "end": 504
+      },
+      {
+        "text": "10/31/1995",
+        "type": "DATE",
+        "start": 520,
+        "end": 530
+      },
+      {
+        "text": "789 Elm Road, Portland, OR 97201",
+        "type": "ADDRESS",
+        "start": 540,
+        "end": 572
+      },
+      {
+        "text": "https://www.example.com",
+        "type": "URL",
+        "start": 582,
+        "end": 605
+      },
+      {
+        "text": "\u00a55000",
+        "type": "CURRENCY",
+        "start": 614,
+        "end": 619
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.366952",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_019",
+    "text": "Document ID: synthetic_019\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: jane.smith@company.org\nContact email: bob.johnson@test.net\nPhone number: 555-5678\nPhone number: (555) 678-9012\nSocial Security Number: 987-65-4321\nSocial Security Number: 666-77-8888\nCredit card: 6011-1234-5678-9012\nCredit card: 3400 000000 00009\nEmployee: Jane Smith\nEmployee: Henry Taylor\nCompany: Digital Systems Corp\nCompany: Omega Corporation\nUsing product: PlusFramework Pro\nLocated in: New York\nServer IP: 10.20.30.40\nDate of birth: 12/31/2020\nAddress: 147 Birch Court, Denver, CO 80201\nWebsite: http://system.com/admin\nAmount: $25,500.99",
+    "pii_entities": [
+      {
+        "text": "jane.smith@company.org",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 99
+      },
+      {
+        "text": "bob.johnson@test.net",
+        "type": "EMAIL",
+        "start": 115,
+        "end": 135
+      },
+      {
+        "text": "555-5678",
+        "type": "PHONE",
+        "start": 150,
+        "end": 158
+      },
+      {
+        "text": "(555) 678-9012",
+        "type": "PHONE",
+        "start": 173,
+        "end": 187
+      },
+      {
+        "text": "987-65-4321",
+        "type": "SSN",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "text": "666-77-8888",
+        "type": "SSN",
+        "start": 248,
+        "end": 259
+      },
+      {
+        "text": "6011-1234-5678-9012",
+        "type": "CREDIT_CARD",
+        "start": 273,
+        "end": 292
+      },
+      {
+        "text": "3400 000000 00009",
+        "type": "CREDIT_CARD",
+        "start": 306,
+        "end": 323
+      },
+      {
+        "text": "Jane Smith",
+        "type": "PERSON",
+        "start": 334,
+        "end": 344
+      },
+      {
+        "text": "Henry Taylor",
+        "type": "PERSON",
+        "start": 355,
+        "end": 367
+      },
+      {
+        "text": "Digital Systems Corp",
+        "type": "ORG",
+        "start": 377,
+        "end": 397
+      },
+      {
+        "text": "Omega Corporation",
+        "type": "ORG",
+        "start": 407,
+        "end": 424
+      },
+      {
+        "text": "PlusFramework Pro",
+        "type": "PRODUCT",
+        "start": 440,
+        "end": 457
+      },
+      {
+        "text": "New York",
+        "type": "GPE",
+        "start": 470,
+        "end": 478
+      },
+      {
+        "text": "10.20.30.40",
+        "type": "IP_ADDRESS",
+        "start": 490,
+        "end": 501
+      },
+      {
+        "text": "12/31/2020",
+        "type": "DATE",
+        "start": 517,
+        "end": 527
+      },
+      {
+        "text": "147 Birch Court, Denver, CO 80201",
+        "type": "ADDRESS",
+        "start": 537,
+        "end": 570
+      },
+      {
+        "text": "http://system.com/admin",
+        "type": "URL",
+        "start": 580,
+        "end": 603
+      },
+      {
+        "text": "$25,500.99",
+        "type": "CURRENCY",
+        "start": 612,
+        "end": 622
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.367046",
+      "total_pii_count": 19
+    }
+  },
+  {
+    "document_id": "synthetic_020",
+    "text": "Document ID: synthetic_020\nGenerated on: 2025-11-14 18:26:13\n\n\nContact email: grace.lee@tech.org\nContact email: david.miller@site.io\nPhone number: +1-555-987-6543\nPhone number: (555) 123-4567\nSocial Security Number: 666-77-8888\nSocial Security Number: 000-11-2222\nCredit card: 5500000000000004\nCredit card: 6011-1234-5678-9012\nEmployee: Charlie Brown\nEmployee: Emma Davis\nCompany: Tech Solutions LLC\nCompany: Nexus Industries\nUsing product: EliteCloud Suite\nLocated in: Phoenix\nServer IP: 1.1.1.1\nDate of birth: 11/05/2015\nAddress: 456 Oak Avenue, Springfield, IL 62701\nWebsite: https://www.example.com\nAmount: $10,000.00",
+    "pii_entities": [
+      {
+        "text": "grace.lee@tech.org",
+        "type": "EMAIL",
+        "start": 77,
+        "end": 95
+      },
+      {
+        "text": "david.miller@site.io",
+        "type": "EMAIL",
+        "start": 111,
+        "end": 131
+      },
+      {
+        "text": "+1-555-987-6543",
+        "type": "PHONE",
+        "start": 146,
+        "end": 161
+      },
+      {
+        "text": "(555) 123-4567",
+        "type": "PHONE",
+        "start": 176,
+        "end": 190
+      },
+      {
+        "text": "666-77-8888",
+        "type": "SSN",
+        "start": 215,
+        "end": 226
+      },
+      {
+        "text": "000-11-2222",
+        "type": "SSN",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "text": "5500000000000004",
+        "type": "CREDIT_CARD",
+        "start": 276,
+        "end": 292
+      },
+      {
+        "text": "6011-1234-5678-9012",
+        "type": "CREDIT_CARD",
+        "start": 306,
+        "end": 325
+      },
+      {
+        "text": "Charlie Brown",
+        "type": "PERSON",
+        "start": 336,
+        "end": 349
+      },
+      {
+        "text": "Emma Davis",
+        "type": "PERSON",
+        "start": 360,
+        "end": 370
+      },
+      {
+        "text": "Tech Solutions LLC",
+        "type": "ORG",
+        "start": 380,
+        "end": 398
+      },
+      {
+        "text": "Nexus Industries",
+        "type": "ORG",
+        "start": 408,
+        "end": 424
+      },
+      {
+        "text": "EliteCloud Suite",
+        "type": "PRODUCT",
+        "start": 440,
+        "end": 456
+      },
+      {
+        "text": "Phoenix",
+        "type": "GPE",
+        "start": 469,
+        "end": 476
+      },
+      {
+        "text": "1.1.1.1",
+        "type": "IP_ADDRESS",
+        "start": 488,
+        "end": 495
+      },
+      {
+        "text": "11/05/2015",
+        "type": "DATE",
+        "start": 511,
+        "end": 521
+      },
+      {
+        "text": "456 Oak Avenue, Springfield, IL 62701",
+        "type": "ADDRESS",
+        "start": 531,
+        "end": 568
+      },
+      {
+        "text": "https://www.example.com",
+        "type": "URL",
+        "start": 578,
+        "end": 601
+      },
+      {
+        "text": "$10,000.00",
+        "type": "CURRENCY",
+        "start": 610,
+        "end": 620
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-11-14T18:26:13.367147",
+      "total_pii_count": 19
+    }
+  }
+]

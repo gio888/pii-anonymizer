@@ -1,0 +1,185 @@
+{
+  "dataset_info": {
+    "name": "Real-World PII Test Dataset",
+    "version": "1.0",
+    "created_date": "2025-11-14",
+    "total_documents": 7,
+    "total_pii_entities": 228,
+    "source_type": "corporate_press_releases"
+  },
+  "document_summary": [
+    {
+      "document_id": "realworld_001",
+      "title": "Bio X Cell CEO Appointment",
+      "industry": "biotechnology",
+      "date": "2024-08-12",
+      "pii_count": 41,
+      "has_email": true,
+      "has_phone": true,
+      "has_address": false,
+      "has_url": true
+    },
+    {
+      "document_id": "realworld_002",
+      "title": "CISOs Connect Executive Appointments",
+      "industry": "cybersecurity",
+      "date": "2024-07-31",
+      "pii_count": 30,
+      "has_email": true,
+      "has_phone": true,
+      "has_address": false,
+      "has_url": false
+    },
+    {
+      "document_id": "realworld_003",
+      "title": "Envista Holdings CEO Appointment",
+      "industry": "healthcare",
+      "date": "2024-04-15",
+      "pii_count": 37,
+      "has_email": true,
+      "has_phone": true,
+      "has_address": true,
+      "has_url": false
+    },
+    {
+      "document_id": "realworld_004",
+      "title": "Vanguard CEO Appointment",
+      "industry": "financial_services",
+      "date": "2024-05-14",
+      "pii_count": 32,
+      "has_email": false,
+      "has_phone": false,
+      "has_address": false,
+      "has_url": false
+    },
+    {
+      "document_id": "realworld_005",
+      "title": "Estée Lauder CEO Appointment",
+      "industry": "beauty_consumer_goods",
+      "date": "2024-10-30",
+      "pii_count": 26,
+      "has_email": false,
+      "has_phone": false,
+      "has_address": false,
+      "has_url": false
+    },
+    {
+      "document_id": "realworld_006",
+      "title": "Neonode CEO Appointment",
+      "industry": "technology",
+      "date": "2025-03-24",
+      "pii_count": 31,
+      "has_email": true,
+      "has_phone": true,
+      "has_address": false,
+      "has_url": false
+    },
+    {
+      "document_id": "realworld_007",
+      "title": "AbbVie CEO Appointment",
+      "industry": "pharmaceutical",
+      "date": "2024-02-20",
+      "pii_count": 31,
+      "has_email": false,
+      "has_phone": false,
+      "has_address": false,
+      "has_url": false
+    }
+  ],
+  "entity_type_distribution": {
+    "PERSON": {
+      "count": 76,
+      "percentage": 33.3,
+      "description": "Individual names (executives, contacts, founders)",
+      "examples": ["Christopher Conway", "Klaus Lubbe", "Juliana Teibel"]
+    },
+    "ORG": {
+      "count": 93,
+      "percentage": 40.8,
+      "description": "Companies, organizations, institutions",
+      "examples": ["Bio X Cell, LLC", "McKinsey & Company", "Vanguard"]
+    },
+    "GPE": {
+      "count": 26,
+      "percentage": 11.4,
+      "description": "Geographical locations (cities, states, countries)",
+      "examples": ["LEBANON", "California", "Stockholm", "N.H."]
+    },
+    "DATE": {
+      "count": 43,
+      "percentage": 18.9,
+      "description": "Specific dates and years",
+      "examples": ["Aug. 12, 2024", "2008", "February", "June 2023"]
+    },
+    "EMAIL": {
+      "count": 5,
+      "percentage": 2.2,
+      "description": "Email addresses",
+      "examples": ["connor@thatsnice.com", "juliana@cisosconnect.io"]
+    },
+    "PHONE": {
+      "count": 5,
+      "percentage": 2.2,
+      "description": "Phone numbers in various formats",
+      "examples": ["+1 212 366 4455", "(714) 817-7000", "+46 703 97 21 09"]
+    },
+    "ADDRESS": {
+      "count": 2,
+      "percentage": 0.9,
+      "description": "Physical addresses",
+      "examples": ["200 S. Kraemer Blvd., Building E", "92821"]
+    },
+    "URL": {
+      "count": 1,
+      "percentage": 0.4,
+      "description": "Website URLs",
+      "examples": ["https://bioxcell.com/"]
+    },
+    "PRODUCT": {
+      "count": 2,
+      "percentage": 0.9,
+      "description": "Product or brand names",
+      "examples": ["The Ordinary", "Security Shark Tank"]
+    }
+  },
+  "industry_distribution": {
+    "biotechnology": 1,
+    "cybersecurity": 1,
+    "healthcare": 1,
+    "financial_services": 1,
+    "beauty_consumer_goods": 1,
+    "technology": 1,
+    "pharmaceutical": 1
+  },
+  "contact_information_coverage": {
+    "documents_with_email": 4,
+    "documents_with_phone": 4,
+    "documents_with_address": 1,
+    "documents_with_url": 1,
+    "documents_with_any_contact": 5
+  },
+  "annotation_quality_metrics": {
+    "manual_annotation": true,
+    "verified": true,
+    "character_level_precision": true,
+    "completeness": "all_instances_annotated",
+    "overlapping_entities": false,
+    "annotation_method": "manual_character_position_marking"
+  },
+  "recommended_use_cases": [
+    "Named Entity Recognition (NER) evaluation",
+    "PII detection system testing",
+    "Anonymization accuracy assessment",
+    "Contact information extraction validation",
+    "Multi-type entity detection benchmarking",
+    "Real-world document processing testing"
+  ],
+  "limitations": [
+    "English language only",
+    "Press release domain specific",
+    "Formal writing style",
+    "Limited sample size (7 documents)",
+    "No highly sensitive PII (SSN, credit cards)",
+    "Corporate communications context"
+  ]
+}

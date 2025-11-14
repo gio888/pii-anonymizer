@@ -1,0 +1,23 @@
+Document ID: synthetic_013
+Generated on: 2025-11-14 18:26:13
+
+
+Contact email: grace.lee@tech.org
+Contact email: frank.wilson@mail.net
+Phone number: 555-5678
+Phone number: (555) 123-4567
+Social Security Number: 111-22-3333
+Social Security Number: 987-65-4321
+Credit card: 5500000000000004
+Credit card: 4532-1234-5678-9010
+Employee: Henry Taylor
+Employee: Grace Lee
+Company: Digital Systems Corp
+Company: Omega Corporation
+Using product: MegaTool Plus
+Located in: New York
+Server IP: 10.0.0.5
+Date of birth: 05/17/2018
+Address: 123 Main Street, Anytown, CA 90210
+Website: http://www.domain.com/api
+Amount: $999,999.99
