@@ -4,47 +4,252 @@
     "source_url": "https://www.prnewswire.com/news-releases/bio-x-cell-announces-ceo-appointment-302219367.html",
     "text": "LEBANON, N.H., Aug. 12, 2024 /PRNewswire/ -- Bio X Cell, LLC (BXC), a specialized provider of monoclonal antibodies for preclinical research applications, today announced the appointment of Christopher Conway as Chief Executive Officer. Conway brings more than 20 years of business experience spanning the aerospace, pharmaceutical/biotech, and contract research sectors.\n\n\"Chris not only brings strong business credentials, but understanding and respect for Bio X Cell's culture and mission to advance scientific discovery,\" stated Klaus Lubbe, founder of Bio X Cell. \"His track record of driving profitable growth and operational excellence, while building strong, engaged teams, will help BXC deliver on its strategic plan for the future.\"\n\nConway previously served as President, R&D at Curia (formerly AMRI), where he managed the P&L for twenty global sites spanning small molecule chemistry, biologics, and analytical services. He began at AMRI/Curia in 2008 in commercial roles and was promoted to Senior Vice President in 2015 and President, R&D in 2019. Prior to joining AMRI, Conway held leadership positions with Johnson & Johnson and Dynabil Industries.\n\n\"Chris' experience transitioning businesses from founder-led to private equity ownership makes him uniquely qualified to lead BXC through the next phase of growth,\" said Craig Majernik, Managing Director at Windjammer Capital Investors, the private equity firm that partnered with Bio X Cell in June 2023.\n\n\"I am honored to have the opportunity to lead Bio X Cell,\" said Conway. \"I am impressed by the company's commitment to providing innovative products and best-in-class service to the research community. I look forward to working with the talented team at BXC to build on this strong foundation.\"\n\nAbout Bio X Cell\nFounded in 1997, Bio X Cell is a specialized provider of monoclonal antibodies for preclinical research applications. The company's portfolio includes more than 400 functional grade antibodies used by over 1,500 academic, government, and commercial customers in more than 50 countries. Bio X Cell antibodies have been cited in more than 20,000 research publications. For more information, visit https://bioxcell.com/\n\nCONTACT:\nConnor Halverson\nThat's Nice LLC\n+1 212 366 4455\nconnor@thatsnice.com",
     "pii_entities": [
-      {"text": "LEBANON", "type": "GPE", "start": 0, "end": 7},
-      {"text": "N.H.", "type": "GPE", "start": 9, "end": 13},
-      {"text": "Aug. 12, 2024", "type": "DATE", "start": 15, "end": 28},
-      {"text": "Bio X Cell, LLC", "type": "ORG", "start": 48, "end": 63},
-      {"text": "BXC", "type": "ORG", "start": 65, "end": 68},
-      {"text": "Christopher Conway", "type": "PERSON", "start": 187, "end": 205},
-      {"text": "Conway", "type": "PERSON", "start": 235, "end": 241},
-      {"text": "Chris", "type": "PERSON", "start": 382, "end": 387},
-      {"text": "Bio X Cell", "type": "ORG", "start": 452, "end": 462},
-      {"text": "Klaus Lubbe", "type": "PERSON", "start": 534, "end": 545},
-      {"text": "Bio X Cell", "type": "ORG", "start": 558, "end": 568},
-      {"text": "BXC", "type": "ORG", "start": 688, "end": 691},
-      {"text": "Conway", "type": "PERSON", "start": 745, "end": 751},
-      {"text": "Curia", "type": "ORG", "start": 791, "end": 796},
-      {"text": "AMRI", "type": "ORG", "start": 807, "end": 811},
-      {"text": "AMRI/Curia", "type": "ORG", "start": 952, "end": 962},
-      {"text": "2008", "type": "DATE", "start": 966, "end": 970},
-      {"text": "2015", "type": "DATE", "start": 1034, "end": 1038},
-      {"text": "2019", "type": "DATE", "start": 1062, "end": 1066},
-      {"text": "AMRI", "type": "ORG", "start": 1083, "end": 1087},
-      {"text": "Conway", "type": "PERSON", "start": 1089, "end": 1095},
-      {"text": "Johnson & Johnson", "type": "ORG", "start": 1127, "end": 1144},
-      {"text": "Dynabil Industries", "type": "ORG", "start": 1149, "end": 1167},
-      {"text": "Chris", "type": "PERSON", "start": 1171, "end": 1176},
-      {"text": "BXC", "type": "ORG", "start": 1293, "end": 1296},
-      {"text": "Craig Majernik", "type": "PERSON", "start": 1341, "end": 1355},
-      {"text": "Windjammer Capital Investors", "type": "ORG", "start": 1379, "end": 1407},
-      {"text": "Bio X Cell", "type": "ORG", "start": 1449, "end": 1459},
-      {"text": "June 2023", "type": "DATE", "start": 1463, "end": 1472},
-      {"text": "Bio X Cell", "type": "ORG", "start": 1523, "end": 1533},
-      {"text": "Conway", "type": "PERSON", "start": 1541, "end": 1547},
-      {"text": "BXC", "type": "ORG", "start": 1727, "end": 1730},
-      {"text": "Bio X Cell", "type": "ORG", "start": 1773, "end": 1783},
-      {"text": "1997", "type": "DATE", "start": 1795, "end": 1799},
-      {"text": "Bio X Cell", "type": "ORG", "start": 1801, "end": 1811},
-      {"text": "Bio X Cell", "type": "ORG", "start": 2048, "end": 2058},
-      {"text": "https://bioxcell.com/", "type": "URL", "start": 2167, "end": 2188},
-      {"text": "Connor Halverson", "type": "PERSON", "start": 2199, "end": 2215},
-      {"text": "That's Nice LLC", "type": "ORG", "start": 2216, "end": 2231},
-      {"text": "+1 212 366 4455", "type": "PHONE", "start": 2232, "end": 2247},
-      {"text": "connor@thatsnice.com", "type": "EMAIL", "start": 2248, "end": 2268}
+      {
+        "text": "LEBANON",
+        "type": "GPE",
+        "start": 0,
+        "end": 7
+      },
+      {
+        "text": "N.H.",
+        "type": "GPE",
+        "start": 9,
+        "end": 13
+      },
+      {
+        "text": "Aug. 12, 2024",
+        "type": "DATE",
+        "start": 15,
+        "end": 28
+      },
+      {
+        "text": "Bio X Cell, LLC",
+        "type": "ORG",
+        "start": 48,
+        "end": 63
+      },
+      {
+        "text": "BXC",
+        "type": "ORG",
+        "start": 65,
+        "end": 68
+      },
+      {
+        "text": "Christopher Conway",
+        "type": "PERSON",
+        "start": 187,
+        "end": 205
+      },
+      {
+        "text": "Conway",
+        "type": "PERSON",
+        "start": 235,
+        "end": 241
+      },
+      {
+        "text": "Chris",
+        "type": "PERSON",
+        "start": 382,
+        "end": 387
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 452,
+        "end": 462
+      },
+      {
+        "text": "Klaus Lubbe",
+        "type": "PERSON",
+        "start": 534,
+        "end": 545
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 558,
+        "end": 568
+      },
+      {
+        "text": "BXC",
+        "type": "ORG",
+        "start": 688,
+        "end": 691
+      },
+      {
+        "text": "Conway",
+        "type": "PERSON",
+        "start": 745,
+        "end": 751
+      },
+      {
+        "text": "Curia",
+        "type": "ORG",
+        "start": 791,
+        "end": 796
+      },
+      {
+        "text": "AMRI",
+        "type": "ORG",
+        "start": 807,
+        "end": 811
+      },
+      {
+        "text": "AMRI/Curia",
+        "type": "ORG",
+        "start": 952,
+        "end": 962
+      },
+      {
+        "text": "2008",
+        "type": "DATE",
+        "start": 966,
+        "end": 970
+      },
+      {
+        "text": "2015",
+        "type": "DATE",
+        "start": 1034,
+        "end": 1038
+      },
+      {
+        "text": "2019",
+        "type": "DATE",
+        "start": 1062,
+        "end": 1066
+      },
+      {
+        "text": "AMRI",
+        "type": "ORG",
+        "start": 1083,
+        "end": 1087
+      },
+      {
+        "text": "Conway",
+        "type": "PERSON",
+        "start": 1089,
+        "end": 1095
+      },
+      {
+        "text": "Johnson & Johnson",
+        "type": "ORG",
+        "start": 1127,
+        "end": 1144
+      },
+      {
+        "text": "Dynabil Industries",
+        "type": "ORG",
+        "start": 1149,
+        "end": 1167
+      },
+      {
+        "text": "Chris",
+        "type": "PERSON",
+        "start": 1171,
+        "end": 1176
+      },
+      {
+        "text": "BXC",
+        "type": "ORG",
+        "start": 1293,
+        "end": 1296
+      },
+      {
+        "text": "Craig Majernik",
+        "type": "PERSON",
+        "start": 1341,
+        "end": 1355
+      },
+      {
+        "text": "Windjammer Capital Investors",
+        "type": "ORG",
+        "start": 1379,
+        "end": 1407
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 1449,
+        "end": 1459
+      },
+      {
+        "text": "June 2023",
+        "type": "DATE",
+        "start": 1463,
+        "end": 1472
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 1523,
+        "end": 1533
+      },
+      {
+        "text": "Conway",
+        "type": "PERSON",
+        "start": 1541,
+        "end": 1547
+      },
+      {
+        "text": "BXC",
+        "type": "ORG",
+        "start": 1727,
+        "end": 1730
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 1773,
+        "end": 1783
+      },
+      {
+        "text": "1997",
+        "type": "DATE",
+        "start": 1795,
+        "end": 1799
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 1801,
+        "end": 1811
+      },
+      {
+        "text": "Bio X Cell",
+        "type": "ORG",
+        "start": 2048,
+        "end": 2058
+      },
+      {
+        "text": "https://bioxcell.com/",
+        "type": "URL",
+        "start": 2167,
+        "end": 2188
+      },
+      {
+        "text": "Connor Halverson",
+        "type": "PERSON",
+        "start": 2199,
+        "end": 2215
+      },
+      {
+        "text": "That's Nice LLC",
+        "type": "ORG",
+        "start": 2216,
+        "end": 2231
+      },
+      {
+        "text": "+1 212 366 4455",
+        "type": "PHONE",
+        "start": 2232,
+        "end": 2247
+      },
+      {
+        "text": "connor@thatsnice.com",
+        "type": "EMAIL",
+        "start": 2248,
+        "end": 2268
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
@@ -58,36 +263,186 @@
     "source_url": "https://www.prnewswire.com/news-releases/cisos-connect-announces-three-new-appointments-to-meet-needs-of-growing-cybersecurity-executive-community-302211035.html",
     "text": "NEW YORK, July 31, 2024 /PRNewswire/ -- CISOs Connect™, the largest membership-only community of cybersecurity executives, today announced three new appointments to meet the needs of its growing community.\n\nJuliana Teibel has been named Vice President of Global Business Development. In this role, she will expand and manage strategic relationships with CISOs Connect members, partners, and vendors. Juliana can be reached at 201-835-9205 or juliana@cisosconnect.io.\n\nAmy Teibel has been appointed Vice President of Content. She will drive customized reports, surveys, and print/video materials for CISOs Connect members.\n\nJohann Balaguer has been named CISO in Residence. Balaguer currently serves as Vice President and Global Chief Information Security Officer at Hard Rock. In this new role, he will oversee and shape high-value content through proprietary research and peer messaging.\n\n\"I want to congratulate Juliana, Amy, and Johann on their appointments,\" said David Cass, President of CISOs Connect. \"These appointments represent our commitment to delivering exceptional value to our member community. I look forward to seeing everyone at our Black Hat events this week.\"\n\n\"The appointment of these three outstanding professionals is designed to provide differentiated services and content to our members,\" said Aimee Rhodes, CEO of CISOs Connect. \"Their expertise will help us continue to set the standard for cybersecurity executive communities.\"\n\n\"I am excited by the role, which will help drive CISOs Connect expansion globally,\" said Juliana Teibel.\n\nJohann Balaguer replaces Kevin McKenzie, who recently transitioned to the role of CISO at Ferguson.\n\nAbout CISOs Connect\nCISOs Connect is an exclusive membership-only community of cybersecurity executives, part of Security Current™. The organization is known for Security Shark Tank® and CISO-driven content that serves the cybersecurity community.",
     "pii_entities": [
-      {"text": "NEW YORK", "type": "GPE", "start": 0, "end": 8},
-      {"text": "July 31, 2024", "type": "DATE", "start": 10, "end": 23},
-      {"text": "CISOs Connect", "type": "ORG", "start": 41, "end": 54},
-      {"text": "Juliana Teibel", "type": "PERSON", "start": 208, "end": 222},
-      {"text": "CISOs Connect", "type": "ORG", "start": 352, "end": 365},
-      {"text": "Juliana", "type": "PERSON", "start": 400, "end": 407},
-      {"text": "201-835-9205", "type": "PHONE", "start": 427, "end": 439},
-      {"text": "juliana@cisosconnect.io", "type": "EMAIL", "start": 443, "end": 466},
-      {"text": "Amy Teibel", "type": "PERSON", "start": 469, "end": 479},
-      {"text": "CISOs Connect", "type": "ORG", "start": 602, "end": 615},
-      {"text": "Johann Balaguer", "type": "PERSON", "start": 626, "end": 641},
-      {"text": "Balaguer", "type": "PERSON", "start": 672, "end": 680},
-      {"text": "Hard Rock", "type": "ORG", "start": 764, "end": 773},
-      {"text": "Juliana", "type": "PERSON", "start": 926, "end": 933},
-      {"text": "Amy", "type": "PERSON", "start": 935, "end": 938},
-      {"text": "Johann", "type": "PERSON", "start": 944, "end": 950},
-      {"text": "David Cass", "type": "PERSON", "start": 979, "end": 989},
-      {"text": "CISOs Connect", "type": "ORG", "start": 1004, "end": 1017},
-      {"text": "Black Hat", "type": "ORG", "start": 1145, "end": 1154},
-      {"text": "Aimee Rhodes", "type": "PERSON", "start": 1322, "end": 1334},
-      {"text": "CISOs Connect", "type": "ORG", "start": 1343, "end": 1356},
-      {"text": "CISOs Connect", "type": "ORG", "start": 1506, "end": 1519},
-      {"text": "Juliana Teibel", "type": "PERSON", "start": 1549, "end": 1563},
-      {"text": "Johann Balaguer", "type": "PERSON", "start": 1566, "end": 1581},
-      {"text": "Kevin McKenzie", "type": "PERSON", "start": 1591, "end": 1605},
-      {"text": "Ferguson", "type": "ORG", "start": 1661, "end": 1669},
-      {"text": "CISOs Connect", "type": "ORG", "start": 1678, "end": 1691},
-      {"text": "CISOs Connect", "type": "ORG", "start": 1692, "end": 1705},
-      {"text": "Security Current", "type": "ORG", "start": 1778, "end": 1794},
-      {"text": "Security Shark Tank", "type": "PRODUCT", "start": 1827, "end": 1846}
+      {
+        "text": "NEW YORK",
+        "type": "GPE",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "July 31, 2024",
+        "type": "DATE",
+        "start": 10,
+        "end": 23
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 41,
+        "end": 54
+      },
+      {
+        "text": "Juliana Teibel",
+        "type": "PERSON",
+        "start": 208,
+        "end": 222
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 352,
+        "end": 365
+      },
+      {
+        "text": "Juliana",
+        "type": "PERSON",
+        "start": 400,
+        "end": 407
+      },
+      {
+        "text": "201-835-9205",
+        "type": "PHONE",
+        "start": 427,
+        "end": 439
+      },
+      {
+        "text": "juliana@cisosconnect.io",
+        "type": "EMAIL",
+        "start": 443,
+        "end": 466
+      },
+      {
+        "text": "Amy Teibel",
+        "type": "PERSON",
+        "start": 469,
+        "end": 479
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 602,
+        "end": 615
+      },
+      {
+        "text": "Johann Balaguer",
+        "type": "PERSON",
+        "start": 626,
+        "end": 641
+      },
+      {
+        "text": "Balaguer",
+        "type": "PERSON",
+        "start": 672,
+        "end": 680
+      },
+      {
+        "text": "Hard Rock",
+        "type": "ORG",
+        "start": 764,
+        "end": 773
+      },
+      {
+        "text": "Juliana",
+        "type": "PERSON",
+        "start": 926,
+        "end": 933
+      },
+      {
+        "text": "Amy",
+        "type": "PERSON",
+        "start": 935,
+        "end": 938
+      },
+      {
+        "text": "Johann",
+        "type": "PERSON",
+        "start": 944,
+        "end": 950
+      },
+      {
+        "text": "David Cass",
+        "type": "PERSON",
+        "start": 979,
+        "end": 989
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 1004,
+        "end": 1017
+      },
+      {
+        "text": "Black Hat",
+        "type": "ORG",
+        "start": 1145,
+        "end": 1154
+      },
+      {
+        "text": "Aimee Rhodes",
+        "type": "PERSON",
+        "start": 1322,
+        "end": 1334
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 1343,
+        "end": 1356
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 1506,
+        "end": 1519
+      },
+      {
+        "text": "Juliana Teibel",
+        "type": "PERSON",
+        "start": 1549,
+        "end": 1563
+      },
+      {
+        "text": "Johann Balaguer",
+        "type": "PERSON",
+        "start": 1566,
+        "end": 1581
+      },
+      {
+        "text": "Kevin McKenzie",
+        "type": "PERSON",
+        "start": 1591,
+        "end": 1605
+      },
+      {
+        "text": "Ferguson",
+        "type": "ORG",
+        "start": 1661,
+        "end": 1669
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 1678,
+        "end": 1691
+      },
+      {
+        "text": "CISOs Connect",
+        "type": "ORG",
+        "start": 1692,
+        "end": 1705
+      },
+      {
+        "text": "Security Current",
+        "type": "ORG",
+        "start": 1778,
+        "end": 1794
+      },
+      {
+        "text": "Security Shark Tank",
+        "type": "PRODUCT",
+        "start": 1827,
+        "end": 1846
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
@@ -101,47 +456,238 @@
     "source_url": "https://investors.envistaco.com/2024-04-15-Envista-Announces-CEO-Appointment",
     "text": "BREA, California, April 15, 2024 -- Envista Holdings Corporation (NYSE: NVST), a global family of trusted dental brands united by a shared purpose to partner with professionals to improve lives, today announced the appointment of Paul Keel as Chief Executive Officer and a member of the Board of Directors, effective May 1, 2024. He will replace Amir Aghdaei, who will serve as a senior advisor to ensure a smooth transition.\n\n\"Paul's strong track record as CEO of a public, diversified, global innovation company positions him well to lead Envista in its next phase of growth,\" said Scott Huennekens, Chairman of Envista's Board of Directors. \"His expertise in accelerating growth and operational excellence within medical and oral care markets will be invaluable to Envista.\"\n\nKeel brings extensive leadership experience from his most recent role as Chief Executive Officer of Smiths Group plc, a FTSE 100 company. Prior to that, he spent 16 years at 3M, where he held several senior leadership positions including Group President of the Consumer Business, President of 3M Medical, and President of 3M's Specialty Dental business. Earlier in his career, Keel worked at GE, McKinsey & Company, and General Mills. He holds a BA from Carleton College and an MBA from Harvard Business School.\n\n\"I am thrilled to join Envista and build on the company's strong foundation,\" said Paul Keel. \"I look forward to working with the talented team to serve all our stakeholders and drive long-term value creation.\"\n\n\"It has been an honor to lead Envista,\" said Amir Aghdaei. \"I am confident that Paul is the right leader to take the company forward, and I look forward to supporting him during the transition.\"\n\nCONTACT:\nMelissa Morrison\nVP Communication & Central Marketing\nEnvista Holdings Corporation\n200 S. Kraemer Blvd., Building E\nBrea, CA 92821\n(714) 817-7000\ninfo@envistaco.com",
     "pii_entities": [
-      {"text": "BREA", "type": "GPE", "start": 0, "end": 4},
-      {"text": "California", "type": "GPE", "start": 6, "end": 16},
-      {"text": "April 15, 2024", "type": "DATE", "start": 18, "end": 32},
-      {"text": "Envista Holdings Corporation", "type": "ORG", "start": 37, "end": 65},
-      {"text": "Paul Keel", "type": "PERSON", "start": 233, "end": 242},
-      {"text": "May 1, 2024", "type": "DATE", "start": 315, "end": 326},
-      {"text": "Amir Aghdaei", "type": "PERSON", "start": 346, "end": 358},
-      {"text": "Paul", "type": "PERSON", "start": 434, "end": 438},
-      {"text": "Envista", "type": "ORG", "start": 545, "end": 552},
-      {"text": "Scott Huennekens", "type": "PERSON", "start": 590, "end": 606},
-      {"text": "Envista", "type": "ORG", "start": 621, "end": 628},
-      {"text": "Envista", "type": "ORG", "start": 778, "end": 785},
-      {"text": "Keel", "type": "PERSON", "start": 789, "end": 793},
-      {"text": "Smiths Group plc", "type": "ORG", "start": 884, "end": 900},
-      {"text": "FTSE 100", "type": "ORG", "start": 904, "end": 912},
-      {"text": "3M", "type": "ORG", "start": 956, "end": 958},
-      {"text": "3M Medical", "type": "ORG", "start": 1068, "end": 1078},
-      {"text": "3M", "type": "ORG", "start": 1097, "end": 1099},
-      {"text": "Keel", "type": "PERSON", "start": 1157, "end": 1161},
-      {"text": "GE", "type": "ORG", "start": 1172, "end": 1174},
-      {"text": "McKinsey & Company", "type": "ORG", "start": 1176, "end": 1194},
-      {"text": "General Mills", "type": "ORG", "start": 1200, "end": 1213},
-      {"text": "Carleton College", "type": "ORG", "start": 1233, "end": 1249},
-      {"text": "Harvard Business School", "type": "ORG", "start": 1265, "end": 1288},
-      {"text": "Envista", "type": "ORG", "start": 1318, "end": 1325},
-      {"text": "Paul Keel", "type": "PERSON", "start": 1379, "end": 1388},
-      {"text": "Envista", "type": "ORG", "start": 1537, "end": 1544},
-      {"text": "Amir Aghdaei", "type": "PERSON", "start": 1552, "end": 1564},
-      {"text": "Paul", "type": "PERSON", "start": 1587, "end": 1591},
-      {"text": "Melissa Morrison", "type": "PERSON", "start": 1730, "end": 1746},
-      {"text": "Envista Holdings Corporation", "type": "ORG", "start": 1784, "end": 1812},
-      {"text": "200 S. Kraemer Blvd., Building E", "type": "ADDRESS", "start": 1813, "end": 1845},
-      {"text": "Brea", "type": "GPE", "start": 1846, "end": 1850},
-      {"text": "CA", "type": "GPE", "start": 1852, "end": 1854},
-      {"text": "92821", "type": "ADDRESS", "start": 1855, "end": 1860},
-      {"text": "(714) 817-7000", "type": "PHONE", "start": 1861, "end": 1875},
-      {"text": "info@envistaco.com", "type": "EMAIL", "start": 1876, "end": 1894}
+      {
+        "text": "BREA",
+        "type": "GPE",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "text": "NYSE: NVST",
+        "type": "ORG",
+        "start": 66,
+        "end": 76
+      },
+      {
+        "text": "California",
+        "type": "GPE",
+        "start": 6,
+        "end": 16
+      },
+      {
+        "text": "April 15, 2024",
+        "type": "DATE",
+        "start": 18,
+        "end": 32
+      },
+      {
+        "text": "Envista Holdings Corporation",
+        "type": "ORG",
+        "start": 37,
+        "end": 65
+      },
+      {
+        "text": "Paul Keel",
+        "type": "PERSON",
+        "start": 233,
+        "end": 242
+      },
+      {
+        "text": "May 1, 2024",
+        "type": "DATE",
+        "start": 315,
+        "end": 326
+      },
+      {
+        "text": "Amir Aghdaei",
+        "type": "PERSON",
+        "start": 346,
+        "end": 358
+      },
+      {
+        "text": "Paul",
+        "type": "PERSON",
+        "start": 434,
+        "end": 438
+      },
+      {
+        "text": "Envista",
+        "type": "ORG",
+        "start": 545,
+        "end": 552
+      },
+      {
+        "text": "Scott Huennekens",
+        "type": "PERSON",
+        "start": 590,
+        "end": 606
+      },
+      {
+        "text": "Envista",
+        "type": "ORG",
+        "start": 621,
+        "end": 628
+      },
+      {
+        "text": "Envista",
+        "type": "ORG",
+        "start": 778,
+        "end": 785
+      },
+      {
+        "text": "Keel",
+        "type": "PERSON",
+        "start": 789,
+        "end": 793
+      },
+      {
+        "text": "Smiths Group plc",
+        "type": "ORG",
+        "start": 884,
+        "end": 900
+      },
+      {
+        "text": "FTSE 100",
+        "type": "ORG",
+        "start": 904,
+        "end": 912
+      },
+      {
+        "text": "3M",
+        "type": "ORG",
+        "start": 956,
+        "end": 958
+      },
+      {
+        "text": "3M Medical",
+        "type": "ORG",
+        "start": 1068,
+        "end": 1078
+      },
+      {
+        "text": "3M",
+        "type": "ORG",
+        "start": 1097,
+        "end": 1099
+      },
+      {
+        "text": "Keel",
+        "type": "PERSON",
+        "start": 1157,
+        "end": 1161
+      },
+      {
+        "text": "GE",
+        "type": "ORG",
+        "start": 1172,
+        "end": 1174
+      },
+      {
+        "text": "McKinsey & Company",
+        "type": "ORG",
+        "start": 1176,
+        "end": 1194
+      },
+      {
+        "text": "General Mills",
+        "type": "ORG",
+        "start": 1200,
+        "end": 1213
+      },
+      {
+        "text": "Carleton College",
+        "type": "ORG",
+        "start": 1233,
+        "end": 1249
+      },
+      {
+        "text": "Harvard Business School",
+        "type": "ORG",
+        "start": 1265,
+        "end": 1288
+      },
+      {
+        "text": "Envista",
+        "type": "ORG",
+        "start": 1318,
+        "end": 1325
+      },
+      {
+        "text": "Paul Keel",
+        "type": "PERSON",
+        "start": 1379,
+        "end": 1388
+      },
+      {
+        "text": "Envista",
+        "type": "ORG",
+        "start": 1537,
+        "end": 1544
+      },
+      {
+        "text": "Amir Aghdaei",
+        "type": "PERSON",
+        "start": 1552,
+        "end": 1564
+      },
+      {
+        "text": "Paul",
+        "type": "PERSON",
+        "start": 1587,
+        "end": 1591
+      },
+      {
+        "text": "Melissa Morrison",
+        "type": "PERSON",
+        "start": 1730,
+        "end": 1746
+      },
+      {
+        "text": "Envista Holdings Corporation",
+        "type": "ORG",
+        "start": 1784,
+        "end": 1812
+      },
+      {
+        "text": "200 S. Kraemer Blvd., Building E",
+        "type": "ADDRESS",
+        "start": 1813,
+        "end": 1845
+      },
+      {
+        "text": "Brea",
+        "type": "GPE",
+        "start": 1846,
+        "end": 1850
+      },
+      {
+        "text": "CA",
+        "type": "GPE",
+        "start": 1852,
+        "end": 1854
+      },
+      {
+        "text": "92821",
+        "type": "ADDRESS",
+        "start": 1855,
+        "end": 1860
+      },
+      {
+        "text": "(714) 817-7000",
+        "type": "PHONE",
+        "start": 1861,
+        "end": 1875
+      },
+      {
+        "text": "info@envistaco.com",
+        "type": "EMAIL",
+        "start": 1876,
+        "end": 1894
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
-      "total_pii_count": 37,
+      "total_pii_count": 38,
       "source_type": "press_release",
       "industry": "healthcare"
     }
@@ -151,38 +697,198 @@
     "source_url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-announces-appointment-salim-ramji-new-ceo-05142024.html",
     "text": "VALLEY FORGE, PA, May 14, 2024 -- Vanguard today announced that its Board of Directors has appointed Salim Ramji, a longtime financial services executive, as the Company's new Chief Executive Officer and a member of the Board, effective July 8, 2024. He succeeds Tim Buckley, who announced in February his plans to retire. In addition, Mark Loughridge will become nonexecutive Chairman of the Board.\n\n\"Salim is an exceptional leader who is aligned with Vanguard's mission-driven culture,\" said Mark Loughridge. \"His extensive experience in financial services, combined with his commitment to putting clients first, makes him the ideal choice to lead Vanguard into the future.\"\n\nRamji brings more than 25 years of experience in the financial services industry to Vanguard. Most recently, he served as Global Head of iShares & Index Investing at BlackRock, where he led the world's largest ETF business. Prior to BlackRock, he worked at McKinsey & Company, advising financial institutions on strategy and operations, and practiced law at Clifford Chance. He holds degrees from the University of Toronto and Cambridge University, and is a CFA charterholder.\n\n\"I am honored to join Vanguard and to serve its clients and crew members,\" said Salim Ramji. \"Vanguard's commitment to putting investors first has transformed the investment landscape, and I look forward to building on this legacy.\"\n\nThe Board also announced that Greg Davis, currently President and Chief Investment Officer, has been appointed to the Board and will take on expanded responsibilities for regulatory affairs. Additionally, John Murphy, Chief Financial Officer of The Coca-Cola Company, will join Vanguard's Board effective June 1, 2024.\n\nAbout Vanguard\nFounded in 1975, Vanguard is one of the world's leading investment management companies. The firm is known for its investor-owned structure and commitment to low-cost investing, serving tens of millions of investors worldwide through direct channels, workplace retirement plans, and financial intermediaries.",
     "pii_entities": [
-      {"text": "VALLEY FORGE", "type": "GPE", "start": 0, "end": 12},
-      {"text": "PA", "type": "GPE", "start": 14, "end": 16},
-      {"text": "May 14, 2024", "type": "DATE", "start": 18, "end": 30},
-      {"text": "Vanguard", "type": "ORG", "start": 35, "end": 43},
-      {"text": "Salim Ramji", "type": "PERSON", "start": 101, "end": 112},
-      {"text": "July 8, 2024", "type": "DATE", "start": 236, "end": 248},
-      {"text": "Tim Buckley", "type": "PERSON", "start": 263, "end": 274},
-      {"text": "February", "type": "DATE", "start": 293, "end": 301},
-      {"text": "Mark Loughridge", "type": "PERSON", "start": 337, "end": 352},
-      {"text": "Salim", "type": "PERSON", "start": 405, "end": 410},
-      {"text": "Vanguard", "type": "ORG", "start": 456, "end": 464},
-      {"text": "Mark Loughridge", "type": "PERSON", "start": 496, "end": 511},
-      {"text": "Vanguard", "type": "ORG", "start": 647, "end": 655},
-      {"text": "Ramji", "type": "PERSON", "start": 688, "end": 693},
-      {"text": "Vanguard", "type": "ORG", "start": 770, "end": 778},
-      {"text": "BlackRock", "type": "ORG", "start": 848, "end": 857},
-      {"text": "BlackRock", "type": "ORG", "start": 913, "end": 922},
-      {"text": "McKinsey & Company", "type": "ORG", "start": 938, "end": 956},
-      {"text": "Clifford Chance", "type": "ORG", "start": 1034, "end": 1049},
-      {"text": "University of Toronto", "type": "ORG", "start": 1075, "end": 1096},
-      {"text": "Cambridge University", "type": "ORG", "start": 1101, "end": 1121},
-      {"text": "Vanguard", "type": "ORG", "start": 1186, "end": 1194},
-      {"text": "Salim Ramji", "type": "PERSON", "start": 1249, "end": 1260},
-      {"text": "Vanguard", "type": "ORG", "start": 1263, "end": 1271},
-      {"text": "Greg Davis", "type": "PERSON", "start": 1442, "end": 1452},
-      {"text": "John Murphy", "type": "PERSON", "start": 1592, "end": 1603},
-      {"text": "The Coca-Cola Company", "type": "ORG", "start": 1631, "end": 1652},
-      {"text": "Vanguard", "type": "ORG", "start": 1664, "end": 1672},
-      {"text": "June 1, 2024", "type": "DATE", "start": 1694, "end": 1706},
-      {"text": "Vanguard", "type": "ORG", "start": 1715, "end": 1723},
-      {"text": "1975", "type": "DATE", "start": 1735, "end": 1739},
-      {"text": "Vanguard", "type": "ORG", "start": 1741, "end": 1749}
+      {
+        "text": "VALLEY FORGE",
+        "type": "GPE",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "text": "PA",
+        "type": "GPE",
+        "start": 14,
+        "end": 16
+      },
+      {
+        "text": "May 14, 2024",
+        "type": "DATE",
+        "start": 18,
+        "end": 30
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 35,
+        "end": 43
+      },
+      {
+        "text": "Salim Ramji",
+        "type": "PERSON",
+        "start": 101,
+        "end": 112
+      },
+      {
+        "text": "July 8, 2024",
+        "type": "DATE",
+        "start": 236,
+        "end": 248
+      },
+      {
+        "text": "Tim Buckley",
+        "type": "PERSON",
+        "start": 263,
+        "end": 274
+      },
+      {
+        "text": "February",
+        "type": "DATE",
+        "start": 293,
+        "end": 301
+      },
+      {
+        "text": "Mark Loughridge",
+        "type": "PERSON",
+        "start": 337,
+        "end": 352
+      },
+      {
+        "text": "Salim",
+        "type": "PERSON",
+        "start": 405,
+        "end": 410
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 456,
+        "end": 464
+      },
+      {
+        "text": "Mark Loughridge",
+        "type": "PERSON",
+        "start": 496,
+        "end": 511
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 647,
+        "end": 655
+      },
+      {
+        "text": "Ramji",
+        "type": "PERSON",
+        "start": 688,
+        "end": 693
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 770,
+        "end": 778
+      },
+      {
+        "text": "BlackRock",
+        "type": "ORG",
+        "start": 848,
+        "end": 857
+      },
+      {
+        "text": "BlackRock",
+        "type": "ORG",
+        "start": 913,
+        "end": 922
+      },
+      {
+        "text": "McKinsey & Company",
+        "type": "ORG",
+        "start": 938,
+        "end": 956
+      },
+      {
+        "text": "Clifford Chance",
+        "type": "ORG",
+        "start": 1034,
+        "end": 1049
+      },
+      {
+        "text": "University of Toronto",
+        "type": "ORG",
+        "start": 1075,
+        "end": 1096
+      },
+      {
+        "text": "Cambridge University",
+        "type": "ORG",
+        "start": 1101,
+        "end": 1121
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 1186,
+        "end": 1194
+      },
+      {
+        "text": "Salim Ramji",
+        "type": "PERSON",
+        "start": 1249,
+        "end": 1260
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 1263,
+        "end": 1271
+      },
+      {
+        "text": "Greg Davis",
+        "type": "PERSON",
+        "start": 1442,
+        "end": 1452
+      },
+      {
+        "text": "John Murphy",
+        "type": "PERSON",
+        "start": 1592,
+        "end": 1603
+      },
+      {
+        "text": "The Coca-Cola Company",
+        "type": "ORG",
+        "start": 1631,
+        "end": 1652
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 1664,
+        "end": 1672
+      },
+      {
+        "text": "June 1, 2024",
+        "type": "DATE",
+        "start": 1694,
+        "end": 1706
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 1715,
+        "end": 1723
+      },
+      {
+        "text": "1975",
+        "type": "DATE",
+        "start": 1735,
+        "end": 1739
+      },
+      {
+        "text": "Vanguard",
+        "type": "ORG",
+        "start": 1741,
+        "end": 1749
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
@@ -196,32 +902,162 @@
     "source_url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2024/10-30-2024-103030698",
     "text": "NEW YORK, October 30, 2024 -- The Estée Lauder Companies Inc. today announced the appointment of Stéphane de La Faverie as President and Chief Executive Officer, effective January 1, 2025. He succeeds Fabrizio Freda, who is retiring after more than 16 years with the company. William P. Lauder will step down as Executive Chairman but will remain Chair of the Board following the Annual Meeting of Stockholders.\n\n\"Stéphane's deep-rooted industry expertise and collaborative approach make him ideal to move us forward with speed and urgency,\" said William P. Lauder. \"His track record of driving innovation and growth across our brand portfolio positions him perfectly to lead the company through its next chapter.\"\n\nDe La Faverie brings over 25 years of prestige beauty experience to the CEO role. He joined The Estée Lauder Companies in 2011 and currently serves as Executive Group President, overseeing a portfolio of brands including Estée Lauder, Jo Malone London, The Ordinary, and Le Labo. Prior to joining the company, he spent 14 years at L'Oréal, where he held several senior positions including General Manager of Giorgio Armani Beauty USA and various leadership roles with Lancôme in Europe and North America.\n\n\"I am deeply humbled and excited to lead this extraordinary company,\" said Stéphane de La Faverie. \"I am committed to revitalizing growth via groundbreaking innovation and strengthening our position as the global leader in prestige beauty.\"\n\nCharlene Barshefsky, Board Presiding Director, stated: \"Stéphane is the ideal transformational leader needed to drive this extraordinary Company forward. His combination of strategic vision, operational excellence, and deep understanding of luxury beauty makes him uniquely qualified for this role.\"\n\nMedia Contact: Jill Marvin\nInvestor Relations: Rainey Mancini",
     "pii_entities": [
-      {"text": "NEW YORK", "type": "GPE", "start": 0, "end": 8},
-      {"text": "October 30, 2024", "type": "DATE", "start": 10, "end": 26},
-      {"text": "The Estée Lauder Companies Inc.", "type": "ORG", "start": 31, "end": 62},
-      {"text": "Stéphane de La Faverie", "type": "PERSON", "start": 97, "end": 119},
-      {"text": "January 1, 2025", "type": "DATE", "start": 171, "end": 186},
-      {"text": "Fabrizio Freda", "type": "PERSON", "start": 201, "end": 215},
-      {"text": "William P. Lauder", "type": "PERSON", "start": 275, "end": 292},
-      {"text": "Stéphane", "type": "PERSON", "start": 417, "end": 425},
-      {"text": "William P. Lauder", "type": "PERSON", "start": 544, "end": 561},
-      {"text": "De La Faverie", "type": "PERSON", "start": 717, "end": 730},
-      {"text": "The Estée Lauder Companies", "type": "ORG", "start": 810, "end": 836},
-      {"text": "2011", "type": "DATE", "start": 840, "end": 844},
-      {"text": "Estée Lauder", "type": "ORG", "start": 937, "end": 949},
-      {"text": "Jo Malone London", "type": "ORG", "start": 951, "end": 967},
-      {"text": "The Ordinary", "type": "PRODUCT", "start": 969, "end": 981},
-      {"text": "Le Labo", "type": "ORG", "start": 987, "end": 994},
-      {"text": "L'Oréal", "type": "ORG", "start": 1054, "end": 1061},
-      {"text": "Giorgio Armani Beauty USA", "type": "ORG", "start": 1124, "end": 1149},
-      {"text": "Lancôme", "type": "ORG", "start": 1189, "end": 1196},
-      {"text": "Europe", "type": "GPE", "start": 1200, "end": 1206},
-      {"text": "North America", "type": "GPE", "start": 1211, "end": 1224},
-      {"text": "Stéphane de La Faverie", "type": "PERSON", "start": 1297, "end": 1319},
-      {"text": "Charlene Barshefsky", "type": "PERSON", "start": 1480, "end": 1499},
-      {"text": "Stéphane", "type": "PERSON", "start": 1537, "end": 1545},
-      {"text": "Jill Marvin", "type": "PERSON", "start": 1795, "end": 1806},
-      {"text": "Rainey Mancini", "type": "PERSON", "start": 1829, "end": 1843}
+      {
+        "text": "NEW YORK",
+        "type": "GPE",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "October 30, 2024",
+        "type": "DATE",
+        "start": 10,
+        "end": 26
+      },
+      {
+        "text": "The Estée Lauder Companies Inc.",
+        "type": "ORG",
+        "start": 31,
+        "end": 62
+      },
+      {
+        "text": "Stéphane de La Faverie",
+        "type": "PERSON",
+        "start": 97,
+        "end": 119
+      },
+      {
+        "text": "January 1, 2025",
+        "type": "DATE",
+        "start": 171,
+        "end": 186
+      },
+      {
+        "text": "Fabrizio Freda",
+        "type": "PERSON",
+        "start": 201,
+        "end": 215
+      },
+      {
+        "text": "William P. Lauder",
+        "type": "PERSON",
+        "start": 275,
+        "end": 292
+      },
+      {
+        "text": "Stéphane",
+        "type": "PERSON",
+        "start": 417,
+        "end": 425
+      },
+      {
+        "text": "William P. Lauder",
+        "type": "PERSON",
+        "start": 544,
+        "end": 561
+      },
+      {
+        "text": "De La Faverie",
+        "type": "PERSON",
+        "start": 717,
+        "end": 730
+      },
+      {
+        "text": "The Estée Lauder Companies",
+        "type": "ORG",
+        "start": 810,
+        "end": 836
+      },
+      {
+        "text": "2011",
+        "type": "DATE",
+        "start": 840,
+        "end": 844
+      },
+      {
+        "text": "Estée Lauder",
+        "type": "ORG",
+        "start": 937,
+        "end": 949
+      },
+      {
+        "text": "Jo Malone London",
+        "type": "ORG",
+        "start": 951,
+        "end": 967
+      },
+      {
+        "text": "The Ordinary",
+        "type": "PRODUCT",
+        "start": 969,
+        "end": 981
+      },
+      {
+        "text": "Le Labo",
+        "type": "ORG",
+        "start": 987,
+        "end": 994
+      },
+      {
+        "text": "L'Oréal",
+        "type": "ORG",
+        "start": 1054,
+        "end": 1061
+      },
+      {
+        "text": "Giorgio Armani Beauty USA",
+        "type": "ORG",
+        "start": 1124,
+        "end": 1149
+      },
+      {
+        "text": "Lancôme",
+        "type": "ORG",
+        "start": 1189,
+        "end": 1196
+      },
+      {
+        "text": "Europe",
+        "type": "GPE",
+        "start": 1200,
+        "end": 1206
+      },
+      {
+        "text": "North America",
+        "type": "GPE",
+        "start": 1211,
+        "end": 1224
+      },
+      {
+        "text": "Stéphane de La Faverie",
+        "type": "PERSON",
+        "start": 1297,
+        "end": 1319
+      },
+      {
+        "text": "Charlene Barshefsky",
+        "type": "PERSON",
+        "start": 1480,
+        "end": 1499
+      },
+      {
+        "text": "Stéphane",
+        "type": "PERSON",
+        "start": 1537,
+        "end": 1545
+      },
+      {
+        "text": "Jill Marvin",
+        "type": "PERSON",
+        "start": 1795,
+        "end": 1806
+      },
+      {
+        "text": "Rainey Mancini",
+        "type": "PERSON",
+        "start": 1829,
+        "end": 1843
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
@@ -235,41 +1071,202 @@
     "source_url": "https://www.prnewswire.com/news-releases/neonode-announces-appointment-of-new-president-and-ceo-302409296.html",
     "text": "STOCKHOLM, March 24, 2025 -- Neonode Inc. (NASDAQ: NEON), a leading provider of advanced optical sensing solutions, today announced the appointment of Daniel Alexus as President and Chief Executive Officer, effective March 31, 2025. Alexus will succeed Fredrik Nihlén, who has served as Interim President, CEO and CFO.\n\n\"Daniel has a proven track record of outstanding business leadership and high technical skills – experience that will be crucial to Neonode's success moving forward,\" said Ulf Rosberg, Chairman of Neonode's Board of Directors. \"His expertise in innovation and technology commercialization will help us accelerate our growth strategy.\"\n\nAlexus, 40, joins Neonode from Telefonaktiebolaget LM Ericsson, where he has served since 2018 as Executive Global Head of Innovation and Founder of Ericsson ONE. During his tenure at Ericsson, which began in 2010, he held multiple senior positions focused on technology innovation and business development. Prior to Ericsson, he worked in various technology and engineering roles.\n\n\"I am excited to be joining Neonode and inspired to collaborate with the team and the Board of Directors to drive the company's growth and development,\" said Daniel Alexus. \"Neonode has established a strong position in optical sensing technology, and I see tremendous opportunities ahead.\"\n\nAlexus holds a Master of Science in Engineering & Management from KTH Royal Institute of Technology in Stockholm. He brings deep expertise in technology innovation, product development, and global business strategy to his new role.\n\nFor more information, contact:\nFreddrik Nihlén\nInterim President, CEO and CFO\nfredrik.nihlen@neonode.com\n+46 703 97 21 09\n\nSource: Neonode Inc. via Cision",
     "pii_entities": [
-      {"text": "STOCKHOLM", "type": "GPE", "start": 0, "end": 9},
-      {"text": "March 24, 2025", "type": "DATE", "start": 11, "end": 25},
-      {"text": "Neonode Inc.", "type": "ORG", "start": 30, "end": 42},
-      {"text": "Daniel Alexus", "type": "PERSON", "start": 152, "end": 165},
-      {"text": "March 31, 2025", "type": "DATE", "start": 218, "end": 232},
-      {"text": "Alexus", "type": "PERSON", "start": 234, "end": 240},
-      {"text": "Fredrik Nihlén", "type": "PERSON", "start": 253, "end": 267},
-      {"text": "Daniel", "type": "PERSON", "start": 325, "end": 331},
-      {"text": "Neonode", "type": "ORG", "start": 451, "end": 458},
-      {"text": "Ulf Rosberg", "type": "PERSON", "start": 492, "end": 503},
-      {"text": "Neonode", "type": "ORG", "start": 518, "end": 525},
-      {"text": "Alexus", "type": "PERSON", "start": 654, "end": 660},
-      {"text": "40", "type": "DATE", "start": 662, "end": 664},
-      {"text": "Neonode", "type": "ORG", "start": 672, "end": 679},
-      {"text": "Telefonaktiebolaget LM Ericsson", "type": "ORG", "start": 685, "end": 716},
-      {"text": "2018", "type": "DATE", "start": 748, "end": 752},
-      {"text": "Ericsson ONE", "type": "ORG", "start": 806, "end": 818},
-      {"text": "Ericsson", "type": "ORG", "start": 841, "end": 849},
-      {"text": "2010", "type": "DATE", "start": 867, "end": 871},
-      {"text": "Ericsson", "type": "ORG", "start": 972, "end": 980},
-      {"text": "Neonode", "type": "ORG", "start": 1076, "end": 1083},
-      {"text": "Daniel Alexus", "type": "PERSON", "start": 1188, "end": 1201},
-      {"text": "Neonode", "type": "ORG", "start": 1204, "end": 1211},
-      {"text": "Alexus", "type": "PERSON", "start": 1320, "end": 1326},
-      {"text": "KTH Royal Institute of Technology", "type": "ORG", "start": 1386, "end": 1419},
-      {"text": "Stockholm", "type": "GPE", "start": 1423, "end": 1432},
-      {"text": "Fredrik Nihlén", "type": "PERSON", "start": 1586, "end": 1600},
-      {"text": "fredrik.nihlen@neonode.com", "type": "EMAIL", "start": 1631, "end": 1657},
-      {"text": "+46 703 97 21 09", "type": "PHONE", "start": 1658, "end": 1674},
-      {"text": "Neonode Inc.", "type": "ORG", "start": 1684, "end": 1696},
-      {"text": "Cision", "type": "ORG", "start": 1701, "end": 1707}
+      {
+        "text": "STOCKHOLM",
+        "type": "GPE",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "text": "NASDAQ: NEON",
+        "type": "ORG",
+        "start": 43,
+        "end": 55
+      },
+      {
+        "text": "March 24, 2025",
+        "type": "DATE",
+        "start": 11,
+        "end": 25
+      },
+      {
+        "text": "Neonode Inc.",
+        "type": "ORG",
+        "start": 30,
+        "end": 42
+      },
+      {
+        "text": "Daniel Alexus",
+        "type": "PERSON",
+        "start": 152,
+        "end": 165
+      },
+      {
+        "text": "March 31, 2025",
+        "type": "DATE",
+        "start": 218,
+        "end": 232
+      },
+      {
+        "text": "Alexus",
+        "type": "PERSON",
+        "start": 234,
+        "end": 240
+      },
+      {
+        "text": "Fredrik Nihlén",
+        "type": "PERSON",
+        "start": 253,
+        "end": 267
+      },
+      {
+        "text": "Daniel",
+        "type": "PERSON",
+        "start": 325,
+        "end": 331
+      },
+      {
+        "text": "Neonode",
+        "type": "ORG",
+        "start": 451,
+        "end": 458
+      },
+      {
+        "text": "Ulf Rosberg",
+        "type": "PERSON",
+        "start": 492,
+        "end": 503
+      },
+      {
+        "text": "Neonode",
+        "type": "ORG",
+        "start": 518,
+        "end": 525
+      },
+      {
+        "text": "Alexus",
+        "type": "PERSON",
+        "start": 654,
+        "end": 660
+      },
+      {
+        "text": "40",
+        "type": "DATE",
+        "start": 662,
+        "end": 664
+      },
+      {
+        "text": "Neonode",
+        "type": "ORG",
+        "start": 672,
+        "end": 679
+      },
+      {
+        "text": "Telefonaktiebolaget LM Ericsson",
+        "type": "ORG",
+        "start": 685,
+        "end": 716
+      },
+      {
+        "text": "2018",
+        "type": "DATE",
+        "start": 748,
+        "end": 752
+      },
+      {
+        "text": "Ericsson ONE",
+        "type": "ORG",
+        "start": 806,
+        "end": 818
+      },
+      {
+        "text": "Ericsson",
+        "type": "ORG",
+        "start": 841,
+        "end": 849
+      },
+      {
+        "text": "2010",
+        "type": "DATE",
+        "start": 867,
+        "end": 871
+      },
+      {
+        "text": "Ericsson",
+        "type": "ORG",
+        "start": 972,
+        "end": 980
+      },
+      {
+        "text": "Neonode",
+        "type": "ORG",
+        "start": 1076,
+        "end": 1083
+      },
+      {
+        "text": "Daniel Alexus",
+        "type": "PERSON",
+        "start": 1188,
+        "end": 1201
+      },
+      {
+        "text": "Neonode",
+        "type": "ORG",
+        "start": 1204,
+        "end": 1211
+      },
+      {
+        "text": "Alexus",
+        "type": "PERSON",
+        "start": 1320,
+        "end": 1326
+      },
+      {
+        "text": "KTH Royal Institute of Technology",
+        "type": "ORG",
+        "start": 1386,
+        "end": 1419
+      },
+      {
+        "text": "Stockholm",
+        "type": "GPE",
+        "start": 1423,
+        "end": 1432
+      },
+      {
+        "text": "Fredrik Nihlén",
+        "type": "PERSON",
+        "start": 1586,
+        "end": 1600
+      },
+      {
+        "text": "fredrik.nihlen@neonode.com",
+        "type": "EMAIL",
+        "start": 1631,
+        "end": 1657
+      },
+      {
+        "text": "+46 703 97 21 09",
+        "type": "PHONE",
+        "start": 1658,
+        "end": 1674
+      },
+      {
+        "text": "Neonode Inc.",
+        "type": "ORG",
+        "start": 1684,
+        "end": 1696
+      },
+      {
+        "text": "Cision",
+        "type": "ORG",
+        "start": 1701,
+        "end": 1707
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
-      "total_pii_count": 31,
+      "total_pii_count": 32,
       "source_type": "press_release",
       "industry": "technology"
     }
@@ -279,41 +1276,202 @@
     "source_url": "https://www.prnewswire.com/news-releases/abbvie-announces-appointment-of-robert-a-michael-as-chief-executive-officer-302066116.html",
     "text": "NORTH CHICAGO, Illinois, February 20, 2024 -- AbbVie (NYSE: ABBV), a global research-based biopharmaceutical company, today announced that its Board of Directors has unanimously selected Robert A. Michael, currently President and Chief Operating Officer, to become the company's next Chief Executive Officer, effective July 1, 2024. Richard A. Gonzalez, who has led AbbVie since its inception as an independent company in 2013, will transition to the role of Executive Chairman.\n\n\"Robert is an outstanding leader with deep expertise across our business and a proven track record of driving growth and innovation,\" said Richard A. Gonzalez. \"Over his 31-year career, he has demonstrated exceptional strategic vision and operational excellence. I am confident he is the right leader to guide AbbVie into its next phase of growth.\"\n\nMichael brings 31 years of experience spanning pharmaceuticals, aesthetics, diagnostics, diabetes care, and nutrition. He began his career with Abbott in 1993 through the company's financial development program and has held increasingly senior roles throughout his tenure. He was appointed Chief Financial Officer in 2018, Vice Chairman of Finance and Commercial Operations in 2021, and Vice Chairman and President in 2022 before assuming his current position as President and Chief Operating Officer in 2023.\n\n\"I am honored by the Board's confidence and excited about the opportunity to lead AbbVie,\" said Robert A. Michael. \"Richard has built an incredible foundation, transforming AbbVie into one of the world's leading biopharmaceutical companies. I look forward to working with our talented team to continue delivering life-changing medicines to patients around the world.\"\n\nUnder Gonzalez's leadership, AbbVie has grown from a market capitalization of approximately $54 billion at the time of separation from Abbott in 2013 to more than $300 billion today. During this period, the company's revenue has nearly tripled, and adjusted diluted earnings per share has grown from $2.93 to $11.11.\n\nAbout AbbVie\nAbbVie is a global, research-based biopharmaceutical company founded in 2013. The company discovers and delivers innovative medicines and solutions across immunology, oncology, neuroscience, eye care, and aesthetics. AbbVie's medicines and products reach patients in more than 175 countries, serving over 60 million people worldwide.",
     "pii_entities": [
-      {"text": "NORTH CHICAGO", "type": "GPE", "start": 0, "end": 13},
-      {"text": "Illinois", "type": "GPE", "start": 15, "end": 23},
-      {"text": "February 20, 2024", "type": "DATE", "start": 25, "end": 42},
-      {"text": "AbbVie", "type": "ORG", "start": 47, "end": 53},
-      {"text": "Robert A. Michael", "type": "PERSON", "start": 188, "end": 205},
-      {"text": "July 1, 2024", "type": "DATE", "start": 315, "end": 327},
-      {"text": "Richard A. Gonzalez", "type": "PERSON", "start": 329, "end": 348},
-      {"text": "AbbVie", "type": "ORG", "start": 362, "end": 368},
-      {"text": "2013", "type": "DATE", "start": 420, "end": 424},
-      {"text": "Robert", "type": "PERSON", "start": 483, "end": 489},
-      {"text": "Richard A. Gonzalez", "type": "PERSON", "start": 609, "end": 628},
-      {"text": "AbbVie", "type": "ORG", "start": 788, "end": 794},
-      {"text": "Michael", "type": "PERSON", "start": 825, "end": 832},
-      {"text": "Abbott", "type": "ORG", "start": 964, "end": 970},
-      {"text": "1993", "type": "DATE", "start": 974, "end": 978},
-      {"text": "2018", "type": "DATE", "start": 1130, "end": 1134},
-      {"text": "2021", "type": "DATE", "start": 1192, "end": 1196},
-      {"text": "2022", "type": "DATE", "start": 1232, "end": 1236},
-      {"text": "2023", "type": "DATE", "start": 1323, "end": 1327},
-      {"text": "AbbVie", "type": "ORG", "start": 1421, "end": 1427},
-      {"text": "Robert A. Michael", "type": "PERSON", "start": 1435, "end": 1452},
-      {"text": "Richard", "type": "PERSON", "start": 1455, "end": 1462},
-      {"text": "AbbVie", "type": "ORG", "start": 1514, "end": 1520},
-      {"text": "Gonzalez", "type": "PERSON", "start": 1706, "end": 1714},
-      {"text": "AbbVie", "type": "ORG", "start": 1729, "end": 1735},
-      {"text": "Abbott", "type": "ORG", "start": 1818, "end": 1824},
-      {"text": "2013", "type": "DATE", "start": 1828, "end": 1832},
-      {"text": "AbbVie", "type": "ORG", "start": 2020, "end": 2026},
-      {"text": "AbbVie", "type": "ORG", "start": 2027, "end": 2033},
-      {"text": "2013", "type": "DATE", "start": 2088, "end": 2092},
-      {"text": "AbbVie", "type": "ORG", "start": 2249, "end": 2255}
+      {
+        "text": "NORTH CHICAGO",
+        "type": "GPE",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "text": "NYSE: ABBV",
+        "type": "ORG",
+        "start": 54,
+        "end": 64
+      },
+      {
+        "text": "Illinois",
+        "type": "GPE",
+        "start": 15,
+        "end": 23
+      },
+      {
+        "text": "February 20, 2024",
+        "type": "DATE",
+        "start": 25,
+        "end": 42
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "text": "Robert A. Michael",
+        "type": "PERSON",
+        "start": 188,
+        "end": 205
+      },
+      {
+        "text": "July 1, 2024",
+        "type": "DATE",
+        "start": 315,
+        "end": 327
+      },
+      {
+        "text": "Richard A. Gonzalez",
+        "type": "PERSON",
+        "start": 329,
+        "end": 348
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 362,
+        "end": 368
+      },
+      {
+        "text": "2013",
+        "type": "DATE",
+        "start": 420,
+        "end": 424
+      },
+      {
+        "text": "Robert",
+        "type": "PERSON",
+        "start": 483,
+        "end": 489
+      },
+      {
+        "text": "Richard A. Gonzalez",
+        "type": "PERSON",
+        "start": 609,
+        "end": 628
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 788,
+        "end": 794
+      },
+      {
+        "text": "Michael",
+        "type": "PERSON",
+        "start": 825,
+        "end": 832
+      },
+      {
+        "text": "Abbott",
+        "type": "ORG",
+        "start": 964,
+        "end": 970
+      },
+      {
+        "text": "1993",
+        "type": "DATE",
+        "start": 974,
+        "end": 978
+      },
+      {
+        "text": "2018",
+        "type": "DATE",
+        "start": 1130,
+        "end": 1134
+      },
+      {
+        "text": "2021",
+        "type": "DATE",
+        "start": 1192,
+        "end": 1196
+      },
+      {
+        "text": "2022",
+        "type": "DATE",
+        "start": 1232,
+        "end": 1236
+      },
+      {
+        "text": "2023",
+        "type": "DATE",
+        "start": 1323,
+        "end": 1327
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 1421,
+        "end": 1427
+      },
+      {
+        "text": "Robert A. Michael",
+        "type": "PERSON",
+        "start": 1435,
+        "end": 1452
+      },
+      {
+        "text": "Richard",
+        "type": "PERSON",
+        "start": 1455,
+        "end": 1462
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 1514,
+        "end": 1520
+      },
+      {
+        "text": "Gonzalez",
+        "type": "PERSON",
+        "start": 1706,
+        "end": 1714
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 1729,
+        "end": 1735
+      },
+      {
+        "text": "Abbott",
+        "type": "ORG",
+        "start": 1818,
+        "end": 1824
+      },
+      {
+        "text": "2013",
+        "type": "DATE",
+        "start": 1828,
+        "end": 1832
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 2020,
+        "end": 2026
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 2027,
+        "end": 2033
+      },
+      {
+        "text": "2013",
+        "type": "DATE",
+        "start": 2088,
+        "end": 2092
+      },
+      {
+        "text": "AbbVie",
+        "type": "ORG",
+        "start": 2249,
+        "end": 2255
+      }
     ],
     "metadata": {
       "fetched_at": "2025-11-14T00:00:00Z",
-      "total_pii_count": 31,
+      "total_pii_count": 32,
       "source_type": "press_release",
       "industry": "pharmaceutical"
     }

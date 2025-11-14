@@ -168,6 +168,71 @@ class PIIManager:
             entities.append((matched_text, entity_type, start, end))
             detected_spans.add((start, end))
 
+        # 3. All-caps abbreviation detection (BXC, IBM, FTSE, etc.)
+        # Base blacklist for common words that shouldn't be detected
+        COMMON_WORDS_BLACKLIST = {"OK", "AM", "PM", "OR", "IF", "IS", "AS", "AT", "WE", "NO"}
+
+        # Pattern 1: Basic all-caps abbreviations (2-5 letters)
+        abbrev_pattern = r'\b[A-Z]{2,5}\b'
+        for match in re.finditer(abbrev_pattern, text):
+            start, end = match.span()
+            if (start, end) in detected_spans:
+                continue
+
+            matched_text = match.group(0)
+
+            # Filter common words using blacklist
+            if matched_text in COMMON_WORDS_BLACKLIST:
+                continue
+
+            # Context-aware filtering for ambiguous words (US, IT, AI)
+            if matched_text in {"US", "IT", "AI"}:
+                # Check if it appears in organization context (near Inc, Corp, or capitalized words)
+                context_before = text[max(0, start-30):start]
+                context_after = text[end:min(len(text), end+30)]
+                context = context_before + context_after
+
+                # Keep if organization indicators present
+                org_indicators = ['Inc', 'LLC', 'Corp', 'Ltd', 'Limited', 'Group', 'Industries',
+                                'Solutions', 'Systems', 'Technologies', 'Enterprises', 'Company']
+                has_org_context = any(indicator in context for indicator in org_indicators)
+
+                # Keep if surrounded by other capitalized words (likely part of organization name)
+                has_caps_context = bool(re.search(r'\b[A-Z][a-z]+\b', context))
+
+                if not (has_org_context or has_caps_context):
+                    continue
+
+            # Classify as ORGANIZATION
+            entity_type = 'ORGANIZATION'
+            entities.append((matched_text, entity_type, start, end))
+            detected_spans.add((start, end))
+
+        # Pattern 2: Alphanumeric abbreviations (3M, F5, 401K)
+        alphanumeric_pattern = r'\b(?:\d+[A-Z]+|[A-Z]+\d+)\b'
+        for match in re.finditer(alphanumeric_pattern, text):
+            start, end = match.span()
+            if (start, end) in detected_spans:
+                continue
+
+            matched_text = match.group(0)
+            entity_type = 'ORGANIZATION'
+            entities.append((matched_text, entity_type, start, end))
+            detected_spans.add((start, end))
+
+        # Pattern 3: Stock ticker format (NYSE: ABBV, NASDAQ: NEON, FTSE 100)
+        stock_ticker_pattern = r'\b(?:NYSE|NASDAQ|FTSE|S&P|DOW)(?::\s*|\s+)([A-Z]{1,5}|\d+)\b'
+        for match in re.finditer(stock_ticker_pattern, text):
+            # Extract the full match (including exchange prefix)
+            start, end = match.span()
+            if (start, end) in detected_spans:
+                continue
+
+            matched_text = match.group(0)
+            entity_type = 'ORGANIZATION'
+            entities.append((matched_text, entity_type, start, end))
+            detected_spans.add((start, end))
+
         return entities
 
     def _create_placeholder(self, original: str, pii_type: str) -> str:

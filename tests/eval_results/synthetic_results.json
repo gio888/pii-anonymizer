@@ -1,15 +1,15 @@
 {
   "overall_metrics": {
-    "detection_rate": 0.7961956521739131,
-    "precision": 0.4227994227994228,
-    "recall": 0.7961956521739131,
-    "f1_score": 0.5523091423185674,
-    "leakage_rate": 0.04,
-    "total_ground_truth_pii": 150,
-    "total_true_positives": 586,
-    "total_false_positives": 800,
-    "total_false_negatives": 150,
-    "total_leaked_pii": 6
+    "detection_rate": 0.7602339181286549,
+    "precision": 0.3842364532019704,
+    "recall": 0.7602339181286549,
+    "f1_score": 0.5104712041884816,
+    "leakage_rate": 0.008130081300813009,
+    "total_ground_truth_pii": 123,
+    "total_true_positives": 390,
+    "total_false_positives": 625,
+    "total_false_negatives": 123,
+    "total_leaked_pii": 1
   },
   "per_type_metrics": {
     "EMAIL": {
@@ -20,17 +20,17 @@
       "false_positives": 0,
       "false_negatives": 0,
       "ground_truth": 0,
-      "detected": 44
+      "detected": 40
     },
     "PHONE": {
-      "precision": 0.5289256198347108,
-      "recall": 0.7191011235955056,
-      "f1": 0.6095238095238095,
-      "true_positives": 64,
-      "false_positives": 57,
-      "false_negatives": 25,
-      "ground_truth": 25,
-      "detected": 77
+      "precision": 0.5299145299145299,
+      "recall": 0.7380952380952381,
+      "f1": 0.6169154228855722,
+      "true_positives": 62,
+      "false_positives": 55,
+      "false_negatives": 22,
+      "ground_truth": 22,
+      "detected": 74
     },
     "SSN": {
       "precision": 0.0,
@@ -63,23 +63,23 @@
       "detected": 20
     },
     "DATE": {
-      "precision": 0.16,
-      "recall": 0.8,
-      "f1": 0.26666666666666666,
-      "true_positives": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
       "false_positives": 21,
-      "false_negatives": 1,
-      "ground_truth": 1,
-      "detected": 72
+      "false_negatives": 0,
+      "ground_truth": 0,
+      "detected": 41
     },
     "ADDRESS": {
       "precision": 0.5,
-      "recall": 0.47619047619047616,
-      "f1": 0.4878048780487805,
+      "recall": 0.5,
+      "f1": 0.5,
       "true_positives": 20,
       "false_positives": 20,
-      "false_negatives": 22,
-      "ground_truth": 22,
+      "false_negatives": 20,
+      "ground_truth": 20,
       "detected": 20
     },
     "URL": {
@@ -90,74 +90,74 @@
       "false_positives": 0,
       "false_negatives": 0,
       "ground_truth": 0,
-      "detected": 21
+      "detected": 20
     },
     "CURRENCY": {
-      "precision": 0.25,
+      "precision": 0.5,
       "recall": 0.5,
-      "f1": 0.3333333333333333,
+      "f1": 0.5,
       "true_positives": 2,
-      "false_positives": 6,
+      "false_positives": 2,
       "false_negatives": 2,
       "ground_truth": 2,
-      "detected": 24
+      "detected": 20
     },
     "NUMBER": {
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
       "true_positives": 0,
-      "false_positives": 245,
+      "false_positives": 218,
       "false_negatives": 0,
       "ground_truth": 0,
-      "detected": 265
+      "detected": 231
     },
     "NAME": {
-      "precision": 0.5440414507772021,
-      "recall": 0.7553956834532374,
-      "f1": 0.6325301204819278,
-      "true_positives": 105,
-      "false_positives": 88,
-      "false_negatives": 34,
-      "ground_truth": 34,
-      "detected": 171
+      "precision": 0.5247524752475248,
+      "recall": 0.6309523809523809,
+      "f1": 0.572972972972973,
+      "true_positives": 53,
+      "false_positives": 48,
+      "false_negatives": 31,
+      "ground_truth": 31,
+      "detected": 57
     },
     "ORGANIZATION": {
-      "precision": 0.5314787701317716,
-      "recall": 0.9236641221374046,
-      "f1": 0.6747211895910781,
-      "true_positives": 363,
-      "false_positives": 320,
-      "false_negatives": 30,
-      "ground_truth": 30,
-      "detected": 447
+      "precision": 0.513215859030837,
+      "recall": 0.9173228346456693,
+      "f1": 0.6581920903954802,
+      "true_positives": 233,
+      "false_positives": 221,
+      "false_negatives": 21,
+      "ground_truth": 21,
+      "detected": 257
     },
     "LOCATION": {
-      "precision": 0.24390243902439024,
-      "recall": 0.5555555555555556,
-      "f1": 0.33898305084745767,
-      "true_positives": 10,
-      "false_positives": 31,
-      "false_negatives": 8,
-      "ground_truth": 8,
-      "detected": 59
+      "precision": 0.06666666666666667,
+      "recall": 0.6666666666666666,
+      "f1": 0.1212121212121212,
+      "true_positives": 2,
+      "false_positives": 28,
+      "false_negatives": 1,
+      "ground_truth": 1,
+      "detected": 47
     },
     "PRODUCT": {
       "precision": 0.5,
-      "recall": 0.35294117647058826,
-      "f1": 0.41379310344827586,
+      "recall": 0.375,
+      "f1": 0.42857142857142855,
       "true_positives": 12,
       "false_positives": 12,
-      "false_negatives": 22,
-      "ground_truth": 22,
+      "false_negatives": 20,
+      "ground_truth": 20,
       "detected": 12
     }
   },
   "success_criteria": {
     "passed": false,
     "failures": [
-      "Detection rate 79.62% < 95%",
-      "PII leakage detected: 6 instances (4.00%)"
+      "Detection rate 76.02% < 95%",
+      "PII leakage detected: 1 instances (0.81%)"
     ]
   },
   "detection_results": [
@@ -3049,846 +3049,6 @@
           "IL"
         ]
       }
-    },
-    {
-      "document_id": "realworld_001",
-      "detected_pii": {
-        "EMAIL": [
-          "connor@thatsnice.com"
-        ],
-        "PHONE": [
-          "+1 212 366 4455"
-        ],
-        "DATE": [
-          "Aug. 12, 2024",
-          "2008",
-          "2015",
-          "2019",
-          "June 2023",
-          "1997"
-        ],
-        "URL": [
-          "https://bioxcell.com/"
-        ],
-        "NUMBER": [
-          "2024",
-          "2008",
-          "2015",
-          "2019",
-          "2023",
-          "1997",
-          "4455"
-        ],
-        "LOCATION": [
-          "LEBANON",
-          "N.H.",
-          "Curia"
-        ],
-        "ORGANIZATION": [
-          "Bio X Cell, LLC",
-          "Bio X Cell's",
-          "Bio X Cell",
-          "AMRI",
-          "AMRI/Curia",
-          "AMRI",
-          "Johnson & Johnson",
-          "Dynabil Industries",
-          "Windjammer Capital Investors",
-          "Bio X Cell",
-          "Bio X Cell",
-          "Bio X Cell",
-          "Nice LLC",
-          "Bio X Cell",
-          "Chief Executive Officer",
-          "Bio X Cell",
-          "Senior Vice President",
-          "June 2023",
-          "About Bio X Cell\nFounded",
-          "Bio X Cell",
-          "Connor Halverson\nThat",
-          "LLC",
-          "BXC",
-          "BXC",
-          "AMRI",
-          "BXC",
-          "BXC",
-          "LLC"
-        ],
-        "NAME": [
-          "Christopher Conway",
-          "Conway",
-          "Chris",
-          "Klaus Lubbe",
-          "Conway",
-          "Conway",
-          "Chris",
-          "Craig Majernik",
-          "Conway",
-          "Connor Halverson",
-          "Managing Director"
-        ]
-      },
-      "missed_pii": {
-        "ORGANIZATION": [
-          "Curia",
-          "That's Nice LLC"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2024",
-          "2023",
-          "2008",
-          "4455",
-          "1997",
-          "2015",
-          "2019"
-        ],
-        "LOCATION": [
-          "Curia"
-        ],
-        "ORGANIZATION": [
-          "LLC",
-          "About Bio X Cell\nFounded",
-          "Chief Executive Officer",
-          "Senior Vice President",
-          "Bio X Cell's",
-          "June 2023",
-          "Connor Halverson\nThat",
-          "Nice LLC"
-        ],
-        "NAME": [
-          "Managing Director"
-        ]
-      }
-    },
-    {
-      "document_id": "realworld_002",
-      "detected_pii": {
-        "EMAIL": [
-          "juliana@cisosconnect.io"
-        ],
-        "PHONE": [
-          "835-9205"
-        ],
-        "DATE": [
-          "July 31, 2024"
-        ],
-        "NUMBER": [
-          "2024",
-          "9205"
-        ],
-        "LOCATION": [
-          "NEW YORK"
-        ],
-        "NAME": [
-          "Juliana Teibel",
-          "Juliana",
-          "Amy Teibel",
-          "Johann Balaguer",
-          "Balaguer",
-          "Juliana",
-          "Amy",
-          "Johann",
-          "David Cass",
-          "Aimee Rhodes",
-          "Juliana Teibel",
-          "Johann Balaguer",
-          "Kevin McKenzie",
-          "Vice President",
-          "Vice President",
-          "Vice President",
-          "Black Hat",
-          "Security Current"
-        ],
-        "ORGANIZATION": [
-          "Global Business Development",
-          "CISOs Connect",
-          "Content",
-          "CISOs Connect",
-          "Global Chief Information Security",
-          "Hard Rock",
-          "CISOs Connect",
-          "CISOs Connect",
-          "Ferguson",
-          "CISOs Connect",
-          "Security Current\u2122",
-          "Security Shark Tank\u00ae",
-          "July 31",
-          "CISOs Connect",
-          "Global Chief Information Security Officer",
-          "CISOs Connect",
-          "About CISOs Connect\nCISOs Connect",
-          "Security Shark Tank",
-          "NEW",
-          "YORK",
-          "CISO",
-          "CEO",
-          "CISO",
-          "CISO"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "201-835-9205"
-        ],
-        "PRODUCT": [
-          "Security Shark Tank"
-        ],
-        "ORGANIZATION": [
-          "Black Hat",
-          "Security Current"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2024",
-          "9205"
-        ],
-        "PHONE": [
-          "835-9205"
-        ],
-        "ORGANIZATION": [
-          "Global Business Development",
-          "NEW",
-          "Global Chief Information Security Officer",
-          "CISO",
-          "Global Chief Information Security",
-          "Content",
-          "Security Current\u2122",
-          "Security Shark Tank\u00ae",
-          "YORK",
-          "Security Shark Tank",
-          "About CISOs Connect\nCISOs Connect",
-          "CEO",
-          "July 31"
-        ],
-        "NAME": [
-          "Black Hat",
-          "Security Current",
-          "Vice President"
-        ]
-      }
-    },
-    {
-      "document_id": "realworld_003",
-      "detected_pii": {
-        "EMAIL": [
-          "info@envistaco.com"
-        ],
-        "PHONE": [
-          "821\n(714) 817-7000"
-        ],
-        "DATE": [
-          "April 15, 2024",
-          "May 1, 2024"
-        ],
-        "NUMBER": [
-          "2024",
-          "2024",
-          "92821",
-          "7000"
-        ],
-        "LOCATION": [
-          "BREA",
-          "California"
-        ],
-        "ORGANIZATION": [
-          "Envista Holdings Corporation",
-          "NYSE",
-          "NVST",
-          "the Board of Directors",
-          "Envista",
-          "Envista",
-          "Board of Directors",
-          "Envista",
-          "Smiths Group plc",
-          "Group",
-          "the Consumer Business",
-          "3M Medical",
-          "GE",
-          "McKinsey & Company",
-          "General Mills",
-          "Carleton College",
-          "Harvard Business School",
-          "Envista",
-          "Envista",
-          "Communication & Central Marketing\nEnvista Holdings Corporation",
-          "April 15",
-          "Chief Executive Officer",
-          "Chief Executive Officer",
-          "Smiths Group",
-          "FTSE 100",
-          "Group President",
-          "Melissa Morrison\nVP Communication",
-          "Central Marketing\nEnvista Holdings Corporation\n200 S",
-          "Building E\nBrea",
-          "CA 92821",
-          "CEO",
-          "FTSE",
-          "BA",
-          "MBA",
-          "VP",
-          "CA",
-          "3M",
-          "3M",
-          "3M",
-          "NYSE: NVST"
-        ],
-        "NAME": [
-          "Paul Keel",
-          "Amir Aghdaei",
-          "Paul",
-          "Scott Huennekens",
-          "Keel",
-          "Keel",
-          "Paul Keel",
-          "Amir Aghdaei",
-          "Paul",
-          "Melissa Morrison",
-          "S. Kraemer Blvd.",
-          "May 1",
-          "Consumer Business",
-          "Specialty Dental",
-          "Kraemer Blvd"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "(714) 817-7000"
-        ],
-        "ADDRESS": [
-          "92821",
-          "200 S. Kraemer Blvd., Building E"
-        ],
-        "LOCATION": [
-          "Brea",
-          "CA"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2024",
-          "7000",
-          "92821"
-        ],
-        "PHONE": [
-          "821\n(714) 817-7000"
-        ],
-        "ORGANIZATION": [
-          "FTSE",
-          "Group President",
-          "Board of Directors",
-          "NVST",
-          "CEO",
-          "NYSE",
-          "Chief Executive Officer",
-          "Communication & Central Marketing\nEnvista Holdings Corporation",
-          "Building E\nBrea",
-          "MBA",
-          "CA",
-          "Smiths Group",
-          "the Consumer Business",
-          "VP",
-          "Melissa Morrison\nVP Communication",
-          "CA 92821",
-          "the Board of Directors",
-          "Group",
-          "BA",
-          "Central Marketing\nEnvista Holdings Corporation\n200 S",
-          "April 15"
-        ],
-        "NAME": [
-          "S. Kraemer Blvd.",
-          "May 1",
-          "Specialty Dental",
-          "Consumer Business",
-          "Kraemer Blvd"
-        ]
-      }
-    },
-    {
-      "document_id": "realworld_004",
-      "detected_pii": {
-        "DATE": [
-          "May 14, 2024",
-          "July 8, 2024",
-          "February",
-          "June 1, 2024",
-          "1975"
-        ],
-        "NUMBER": [
-          "2024",
-          "2024",
-          "2024",
-          "1975"
-        ],
-        "LOCATION": [
-          "PA"
-        ],
-        "ORGANIZATION": [
-          "Vanguard",
-          "Board of Directors",
-          "Company",
-          "Board",
-          "Board",
-          "Vanguard",
-          "Vanguard",
-          "Vanguard",
-          "Global Head of iShares & Index Investing at BlackRock",
-          "ETF",
-          "BlackRock",
-          "McKinsey & Company",
-          "the University of Toronto",
-          "Cambridge University",
-          "CFA",
-          "Vanguard",
-          "Vanguard",
-          "Board",
-          "Board",
-          "The Coca-Cola Company",
-          "Vanguard's Board",
-          "Vanguard\nFounded",
-          "Vanguard",
-          "VALLEY FORGE",
-          "May 14",
-          "Chief Executive Officer",
-          "Chief Investment Officer",
-          "Chief Financial Officer",
-          "About Vanguard\nFounded",
-          "FORGE"
-        ],
-        "NAME": [
-          "Salim Ramji",
-          "Tim Buckley",
-          "Mark Loughridge",
-          "Salim",
-          "Mark Loughridge",
-          "Clifford Chance",
-          "Salim Ramji",
-          "Greg Davis",
-          "John Murphy",
-          "July 8",
-          "Global Head",
-          "Index Investing",
-          "The Board",
-          "The Coca",
-          "Cola Company",
-          "June 1"
-        ]
-      },
-      "missed_pii": {
-        "LOCATION": [
-          "VALLEY FORGE"
-        ],
-        "ORGANIZATION": [
-          "University of Toronto",
-          "Clifford Chance"
-        ],
-        "NAME": [
-          "Ramji"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2024",
-          "1975"
-        ],
-        "ORGANIZATION": [
-          "May 14",
-          "VALLEY FORGE",
-          "Company",
-          "Chief Financial Officer",
-          "Board of Directors",
-          "Chief Executive Officer",
-          "Vanguard's Board",
-          "Vanguard\nFounded",
-          "the University of Toronto",
-          "ETF",
-          "About Vanguard\nFounded",
-          "Board",
-          "CFA",
-          "FORGE",
-          "Chief Investment Officer",
-          "Global Head of iShares & Index Investing at BlackRock"
-        ],
-        "NAME": [
-          "Global Head",
-          "June 1",
-          "Index Investing",
-          "The Coca",
-          "The Board",
-          "Cola Company",
-          "July 8",
-          "Clifford Chance"
-        ]
-      }
-    },
-    {
-      "document_id": "realworld_005",
-      "detected_pii": {
-        "DATE": [
-          "October 30, 2024",
-          "January 1, 2025",
-          "2011"
-        ],
-        "NUMBER": [
-          "2024",
-          "2025",
-          "2011"
-        ],
-        "LOCATION": [
-          "NEW YORK",
-          "London"
-        ],
-        "ORGANIZATION": [
-          "The Est\u00e9e Lauder Companies Inc.",
-          "Board",
-          "The Est\u00e9e Lauder Companies",
-          "Executive Group",
-          "Est\u00e9e Lauder",
-          "L'Or\u00e9al",
-          "October 30",
-          "Lauder Companies Inc",
-          "Chief Executive Officer",
-          "Executive Group President",
-          "Jo Malone London",
-          "Giorgio Armani Beauty USA",
-          "Board Presiding Director",
-          "NEW",
-          "YORK",
-          "CEO",
-          "USA"
-        ],
-        "NAME": [
-          "St\u00e9phane de La Faverie",
-          "Fabrizio Freda",
-          "William P. Lauder",
-          "St\u00e9phane",
-          "William P. Lauder",
-          "De La Faverie",
-          "Jo Malone",
-          "Giorgio Armani Beauty",
-          "St\u00e9phane de La Faverie",
-          "Charlene Barshefsky",
-          "St\u00e9phane",
-          "Jill Marvin\nInvestor Relations",
-          "Rainey Mancini",
-          "La Faverie",
-          "January 1",
-          "William P",
-          "Executive Chairman",
-          "Annual Meeting",
-          "William P",
-          "Lauder Companies",
-          "The Ordinary",
-          "Le Labo",
-          "General Manager",
-          "North America",
-          "La Faverie",
-          "Media Contact"
-        ]
-      },
-      "missed_pii": {
-        "LOCATION": [
-          "Europe",
-          "North America"
-        ],
-        "PRODUCT": [
-          "The Ordinary"
-        ],
-        "ORGANIZATION": [
-          "Le Labo",
-          "Lanc\u00f4me"
-        ],
-        "NAME": [
-          "Jill Marvin"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2024",
-          "2025",
-          "2011"
-        ],
-        "LOCATION": [
-          "London"
-        ],
-        "ORGANIZATION": [
-          "NEW",
-          "Chief Executive Officer",
-          "USA",
-          "Executive Group President",
-          "Executive Group",
-          "Board",
-          "Lauder Companies Inc",
-          "YORK",
-          "October 30",
-          "Board Presiding Director",
-          "CEO"
-        ],
-        "NAME": [
-          "General Manager",
-          "The Ordinary",
-          "Media Contact",
-          "Executive Chairman",
-          "La Faverie",
-          "Giorgio Armani Beauty",
-          "January 1",
-          "William P",
-          "Jo Malone",
-          "Lauder Companies",
-          "North America",
-          "Le Labo",
-          "Jill Marvin\nInvestor Relations",
-          "Annual Meeting"
-        ]
-      }
-    },
-    {
-      "document_id": "realworld_006",
-      "detected_pii": {
-        "EMAIL": [
-          "fredrik.nihlen@neonode.com"
-        ],
-        "DATE": [
-          "March 24, 2025",
-          "March 31, 2025",
-          "2018",
-          "2010"
-        ],
-        "NUMBER": [
-          "2025",
-          "2025",
-          "2018",
-          "2010"
-        ],
-        "ORGANIZATION": [
-          "Neonode Inc.",
-          "NASDAQ",
-          "Daniel",
-          "Neonode",
-          "Neonode's Board of Directors",
-          "Neonode",
-          "Telefonaktiebolaget LM Ericsson",
-          "Executive Global Head of Innovation",
-          "Ericsson",
-          "Ericsson",
-          "Neonode",
-          "the Board of Directors",
-          "Neonode",
-          "KTH Royal Institute of Technology",
-          "March 24",
-          "Neonode Inc",
-          "Chief Executive Officer",
-          "March 31",
-          "Executive Global Head",
-          "Ericsson ONE",
-          "KTH Royal Institute",
-          "Neonode Inc",
-          "NEON",
-          "CEO",
-          "CFO",
-          "LM",
-          "ONE",
-          "KTH",
-          "CEO",
-          "CFO",
-          "NASDAQ: NEON"
-        ],
-        "NAME": [
-          "Daniel Alexus",
-          "Alexus",
-          "Fredrik Nihl\u00e9n",
-          "Ulf Rosberg",
-          "Alexus",
-          "Daniel Alexus",
-          "Alexus",
-          "Freddrik Nihl\u00e9n\nInterim",
-          "Interim President",
-          "Interim President"
-        ],
-        "LOCATION": [
-          "Stockholm"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "+46 703 97 21 09"
-        ],
-        "LOCATION": [
-          "STOCKHOLM"
-        ],
-        "ORGANIZATION": [
-          "Cision"
-        ],
-        "DATE": [
-          "40"
-        ],
-        "NAME": [
-          "Daniel"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2025",
-          "2010",
-          "2018"
-        ],
-        "ORGANIZATION": [
-          "March 31",
-          "Neonode's Board of Directors",
-          "LM",
-          "the Board of Directors",
-          "Chief Executive Officer",
-          "March 24",
-          "NEON",
-          "ONE",
-          "Executive Global Head of Innovation",
-          "Daniel",
-          "KTH Royal Institute",
-          "KTH",
-          "Neonode Inc",
-          "NASDAQ",
-          "CFO",
-          "Executive Global Head",
-          "CEO"
-        ],
-        "NAME": [
-          "Freddrik Nihl\u00e9n\nInterim",
-          "Interim President"
-        ]
-      }
-    },
-    {
-      "document_id": "realworld_007",
-      "detected_pii": {
-        "DATE": [
-          "February 20, 2024",
-          "July 1, 2024",
-          "2013",
-          "1993",
-          "2018",
-          "2021",
-          "2022",
-          "2023",
-          "2013",
-          "2013"
-        ],
-        "CURRENCY": [
-          "$54",
-          "$300",
-          "$2.93",
-          "$11.11"
-        ],
-        "NUMBER": [
-          "2024",
-          "2024",
-          "2013",
-          "1993",
-          "2018",
-          "2021",
-          "2022",
-          "2023",
-          "2013",
-          "2013"
-        ],
-        "ORGANIZATION": [
-          "NORTH",
-          "NYSE",
-          "Board of Directors",
-          "AbbVie",
-          "Executive",
-          "Abbott",
-          "Finance",
-          "Board",
-          "AbbVie",
-          "Abbott",
-          "AbbVie",
-          "NORTH CHICAGO",
-          "February 20",
-          "Chief Operating Officer",
-          "Chief Executive Officer",
-          "Chief Financial Officer",
-          "Chief Operating Officer",
-          "About AbbVie\nAbbVie",
-          "ABBV",
-          "NYSE: ABBV"
-        ],
-        "LOCATION": [
-          "CHICAGO",
-          "Illinois"
-        ],
-        "NAME": [
-          "Robert A. Michael",
-          "Richard A. Gonzalez",
-          "Robert",
-          "Richard A. Gonzalez",
-          "Michael",
-          "Robert A. Michael",
-          "Richard",
-          "Gonzalez",
-          "Robert A",
-          "July 1",
-          "Richard A",
-          "Executive Chairman",
-          "Richard A",
-          "Vice Chairman",
-          "Commercial Operations",
-          "Vice Chairman",
-          "Robert A",
-          "Under Gonzalez"
-        ]
-      },
-      "missed_pii": {
-        "LOCATION": [
-          "NORTH CHICAGO"
-        ]
-      },
-      "false_positives": {
-        "NUMBER": [
-          "2024",
-          "2022",
-          "2018",
-          "2013",
-          "2021",
-          "1993",
-          "2023"
-        ],
-        "LOCATION": [
-          "CHICAGO"
-        ],
-        "ORGANIZATION": [
-          "ABBV",
-          "Board of Directors",
-          "Chief Financial Officer",
-          "Board",
-          "Executive",
-          "About AbbVie\nAbbVie",
-          "NORTH CHICAGO",
-          "Chief Operating Officer",
-          "February 20",
-          "NYSE",
-          "Chief Executive Officer",
-          "NORTH",
-          "Finance"
-        ],
-        "CURRENCY": [
-          "$300",
-          "$2.93",
-          "$54",
-          "$11.11"
-        ],
-        "NAME": [
-          "Commercial Operations",
-          "July 1",
-          "Executive Chairman",
-          "Under Gonzalez",
-          "Robert A",
-          "Vice Chairman",
-          "Richard A"
-        ]
-      }
     }
   ],
   "leakage_results": [
@@ -4010,56 +3170,6 @@
     },
     {
       "document_id": "synthetic_020",
-      "has_leakage": false,
-      "leaked_pii": [],
-      "leakage_count": 0
-    },
-    {
-      "document_id": "realworld_001",
-      "has_leakage": false,
-      "leaked_pii": [],
-      "leakage_count": 0
-    },
-    {
-      "document_id": "realworld_002",
-      "has_leakage": false,
-      "leaked_pii": [],
-      "leakage_count": 0
-    },
-    {
-      "document_id": "realworld_003",
-      "has_leakage": false,
-      "leaked_pii": [],
-      "leakage_count": 0
-    },
-    {
-      "document_id": "realworld_004",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Ramji"
-      ],
-      "leakage_count": 1
-    },
-    {
-      "document_id": "realworld_005",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Europe",
-        "Lanc\u00f4me"
-      ],
-      "leakage_count": 2
-    },
-    {
-      "document_id": "realworld_006",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Cision",
-        "40"
-      ],
-      "leakage_count": 2
-    },
-    {
-      "document_id": "realworld_007",
       "has_leakage": false,
       "leaked_pii": [],
       "leakage_count": 0

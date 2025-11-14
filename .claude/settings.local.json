@@ -18,7 +18,9 @@
       "Bash(pip install:*)",
       "Bash(=3.6.0)",
       "Bash(python -m spacy download:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(git push:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

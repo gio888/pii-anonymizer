@@ -9,6 +9,7 @@ A comprehensive Python tool for detecting, anonymizing, and restoring personally
   - Regex patterns for emails, phones, SSNs, credit cards, IPs, URLs, etc.
   - spaCy NER for detecting people, companies, products, and locations
   - Currency and number detection
+  - Abbreviation detection (all-caps: IBM, BXC; alphanumeric: 3M, F5; stock tickers: NYSE: ABBV)
 - 🎭 **Semantic Aliases**: Generate human-readable placeholders like ACME_CORP, JOHN_DOE instead of random IDs
 - 📄 **Multiple Document Formats**:
   - Plain text files (.txt, .md, .csv, .tsv)

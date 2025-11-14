@@ -95,18 +95,98 @@ class TestPIIManager(unittest.TestCase):
         """Test getting statistics about detected PII."""
         # Anonymize text to create detections
         anonymized_text = self.pii_manager.anonymize_text(self.sample_text)
-        
+
         # Get statistics
         stats = self.pii_manager.get_statistics()
-        
+
         # Check that we have statistics for the PII types we expect
         self.assertIn('EMAIL', stats)
         self.assertIn('PHONE', stats)
         self.assertIn('TOTAL', stats)
-        
+
         # Total should be the sum of all individual types
         total = sum(count for pii_type, count in stats.items() if pii_type != 'TOTAL')
         self.assertEqual(stats['TOTAL'], total)
+
+    def test_abbreviation_detection(self):
+        """Test detection of all-caps abbreviations."""
+        # Test with spaCy NER enabled
+        pii_manager_ner = PIIManager(use_ner=True)
+
+        text = "BXC announced a partnership with IBM today. The 3M company also joined, along with FTSE leaders."
+
+        detections = pii_manager_ner.detect_pii_in_text(text)
+        detected_texts = [d[0] for d in detections]
+
+        # Should detect all-caps abbreviations
+        self.assertIn("BXC", detected_texts, "Failed to detect BXC")
+        self.assertIn("IBM", detected_texts, "Failed to detect IBM")
+        self.assertIn("3M", detected_texts, "Failed to detect 3M (alphanumeric)")
+        self.assertIn("FTSE", detected_texts, "Failed to detect FTSE")
+
+        # All should be classified as ORGANIZATION
+        for text, pii_type, _ in detections:
+            if text in ["BXC", "IBM", "3M", "FTSE"]:
+                self.assertEqual(pii_type, "ORGANIZATION",
+                               f"{text} should be classified as ORGANIZATION, got {pii_type}")
+
+    def test_abbreviation_context_filtering(self):
+        """Test that common words are not detected as abbreviations unless in organization context."""
+        pii_manager_ner = PIIManager(use_ner=True)
+
+        # Test 1: Common words without context should NOT be detected
+        text1 = "I am OK with this decision. We can proceed."
+        detections1 = pii_manager_ner.detect_pii_in_text(text1)
+        detected_texts1 = [d[0] for d in detections1]
+
+        self.assertNotIn("I", detected_texts1, "Should not detect 'I' as abbreviation")
+        self.assertNotIn("OK", detected_texts1, "Should not detect 'OK' as abbreviation")
+        self.assertNotIn("We", detected_texts1, "Should not detect 'We' as abbreviation")
+
+        # Test 2: Ambiguous words WITH organization context SHOULD be detected
+        text2 = "US Steel Corporation is a major producer. IT Solutions Inc provides services."
+        detections2 = pii_manager_ner.detect_pii_in_text(text2)
+        detected_texts2 = [d[0] for d in detections2]
+
+        # "US Steel Corporation" should be detected as organization (by pattern-based NER)
+        # "US" alone might be detected if context is strong enough
+        # "IT Solutions Inc" should be detected
+        has_us_or_steel = any("US" in text or "Steel" in text for text in detected_texts2)
+        has_it_or_solutions = any("IT" in text or "Solutions" in text for text in detected_texts2)
+
+        self.assertTrue(has_us_or_steel, "Should detect organization with US in context")
+        self.assertTrue(has_it_or_solutions, "Should detect organization with IT in context")
+
+    def test_stock_ticker_detection(self):
+        """Test stock ticker format detection."""
+        pii_manager_ner = PIIManager(use_ner=True)
+
+        text = "Shares of NASDAQ: NEON rose today. NYSE: ABBV also performed well. The FTSE 100 index climbed."
+
+        detections = pii_manager_ner.detect_pii_in_text(text)
+        detected_texts = [d[0] for d in detections]
+
+        # Should detect stock ticker patterns
+        has_nasdaq_neon = any("NASDAQ" in text and "NEON" in text for text in detected_texts)
+        has_nyse_abbv = any("NYSE" in text and "ABBV" in text for text in detected_texts)
+        has_ftse = any("FTSE" in text for text in detected_texts)
+
+        self.assertTrue(has_nasdaq_neon, "Should detect NASDAQ: NEON ticker")
+        self.assertTrue(has_nyse_abbv, "Should detect NYSE: ABBV ticker")
+        self.assertTrue(has_ftse, "Should detect FTSE 100")
+
+    def test_alphanumeric_abbreviations(self):
+        """Test alphanumeric abbreviation detection (3M, F5, etc.)."""
+        pii_manager_ner = PIIManager(use_ner=True)
+
+        text = "3M and F5 Networks are technology companies. The 401K plan is available."
+
+        detections = pii_manager_ner.detect_pii_in_text(text)
+        detected_texts = [d[0] for d in detections]
+
+        self.assertIn("3M", detected_texts, "Should detect 3M")
+        self.assertIn("F5", detected_texts, "Should detect F5")
+        self.assertIn("401K", detected_texts, "Should detect 401K")
 
 
 class TestPiiConfig(unittest.TestCase):

@@ -1,12 +1,12 @@
 # TODO List
 
-Last updated: 2025-11-14
+Last updated: 2025-11-15
 
 ## High Priority
 
-- [ ] Add all-caps pattern detection for abbreviations (BXC, IBM, 3M, FTSE, etc.)
 - [ ] Integrate phonenumbers library for robust international phone parsing
 - [ ] Add common name dictionary for single-word name detection
+- [ ] Improve location/GPE detection (Europe, Austin, etc.)
 - [ ] Test web application with real documents (all formats)
 - [ ] Add error handling for malformed files in web UI
 - [ ] Create user guide with screenshots for web interface
@@ -29,6 +29,10 @@ Last updated: 2025-11-14
 
 ## Completed ✅
 
+- [x] Add all-caps pattern detection for abbreviations (BXC, IBM, 3M, FTSE, NYSE: ABBV) (2025-11-15)
+- [x] Add alphanumeric abbreviation detection (3M, F5, 401K) (2025-11-15)
+- [x] Add stock ticker pattern detection (NYSE: ABBV, NASDAQ: NEON) (2025-11-15)
+- [x] Implement context-aware filtering for abbreviations (2025-11-15)
 - [x] Build automated evaluation framework with metrics tracking (2025-11-14)
 - [x] Generate synthetic test data (20 docs, 380 PII instances) (2025-11-14)
 - [x] Annotate real-world test data (7 docs, 228 PII instances) (2025-11-14)
