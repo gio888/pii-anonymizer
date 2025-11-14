@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PII Anonymizer - Secure Document Redaction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .drop-zone {
+            border: 3px dashed #cbd5e0;
+            border-radius: 8px;
+            padding: 60px 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f7fafc;
+        }
+
+        .drop-zone:hover {
+            border-color: #667eea;
+            background: #edf2f7;
+        }
+
+        .drop-zone.active {
+            border-color: #667eea;
+            background: #e6f2ff;
+        }
+
+        .drop-zone-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #a0aec0;
+        }
+
+        .drop-zone h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .drop-zone p {
+            color: #718096;
+            margin-bottom: 20px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+        }
+
+        .btn:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+        }
+
+        .progress-container {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #667eea;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            text-align: center;
+            margin-top: 10px;
+            color: #718096;
+        }
+
+        .results {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .stats {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stats h3 {
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: #718096;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-download {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .success {
+            background: #c6f6d5;
+            color: #22543d;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .supported-formats {
+            text-align: center;
+            margin-top: 20px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .format-badge {
+            display: inline-block;
+            background: #edf2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 PII Anonymizer</h1>
+            <p>Securely redact sensitive information from your documents</p>
+        </div>
+
+        <div class="card">
+            <div class="drop-zone" id="dropZone">
+                <div class="drop-zone-icon">📁</div>
+                <h3>Drop your document here</h3>
+                <p>or click to browse</p>
+                <button class="btn" onclick="document.getElementById('fileInput').click()">
+                    Choose File
+                </button>
+                <input type="file" id="fileInput" class="file-input" accept=".txt,.md,.csv,.tsv,.pdf,.docx,.xlsx">
+            </div>
+
+            <div class="supported-formats">
+                <strong>Supported formats:</strong><br>
+                <span class="format-badge">TXT</span>
+                <span class="format-badge">MD</span>
+                <span class="format-badge">CSV</span>
+                <span class="format-badge">TSV</span>
+                <span class="format-badge">PDF</span>
+                <span class="format-badge">DOCX</span>
+                <span class="format-badge">XLSX</span>
+            </div>
+
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Processing...</div>
+            </div>
+
+            <div class="error" id="errorMessage"></div>
+
+            <div class="results" id="results">
+                <div class="success">
+                    ✅ Document anonymized successfully!
+                </div>
+
+                <div class="stats" id="statsContainer">
+                    <h3>Processing Statistics</h3>
+                    <div id="statsContent"></div>
+                </div>
+
+                <h3 style="margin-bottom: 15px;">Download Files</h3>
+                <div class="download-buttons">
+                    <button class="btn btn-download" onclick="downloadFile('anonymized')">
+                        📄 Download Anonymized Document
+                    </button>
+                    <button class="btn btn-download" onclick="downloadFile('mapping_json')">
+                        🗂️ Download Mapping (JSON)
+                    </button>
+                    <button class="btn btn-download" onclick="downloadFile('mapping_csv')">
+                        📊 Download Mapping (CSV)
+                    </button>
+                </div>
+
+                <div style="margin-top: 20px; text-align: center;">
+                    <button class="btn" onclick="resetApp()">
+                        Process Another Document
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSessionId = null;
+
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const results = document.getElementById('results');
+        const errorMessage = document.getElementById('errorMessage');
+        const statsContent = document.getElementById('statsContent');
+
+        // Drag and drop handlers
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('active');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('active');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('active');
+
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+
+        async function handleFile(file) {
+            // Hide any previous errors or results
+            errorMessage.style.display = 'none';
+            results.style.display = 'none';
+
+            // Show progress
+            progressContainer.style.display = 'block';
+            progressFill.style.width = '30%';
+            progressText.textContent = 'Uploading and processing...';
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                progressFill.style.width = '70%';
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    progressFill.style.width = '100%';
+                    progressText.textContent = 'Complete!';
+
+                    currentSessionId = data.session_id;
+                    displayResults(data);
+
+                    setTimeout(() => {
+                        progressContainer.style.display = 'none';
+                        progressFill.style.width = '0%';
+                    }, 1000);
+                } else {
+                    throw new Error(data.error || 'Processing failed');
+                }
+            } catch (error) {
+                progressContainer.style.display = 'none';
+                progressFill.style.width = '0%';
+                showError(error.message);
+            }
+        }
+
+        function displayResults(data) {
+            // Display statistics
+            let statsHtml = '';
+            const stats = data.stats || {};
+
+            for (const [key, value] of Object.entries(stats)) {
+                const label = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                statsHtml += `
+                    <div class="stat-item">
+                        <span class="stat-label">${label}</span>
+                        <span class="stat-value">${value}</span>
+                    </div>
+                `;
+            }
+
+            statsContent.innerHTML = statsHtml;
+            results.style.display = 'block';
+        }
+
+        function downloadFile(fileType) {
+            if (!currentSessionId) return;
+
+            const url = `/download/${currentSessionId}/${fileType}`;
+            window.location.href = url;
+        }
+
+        function showError(message) {
+            errorMessage.textContent = '❌ ' + message;
+            errorMessage.style.display = 'block';
+        }
+
+        function resetApp() {
+            currentSessionId = null;
+            results.style.display = 'none';
+            errorMessage.style.display = 'none';
+            fileInput.value = '';
+        }
+    </script>
+</body>
+</html>

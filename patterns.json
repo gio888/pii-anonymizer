@@ -1,0 +1,9 @@
+{
+    "PASSPORT": "\\b[A-Z]{2}[0-9]{7}\\b",
+    "DRIVER_LICENSE": "\\b[A-Z][0-9]{8}\\b",
+    "EMPLOYEE_ID": "\\bEMP-[0-9]{5}\\b",
+    "ACCOUNT_NUMBER": "\\bACCT-[0-9]{10}\\b",
+    "CUSTOM_ID": "\\bID-[A-Z]{2}-[0-9]{6}\\b",
+    "BANK_ACCOUNT": "\\b[0-9]{10,12}\\b",
+    "SWIFT_CODE": "\\b[A-Z]{6}[A-Z0-9]{2}([A-Z0-9]{3})?\\b"
+  }

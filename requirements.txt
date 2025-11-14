@@ -1,0 +1,25 @@
+# Core dependencies
+spacy>=3.6.0
+
+# PDF processing
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+reportlab>=4.0.0
+markdownify>=0.11.6
+
+# Document processing
+python-docx>=1.1.0
+openpyxl>=3.1.0
+
+# Web interface
+Flask>=3.0.0
+Flask-CORS>=4.0.0
+Werkzeug>=3.0.0
+
+# Google API integration (optional)
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.1.0
+google-auth-oauthlib>=1.1.0
+
+# Additional utilities
+tqdm>=4.66.0
