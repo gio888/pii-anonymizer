@@ -2,7 +2,7 @@
 
 ## 2025-11-15: All-Caps Abbreviation Detection
 **Status**: ✅ Complete
-**Commit**: (pending)
+**Commit**: 6715cb3
 **What**: Added 3 abbreviation patterns (all-caps, alphanumeric, stock tickers) with context-aware filtering to NER fallback
 **Result**: Real-world detection improved 78.03% → 87.89% (+9.86pp), leakage reduced 10 → 6 instances (-40%)
 **Next**: Add name dictionary, improve GPE detection, add age/number context to reach 95% target
