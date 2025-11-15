@@ -1,15 +1,15 @@
 {
   "overall_metrics": {
-    "detection_rate": 0.7961956521739131,
-    "precision": 0.4227994227994228,
-    "recall": 0.7961956521739131,
-    "f1_score": 0.5523091423185674,
-    "leakage_rate": 0.04,
-    "total_ground_truth_pii": 150,
-    "total_true_positives": 586,
-    "total_false_positives": 800,
-    "total_false_negatives": 150,
-    "total_leaked_pii": 6
+    "detection_rate": 0.9336099585062241,
+    "precision": 0.40071237756010686,
+    "recall": 0.9336099585062241,
+    "f1_score": 0.5607476635514018,
+    "leakage_rate": 0.0,
+    "total_ground_truth_pii": 32,
+    "total_true_positives": 450,
+    "total_false_positives": 673,
+    "total_false_negatives": 32,
+    "total_leaked_pii": 0
   },
   "per_type_metrics": {
     "EMAIL": {
@@ -23,14 +23,14 @@
       "detected": 44
     },
     "PHONE": {
-      "precision": 0.5289256198347108,
-      "recall": 0.7191011235955056,
-      "f1": 0.6095238095238095,
-      "true_positives": 64,
-      "false_positives": 57,
-      "false_negatives": 25,
-      "ground_truth": 25,
-      "detected": 77
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "ground_truth": 0,
+      "detected": 44
     },
     "SSN": {
       "precision": 0.0,
@@ -43,14 +43,14 @@
       "detected": 40
     },
     "CREDIT_CARD": {
-      "precision": 1.0,
-      "recall": 0.5,
-      "f1": 0.6666666666666666,
-      "true_positives": 6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
       "false_positives": 0,
-      "false_negatives": 6,
-      "ground_truth": 6,
-      "detected": 34
+      "false_negatives": 0,
+      "ground_truth": 0,
+      "detected": 40
     },
     "IP_ADDRESS": {
       "precision": 0.0,
@@ -63,24 +63,24 @@
       "detected": 20
     },
     "DATE": {
-      "precision": 0.16,
-      "recall": 0.8,
-      "f1": 0.26666666666666666,
-      "true_positives": 4,
-      "false_positives": 21,
-      "false_negatives": 1,
-      "ground_truth": 1,
-      "detected": 72
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 30,
+      "false_negatives": 0,
+      "ground_truth": 0,
+      "detected": 82
     },
     "ADDRESS": {
-      "precision": 0.5,
-      "recall": 0.47619047619047616,
-      "f1": 0.4878048780487805,
-      "true_positives": 20,
-      "false_positives": 20,
-      "false_negatives": 22,
-      "ground_truth": 22,
-      "detected": 20
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "ground_truth": 1,
+      "detected": 21
     },
     "URL": {
       "precision": 0.0,
@@ -102,62 +102,51 @@
       "ground_truth": 2,
       "detected": 24
     },
-    "NUMBER": {
+    "ORGANIZATION": {
+      "precision": 0.430062630480167,
+      "recall": 0.9603729603729604,
+      "f1": 0.5940879596250902,
+      "true_positives": 412,
+      "false_positives": 546,
+      "false_negatives": 17,
+      "ground_truth": 17,
+      "detected": 804
+    },
+    "LOCATION": {
+      "precision": 0.2558139534883721,
+      "recall": 0.5789473684210527,
+      "f1": 0.3548387096774194,
+      "true_positives": 11,
+      "false_positives": 32,
+      "false_negatives": 8,
+      "ground_truth": 8,
+      "detected": 60
+    },
+    "NAME": {
+      "precision": 0.3380281690140845,
+      "recall": 0.9230769230769231,
+      "f1": 0.49484536082474223,
+      "true_positives": 24,
+      "false_positives": 47,
+      "false_negatives": 2,
+      "ground_truth": 2,
+      "detected": 158
+    },
+    "PRODUCT": {
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
       "true_positives": 0,
-      "false_positives": 245,
-      "false_negatives": 0,
-      "ground_truth": 0,
-      "detected": 265
-    },
-    "NAME": {
-      "precision": 0.5440414507772021,
-      "recall": 0.7553956834532374,
-      "f1": 0.6325301204819278,
-      "true_positives": 105,
-      "false_positives": 88,
-      "false_negatives": 34,
-      "ground_truth": 34,
-      "detected": 171
-    },
-    "ORGANIZATION": {
-      "precision": 0.5314787701317716,
-      "recall": 0.9236641221374046,
-      "f1": 0.6747211895910781,
-      "true_positives": 363,
-      "false_positives": 320,
-      "false_negatives": 30,
-      "ground_truth": 30,
-      "detected": 447
-    },
-    "LOCATION": {
-      "precision": 0.24390243902439024,
-      "recall": 0.5555555555555556,
-      "f1": 0.33898305084745767,
-      "true_positives": 10,
-      "false_positives": 31,
-      "false_negatives": 8,
-      "ground_truth": 8,
-      "detected": 59
-    },
-    "PRODUCT": {
-      "precision": 0.5,
-      "recall": 0.35294117647058826,
-      "f1": 0.41379310344827586,
-      "true_positives": 12,
       "false_positives": 12,
-      "false_negatives": 22,
-      "ground_truth": 22,
-      "detected": 12
+      "false_negatives": 2,
+      "ground_truth": 2,
+      "detected": 32
     }
   },
   "success_criteria": {
     "passed": false,
     "failures": [
-      "Detection rate 79.62% < 95%",
-      "PII leakage detected: 6 instances (4.00%)"
+      "Detection rate 93.36% < 95%"
     ]
   },
   "detection_results": [
@@ -170,16 +159,15 @@
         ],
         "PHONE": [
           "555-1234",
-          "+1-555-890-1234",
-          "6011-1234-5678",
-          "782 822463 1000"
+          "+1-555-890-1234"
         ],
         "SSN": [
           "999-88-7777",
           "111-22-3333"
         ],
         "CREDIT_CARD": [
-          "6011-1234-5678-9012"
+          "6011-1234-5678-9012",
+          "3782 822463 10005"
         ],
         "IP_ADDRESS": [
           "10.20.30.40"
@@ -189,7 +177,7 @@
           "07/04/1776"
         ],
         "ADDRESS": [
-          "123 Main Street"
+          "123 Main Street, Anytown, CA 90210"
         ],
         "URL": [
           "https://www.example.com"
@@ -197,37 +185,31 @@
         "CURRENCY": [
           "$999,999.99"
         ],
-        "NUMBER": [
-          "2025",
-          "1234",
-          "1234",
-          "7777",
-          "3333",
-          "6011",
-          "1234",
-          "5678",
-          "9012",
-          "3782",
-          "822463",
-          "10005",
-          "1776",
-          "90210"
-        ],
-        "NAME": [
-          "Jack Thomas\nEmployee",
-          "Jane Smith\nCompany",
-          "Main Street"
-        ],
         "ORGANIZATION": [
-          "Nexus Industries\nCompany",
           "Quantum Systems",
-          "MaxPortal Ultra\nLocated",
           "CA 90210",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Los Angeles\nServer IP",
-          "CA 90210\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Nexus Industries",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "CA"
@@ -236,75 +218,46 @@
           "Los Angeles",
           "Anytown"
         ],
-        "PRODUCT": [
-          "Quantum Systems\nUsing"
-        ]
-      },
-      "missed_pii": {
-        "ADDRESS": [
-          "123 Main Street, Anytown, CA 90210"
+        "NAME": [
+          "Jack Thomas",
+          "Jane Smith",
+          "Main Street"
         ],
         "PRODUCT": [
           "MaxPortal Ultra"
-        ],
-        "CREDIT_CARD": [
-          "3782 822463 10005"
-        ],
-        "ORGANIZATION": [
-          "Nexus Industries"
-        ],
-        "NAME": [
-          "Jack Thomas",
-          "Jane Smith"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "822463",
-          "6011",
-          "7777",
-          "1234",
-          "3333",
-          "10005",
-          "90210",
-          "1776",
-          "3782",
-          "9012",
-          "5678"
-        ],
-        "PHONE": [
-          "6011-1234-5678",
-          "782 822463 1000"
-        ],
-        "ADDRESS": [
-          "123 Main Street"
-        ],
-        "PRODUCT": [
-          "Quantum Systems\nUsing"
-        ],
-        "ORGANIZATION": [
-          "CA 90210\nWebsite",
-          "Social Security Number",
-          "ID",
-          "IP",
-          "CA",
-          "Document ID",
-          "CA 90210",
-          "Los Angeles\nServer IP",
-          "Nexus Industries\nCompany",
-          "MaxPortal Ultra\nLocated"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Jane Smith\nCompany",
-          "Jack Thomas\nEmployee",
           "Main Street"
         ],
         "LOCATION": [
           "Anytown"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "CA",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "CA 90210",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -316,10 +269,8 @@
           "alice.williams@email.com"
         ],
         "PHONE": [
-          "567-8901",
-          "678-9012",
-          "6011-1234-5678",
-          "601111111111"
+          "555-567-8901",
+          "(555) 678-9012"
         ],
         "SSN": [
           "123-45-6789",
@@ -337,7 +288,7 @@
           "09-10-1988"
         ],
         "ADDRESS": [
-          "123 Main Street"
+          "123 Main Street, Anytown, CA 90210"
         ],
         "URL": [
           "https://site.net/login"
@@ -345,116 +296,86 @@
         "CURRENCY": [
           "\u00a3999.99"
         ],
-        "NUMBER": [
-          "2025",
-          "8901",
-          "9012",
-          "6789",
-          "9999",
-          "6011",
-          "1234",
-          "5678",
-          "9012",
-          "6011111111111117",
-          "1988",
-          "90210"
-        ],
-        "NAME": [
-          "Jack Thomas\nCompany",
-          "Main Street"
-        ],
-        "ORGANIZATION": [
-          "Beta Ventures Inc\nCompany: Prime Solutions Group",
-          "MegaTool Plus\nLocated",
-          "CA 90210",
-          "Document ID",
-          "Social Security Number",
-          "Social Security Number",
-          "Ivy Anderson\nEmployee",
-          "Beta Ventures Inc\nCompany",
-          "San Diego\nServer IP",
-          "CA 90210\nWebsite",
-          "ID",
-          "IP",
-          "CA"
-        ],
         "LOCATION": [
           "San Diego",
           "Anytown"
         ],
-        "PRODUCT": [
-          "Prime Solutions Group\nUsing"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555-567-8901",
-          "(555) 678-9012"
-        ],
-        "ADDRESS": [
-          "123 Main Street, Anytown, CA 90210"
-        ],
-        "PRODUCT": [
-          "MegaTool Plus"
-        ],
         "ORGANIZATION": [
-          "Prime Solutions Group",
-          "Beta Ventures Inc"
+          "CA 90210",
+          "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
+          "Social Security Number",
+          "Social Security Number",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Beta Ventures Inc",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "Website",
+          "Amount",
+          "ID",
+          "IP",
+          "CA"
         ],
         "NAME": [
           "Ivy Anderson",
-          "Jack Thomas"
+          "Jack Thomas",
+          "Main Street"
+        ],
+        "PRODUCT": [
+          "Prime Solutions Group",
+          "MegaTool Plus"
+        ]
+      },
+      "missed_pii": {
+        "ORGANIZATION": [
+          "Prime Solutions Group"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "6011",
-          "6789",
-          "1234",
-          "8901",
-          "1988",
-          "5678",
-          "6011111111111117",
-          "90210",
-          "9012",
-          "9999"
-        ],
-        "PHONE": [
-          "678-9012",
-          "567-8901",
-          "6011-1234-5678",
-          "601111111111"
-        ],
-        "ADDRESS": [
-          "123 Main Street"
-        ],
-        "PRODUCT": [
-          "Prime Solutions Group\nUsing"
-        ],
-        "ORGANIZATION": [
-          "CA 90210\nWebsite",
-          "Ivy Anderson\nEmployee",
-          "Beta Ventures Inc\nCompany",
-          "Social Security Number",
-          "San Diego\nServer IP",
-          "ID",
-          "IP",
-          "Beta Ventures Inc\nCompany: Prime Solutions Group",
-          "CA",
-          "Document ID",
-          "MegaTool Plus\nLocated",
-          "CA 90210"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Jack Thomas\nCompany",
           "Main Street"
         ],
         "LOCATION": [
           "Anytown"
+        ],
+        "PRODUCT": [
+          "Prime Solutions Group"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "CA",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "CA 90210",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -467,9 +388,7 @@
         ],
         "PHONE": [
           "+1-555-987-6543",
-          "555-9012",
-          "5425 2334 4455",
-          "5425 2334 4455"
+          "555-9012"
         ],
         "SSN": [
           "111-22-3333",
@@ -487,7 +406,7 @@
           "05/17/2018"
         ],
         "ADDRESS": [
-          "258 Willow Way"
+          "258 Willow Way, Boston, MA 02101"
         ],
         "URL": [
           "https://app.org/settings"
@@ -495,38 +414,35 @@
         "CURRENCY": [
           "$999,999.99"
         ],
-        "NUMBER": [
-          "2025",
-          "6543",
-          "9012",
-          "3333",
-          "6666",
-          "5425",
-          "2334",
-          "4455",
-          "6677",
-          "5425",
-          "2334",
-          "4455",
-          "6677",
-          "2018",
-          "02101"
-        ],
         "NAME": [
           "Emma Davis",
-          "Jane Smith\nCompany",
+          "Jane Smith",
           "Willow Way"
         ],
         "ORGANIZATION": [
-          "Mega Technologies\nCompany",
           "Mega Technologies",
-          "PlusFramework Pro\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Emma Davis\nEmployee",
-          "Phoenix\nServer IP",
-          "MA 02101\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "MA 02101",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "MA"
@@ -536,64 +452,44 @@
           "Boston"
         ],
         "PRODUCT": [
-          "Mega Technologies\nUsing"
-        ]
-      },
-      "missed_pii": {
-        "ADDRESS": [
-          "258 Willow Way, Boston, MA 02101"
-        ],
-        "PRODUCT": [
+          "Mega Technologies",
           "PlusFramework Pro"
-        ],
-        "NAME": [
-          "Jane Smith"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "6666",
-          "6677",
-          "2018",
-          "02101",
-          "6543",
-          "5425",
-          "3333",
-          "2334",
-          "4455",
-          "9012"
-        ],
-        "PHONE": [
-          "5425 2334 4455"
-        ],
-        "ADDRESS": [
-          "258 Willow Way"
-        ],
-        "PRODUCT": [
-          "Mega Technologies\nUsing"
-        ],
-        "ORGANIZATION": [
-          "MA",
-          "Mega Technologies\nCompany",
-          "Social Security Number",
-          "PlusFramework Pro\nLocated",
-          "ID",
-          "Emma Davis\nEmployee",
-          "Phoenix\nServer IP",
-          "IP",
-          "Document ID",
-          "MA 02101\nWebsite"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Jane Smith\nCompany",
           "Willow Way"
         ],
         "LOCATION": [
           "Boston"
+        ],
+        "PRODUCT": [
+          "Mega Technologies"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "MA",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "MA 02101",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -605,10 +501,8 @@
           "jane.smith@company.org"
         ],
         "PHONE": [
-          "567-8901",
-          "+1-555-987-6543",
-          "550000000000",
-          "510510510510"
+          "555-567-8901",
+          "+1-555-987-6543"
         ],
         "SSN": [
           "666-77-8888",
@@ -626,7 +520,7 @@
           "12/31/2020"
         ],
         "ADDRESS": [
-          "321 Pine Boulevard"
+          "321 Pine Boulevard, Austin, TX 78701"
         ],
         "URL": [
           "http://test.org/page"
@@ -634,105 +528,79 @@
         "CURRENCY": [
           "\u00a375.25"
         ],
-        "NUMBER": [
-          "2025",
-          "8901",
-          "6543",
-          "8888",
-          "5555",
-          "5500000000000004",
-          "5105105105105100",
-          "2020",
-          "78701"
-        ],
-        "ORGANIZATION": [
-          "5500000000000004\nCredit",
-          "Global Industries Inc\nCompany:",
-          "EliteCloud Suite\nLocated",
-          "Document ID",
-          "Social Security Number",
-          "Social Security Number",
-          "Global Industries Inc\nCompany",
-          "Acme Corporation\nUsing",
-          "Houston\nServer IP",
-          "TX 78701\nWebsite",
-          "ID",
-          "IP"
-        ],
-        "NAME": [
-          "Alice Williams\nEmployee",
-          "Jack Thomas\nCompany",
-          "Pine Boulevard"
-        ],
         "LOCATION": [
           "Houston",
           "Austin",
           "TX"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555-567-8901"
         ],
-        "ADDRESS": [
-          "321 Pine Boulevard, Austin, TX 78701"
+        "ORGANIZATION": [
+          "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
+          "Social Security Number",
+          "Social Security Number",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Global Industries Inc",
+          "Company",
+          "Acme Corporation",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "TX 78701",
+          "Website",
+          "Amount",
+          "ID",
+          "IP"
+        ],
+        "NAME": [
+          "Alice Williams",
+          "Jack Thomas",
+          "Pine Boulevard"
         ],
         "PRODUCT": [
           "EliteCloud Suite"
-        ],
-        "ORGANIZATION": [
-          "Global Industries Inc",
-          "Acme Corporation"
-        ],
-        "NAME": [
-          "Jack Thomas",
-          "Alice Williams"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "78701",
-          "8888",
-          "6543",
-          "5500000000000004",
-          "8901",
-          "5105105105105100",
-          "5555",
-          "2020"
-        ],
-        "PHONE": [
-          "550000000000",
-          "567-8901",
-          "510510510510"
-        ],
-        "ADDRESS": [
-          "321 Pine Boulevard"
-        ],
-        "ORGANIZATION": [
-          "Global Industries Inc\nCompany:",
-          "Social Security Number",
-          "ID",
-          "EliteCloud Suite\nLocated",
-          "IP",
-          "Houston\nServer IP",
-          "TX 78701\nWebsite",
-          "Document ID",
-          "5500000000000004\nCredit",
-          "Acme Corporation\nUsing",
-          "Global Industries Inc\nCompany"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Jack Thomas\nCompany",
-          "Pine Boulevard",
-          "Alice Williams\nEmployee"
+          "Pine Boulevard"
         ],
         "LOCATION": [
           "Austin",
           "TX"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "Address",
+          "Credit",
+          "ID",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "TX 78701",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "Phone"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -744,8 +612,8 @@
           "frank.wilson@mail.net"
         ],
         "PHONE": [
-          "550000000000",
-          "6011-1234-5678"
+          "555 789 0123",
+          "555 234 5678"
         ],
         "SSN": [
           "555-12-3456",
@@ -763,7 +631,7 @@
           "08-25-1990"
         ],
         "ADDRESS": [
-          "789 Elm Road"
+          "789 Elm Road, Portland, OR 97201"
         ],
         "URL": [
           "https://app.org/settings"
@@ -771,106 +639,84 @@
         "CURRENCY": [
           "\u00a3999.99"
         ],
-        "NUMBER": [
-          "2025",
-          "0123",
-          "5678",
-          "3456",
-          "6666",
-          "5500000000000004",
-          "6011",
-          "1234",
-          "5678",
-          "9012",
-          "1990",
-          "97201"
-        ],
         "ORGANIZATION": [
-          "5500000000000004\nCredit",
-          "Quantum Systems\nCompany",
           "Nexus Industries",
-          "EliteCloud Suite\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Ivy Anderson\nEmployee",
-          "Nexus Industries\nUsing",
-          "Los Angeles\nServer IP",
-          "OR 97201\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "OR 97201",
+          "Website",
+          "Amount",
           "ID",
           "IP"
-        ],
-        "NAME": [
-          "Charlie Brown\nCompany",
-          "Elm Road"
         ],
         "LOCATION": [
           "Los Angeles",
           "Portland"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555 234 5678",
-          "555 789 0123"
-        ],
-        "ADDRESS": [
-          "789 Elm Road, Portland, OR 97201"
-        ],
-        "PRODUCT": [
-          "EliteCloud Suite"
-        ],
-        "ORGANIZATION": [
-          "Quantum Systems"
         ],
         "NAME": [
           "Ivy Anderson",
-          "Charlie Brown"
+          "Charlie Brown",
+          "Elm Road"
+        ],
+        "PRODUCT": [
+          "Quantum Systems",
+          "EliteCloud Suite"
+        ]
+      },
+      "missed_pii": {
+        "ORGANIZATION": [
+          "Quantum Systems"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "6666",
-          "9012",
-          "6011",
-          "1234",
-          "5500000000000004",
-          "0123",
-          "3456",
-          "1990",
-          "5678",
-          "97201"
-        ],
-        "PHONE": [
-          "550000000000",
-          "6011-1234-5678"
-        ],
-        "ADDRESS": [
-          "789 Elm Road"
-        ],
-        "ORGANIZATION": [
-          "Ivy Anderson\nEmployee",
-          "Social Security Number",
-          "Quantum Systems\nCompany",
-          "ID",
-          "Nexus Industries\nUsing",
-          "EliteCloud Suite\nLocated",
-          "IP",
-          "OR 97201\nWebsite",
-          "Document ID",
-          "5500000000000004\nCredit",
-          "Los Angeles\nServer IP"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Charlie Brown\nCompany",
           "Elm Road"
         ],
         "LOCATION": [
           "Portland"
+        ],
+        "PRODUCT": [
+          "Quantum Systems"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "OR 97201",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -883,9 +729,7 @@
         ],
         "PHONE": [
           "+1 555 456 7890",
-          "345-6789",
-          "601111111111",
-          "401288888888"
+          "(555)345-6789"
         ],
         "SSN": [
           "999-88-7777",
@@ -900,10 +744,11 @@
         ],
         "DATE": [
           "2025",
-          "07/04/1776"
+          "07/04/1776",
+          "1"
         ],
         "ADDRESS": [
-          "654 Maple Drive"
+          "654 Maple Drive, Seattle, WA 98101"
         ],
         "URL": [
           "http://test.org/page"
@@ -911,111 +756,87 @@
         "CURRENCY": [
           "\u00a31,000.50"
         ],
-        "NUMBER": [
-          "2025",
-          "7890",
-          "6789",
-          "7777",
-          "8888",
-          "6011111111111117",
-          "4012888888881881",
-          "1776",
-          "98101"
-        ],
-        "PRODUCT": [
-          "synthetic_006\nGenerated",
-          "Mega Technologies\nCompany"
-        ],
-        "NAME": [
-          "bob.johnson@test.net\nPhone",
-          "Alice Williams\nEmployee",
-          "Maple Drive"
+        "LOCATION": [
+          "New York",
+          "Seattle"
         ],
         "ORGANIZATION": [
-          "Mega Technologies\nCompany: Acme Corporation",
-          "MegaTool Plus\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Ivy Anderson\nCompany",
-          "Acme Corporation\nUsing",
-          "New York\nServer IP",
-          "WA 98101\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Acme Corporation",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "WA 98101",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "WA"
         ],
-        "LOCATION": [
-          "New York",
-          "Seattle"
+        "NAME": [
+          "Alice Williams",
+          "Ivy Anderson",
+          "Maple Drive"
+        ],
+        "PRODUCT": [
+          "Mega Technologies",
+          "MegaTool Plus"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "(555)345-6789"
-        ],
-        "ADDRESS": [
-          "654 Maple Drive, Seattle, WA 98101"
-        ],
-        "PRODUCT": [
-          "MegaTool Plus"
-        ],
         "ORGANIZATION": [
-          "Mega Technologies",
-          "Acme Corporation"
-        ],
-        "NAME": [
-          "Ivy Anderson",
-          "Alice Williams"
+          "Mega Technologies"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "7777",
-          "8888",
-          "7890",
-          "6789",
-          "6011111111111117",
-          "1776",
-          "98101",
-          "4012888888881881"
-        ],
-        "PHONE": [
-          "601111111111",
-          "401288888888",
-          "345-6789"
-        ],
-        "ADDRESS": [
-          "654 Maple Drive"
-        ],
-        "PRODUCT": [
-          "Mega Technologies\nCompany",
-          "synthetic_006\nGenerated"
-        ],
-        "ORGANIZATION": [
-          "WA 98101\nWebsite",
-          "Social Security Number",
-          "Ivy Anderson\nCompany",
-          "ID",
-          "New York\nServer IP",
-          "IP",
-          "Mega Technologies\nCompany: Acme Corporation",
-          "MegaTool Plus\nLocated",
-          "WA",
-          "Acme Corporation\nUsing",
-          "Document ID"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Maple Drive",
-          "bob.johnson@test.net\nPhone",
-          "Alice Williams\nEmployee"
+          "Maple Drive"
         ],
         "LOCATION": [
           "Seattle"
+        ],
+        "PRODUCT": [
+          "Mega Technologies"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "Address",
+          "Credit",
+          "ID",
+          "Server IP",
+          "WA",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "WA 98101",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "Phone"
+        ],
+        "DATE": [
+          "2025",
+          "1"
         ]
       }
     },
@@ -1027,15 +848,15 @@
           "jack.thomas@firm.com"
         ],
         "PHONE": [
-          "123-4567",
-          "400 000000 0000",
-          "356600202036"
+          "555 234 5678",
+          "(555) 123-4567"
         ],
         "SSN": [
           "666-77-8888",
           "888-99-0000"
         ],
         "CREDIT_CARD": [
+          "3400 000000 00009",
           "3566002020360505"
         ],
         "IP_ADDRESS": [
@@ -1046,7 +867,7 @@
           "10/31/1995"
         ],
         "ADDRESS": [
-          "654 Maple Drive"
+          "654 Maple Drive, Seattle, WA 98101"
         ],
         "URL": [
           "http://system.com/admin"
@@ -1054,119 +875,88 @@
         "CURRENCY": [
           "\u00a375.25"
         ],
-        "NUMBER": [
-          "2025",
-          "5678",
-          "4567",
-          "8888",
-          "0000",
-          "3400",
-          "000000",
-          "00009",
-          "3566002020360505",
-          "1995",
-          "98101"
+        "NAME": [
+          "Frank Wilson",
+          "Bob Johnson",
+          "Maple Drive"
         ],
         "ORGANIZATION": [
-          "jack.thomas@firm.com\nPhone",
-          "Smart Enterprises\nCompany:",
           "Tech Solutions LLC",
-          "MegaTool Plus\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Frank Wilson\nEmployee",
-          "Jacksonville\nServer IP",
-          "WA 98101\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "WA 98101",
+          "Website",
+          "Amount",
           "ID",
           "LLC",
           "IP",
           "WA"
-        ],
-        "NAME": [
-          "Frank Wilson",
-          "Bob Johnson\nCompany",
-          "Maple Drive"
         ],
         "LOCATION": [
           "Jacksonville",
           "Seattle"
         ],
         "PRODUCT": [
-          "Smart Enterprises\nCompany",
-          "Tech Solutions LLC\nUsing"
+          "Smart Enterprises",
+          "MegaTool Plus"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "555 234 5678",
-          "(555) 123-4567"
-        ],
-        "ADDRESS": [
-          "654 Maple Drive, Seattle, WA 98101"
-        ],
-        "PRODUCT": [
-          "MegaTool Plus"
-        ],
-        "CREDIT_CARD": [
-          "3400 000000 00009"
-        ],
         "ORGANIZATION": [
           "Smart Enterprises"
-        ],
-        "NAME": [
-          "Bob Johnson"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "3400",
-          "8888",
-          "3566002020360505",
-          "1995",
-          "0000",
-          "4567",
-          "98101",
-          "000000",
-          "5678",
-          "00009"
-        ],
-        "PHONE": [
-          "123-4567",
-          "356600202036",
-          "400 000000 0000"
-        ],
-        "ADDRESS": [
-          "654 Maple Drive"
-        ],
-        "PRODUCT": [
-          "Smart Enterprises\nCompany",
-          "Tech Solutions LLC\nUsing"
-        ],
-        "ORGANIZATION": [
-          "WA 98101\nWebsite",
-          "LLC",
-          "Social Security Number",
-          "Jacksonville\nServer IP",
-          "ID",
-          "IP",
-          "Smart Enterprises\nCompany:",
-          "jack.thomas@firm.com\nPhone",
-          "Document ID",
-          "MegaTool Plus\nLocated",
-          "Frank Wilson\nEmployee",
-          "WA"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Bob Johnson\nCompany",
           "Maple Drive"
         ],
         "LOCATION": [
           "Seattle"
+        ],
+        "PRODUCT": [
+          "Smart Enterprises"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "LLC",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "ID",
+          "Server IP",
+          "WA",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "WA 98101"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -1178,9 +968,8 @@
           "emma.davis@provider.com"
         ],
         "PHONE": [
-          "123-4567",
-          "601100000000",
-          "5425 2334 4455"
+          "555 234 5678",
+          "(555) 123-4567"
         ],
         "SSN": [
           "555-12-3456",
@@ -1198,7 +987,7 @@
           "04/01/2005"
         ],
         "ADDRESS": [
-          "456 Oak Avenue"
+          "456 Oak Avenue, Springfield, IL 62701"
         ],
         "URL": [
           "https://portal.net/profile"
@@ -1206,36 +995,31 @@
         "CURRENCY": [
           "\u00a375.25"
         ],
-        "NUMBER": [
-          "2025",
-          "5678",
-          "4567",
-          "3456",
-          "9999",
-          "6011000000000012",
-          "5425",
-          "2334",
-          "4455",
-          "6677",
-          "2005",
-          "62701"
-        ],
-        "NAME": [
-          "John Doe\nEmployee",
-          "Jane Smith\nCompany:",
-          "Austin\nServer IP",
-          "Oak Avenue"
-        ],
         "ORGANIZATION": [
-          "Tech Solutions LLC\nCompany",
           "Nexus Industries",
-          "SuperSystem Pro\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Jane Smith\nCompany",
-          "Nexus Industries\nUsing",
-          "IL 62701\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Austin",
+          "Server IP",
+          "Date of",
+          "Address",
+          "IL 62701",
+          "Website",
+          "Amount",
           "ID",
           "LLC",
           "IP"
@@ -1243,77 +1027,60 @@
         "LOCATION": [
           "Springfield",
           "IL"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555 234 5678",
-          "(555) 123-4567"
-        ],
-        "ADDRESS": [
-          "456 Oak Avenue, Springfield, IL 62701"
-        ],
-        "PRODUCT": [
-          "SuperSystem Pro"
-        ],
-        "ORGANIZATION": [
-          "Tech Solutions LLC"
         ],
         "NAME": [
           "John Doe",
-          "Jane Smith"
+          "Jane Smith",
+          "Oak Avenue"
         ],
+        "PRODUCT": [
+          "Tech Solutions LLC",
+          "SuperSystem Pro"
+        ]
+      },
+      "missed_pii": {
         "LOCATION": [
           "Austin"
+        ],
+        "ORGANIZATION": [
+          "Tech Solutions LLC"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "2005",
-          "6677",
-          "6011000000000012",
-          "4455",
-          "4567",
-          "5425",
-          "62701",
-          "2334",
-          "3456",
-          "5678",
-          "9999"
+        "NAME": [
+          "Oak Avenue"
         ],
-        "PHONE": [
-          "5425 2334 4455",
-          "123-4567",
-          "601100000000"
+        "LOCATION": [
+          "IL",
+          "Springfield"
         ],
-        "ADDRESS": [
-          "456 Oak Avenue"
+        "PRODUCT": [
+          "Tech Solutions LLC"
         ],
         "ORGANIZATION": [
-          "LLC",
-          "Social Security Number",
-          "ID",
-          "Tech Solutions LLC\nCompany",
-          "SuperSystem Pro\nLocated",
-          "Nexus Industries\nUsing",
-          "Jane Smith\nCompany",
+          "Employee",
           "IP",
+          "IL 62701",
+          "Amount",
+          "Austin",
+          "LLC",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
           "Document ID",
-          "IL 62701\nWebsite"
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
         ],
         "DATE": [
           "2025"
-        ],
-        "NAME": [
-          "John Doe\nEmployee",
-          "Jane Smith\nCompany:",
-          "Oak Avenue",
-          "Austin\nServer IP"
-        ],
-        "LOCATION": [
-          "Springfield",
-          "IL"
         ]
       }
     },
@@ -1325,10 +1092,8 @@
           "frank.wilson@mail.net"
         ],
         "PHONE": [
-          "567-8901",
-          "+1-555-987-6543",
-          "356600202036",
-          "601111111111"
+          "555-567-8901",
+          "+1-555-987-6543"
         ],
         "SSN": [
           "777-88-9999",
@@ -1343,10 +1108,11 @@
         ],
         "DATE": [
           "2025",
-          "09-10-1988"
+          "09-10-1988",
+          "10"
         ],
         "ADDRESS": [
-          "147 Birch Court"
+          "147 Birch Court, Denver, CO 80201"
         ],
         "URL": [
           "https://site.net/login"
@@ -1354,32 +1120,36 @@
         "CURRENCY": [
           "$10,000.00"
         ],
-        "NUMBER": [
-          "2025",
-          "8901",
-          "6543",
-          "9999",
-          "6789",
-          "3566002020360505",
-          "6011111111111117",
-          "1988",
-          "80201"
-        ],
         "NAME": [
-          "Jane Smith"
+          "Jane Smith",
+          "Ivy Anderson"
         ],
         "ORGANIZATION": [
-          "Beta Ventures Inc\nCompany",
           "Smart Enterprises",
-          "EliteCloud Suite\nLocated",
           "Birch Court",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Jane Smith\nEmployee",
-          "Ivy Anderson\nCompany",
-          "Philadelphia\nServer IP",
-          "CO 80201\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Beta Ventures Inc",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "CO 80201",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "CO"
@@ -1389,68 +1159,39 @@
           "Denver"
         ],
         "PRODUCT": [
-          "Smart Enterprises\nUsing"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555-567-8901"
-        ],
-        "ADDRESS": [
-          "147 Birch Court, Denver, CO 80201"
-        ],
-        "PRODUCT": [
           "EliteCloud Suite"
-        ],
-        "ORGANIZATION": [
-          "Beta Ventures Inc"
-        ],
-        "NAME": [
-          "Ivy Anderson"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "6789",
-          "3566002020360505",
-          "6543",
-          "8901",
-          "1988",
-          "6011111111111117",
-          "80201",
-          "9999"
-        ],
-        "PHONE": [
-          "567-8901",
-          "356600202036",
-          "601111111111"
-        ],
-        "ADDRESS": [
-          "147 Birch Court"
-        ],
-        "PRODUCT": [
-          "Smart Enterprises\nUsing"
-        ],
-        "ORGANIZATION": [
-          "Philadelphia\nServer IP",
-          "Beta Ventures Inc\nCompany",
-          "Social Security Number",
-          "Ivy Anderson\nCompany",
-          "ID",
-          "Birch Court",
-          "EliteCloud Suite\nLocated",
-          "Jane Smith\nEmployee",
-          "IP",
-          "CO 80201\nWebsite",
-          "Document ID",
-          "CO"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "LOCATION": [
           "Denver"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "CO",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "CO 80201",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Birch Court",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025",
+          "10"
         ]
       }
     },
@@ -1463,9 +1204,7 @@
         ],
         "PHONE": [
           "+1-555-890-1234",
-          "+1-555-987-6543",
-          "401288888888",
-          "5425 2334 4455"
+          "+1-555-987-6543"
         ],
         "SSN": [
           "777-88-9999",
@@ -1483,7 +1222,7 @@
           "11/05/2015"
         ],
         "ADDRESS": [
-          "789 Elm Road"
+          "789 Elm Road, Portland, OR 97201"
         ],
         "URL": [
           "https://app.org/settings"
@@ -1491,113 +1230,84 @@
         "CURRENCY": [
           "\u00a5500"
         ],
-        "NUMBER": [
-          "2025",
-          "1234",
-          "6543",
-          "9999",
-          "3456",
-          "4012888888881881",
-          "5425",
-          "2334",
-          "4455",
-          "6677",
-          "2015",
-          "97201",
-          "5000"
-        ],
         "ORGANIZATION": [
-          "jack.thomas@firm.com\nPhone",
-          "Nexus Industries\nCompany:",
           "Beta Ventures Inc",
-          "PlusFramework Pro\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Ivy Anderson\nEmployee",
-          "Nexus Industries\nCompany",
-          "Beta Ventures Inc\nUsing",
-          "Houston\nServer IP",
-          "OR 97201\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Nexus Industries",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "OR 97201",
+          "Website",
+          "Amount",
           "ID",
           "IP"
-        ],
-        "NAME": [
-          "Charlie Brown\nCompany",
-          "Elm Road"
         ],
         "LOCATION": [
           "Houston",
           "Portland"
-        ]
-      },
-      "missed_pii": {
-        "ADDRESS": [
-          "789 Elm Road, Portland, OR 97201"
-        ],
-        "PRODUCT": [
-          "PlusFramework Pro"
-        ],
-        "ORGANIZATION": [
-          "Nexus Industries"
-        ],
-        "CURRENCY": [
-          "\u00a55000"
         ],
         "NAME": [
           "Ivy Anderson",
-          "Charlie Brown"
+          "Charlie Brown",
+          "Elm Road"
+        ],
+        "PRODUCT": [
+          "PlusFramework Pro"
+        ]
+      },
+      "missed_pii": {
+        "CURRENCY": [
+          "\u00a55000"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "6677",
-          "4455",
-          "1234",
-          "6543",
-          "2015",
-          "5425",
-          "2334",
-          "4012888888881881",
-          "5000",
-          "3456",
-          "97201",
-          "9999"
+        "NAME": [
+          "Elm Road"
         ],
-        "PHONE": [
-          "401288888888",
-          "5425 2334 4455"
-        ],
-        "ADDRESS": [
-          "789 Elm Road"
+        "LOCATION": [
+          "Portland"
         ],
         "ORGANIZATION": [
-          "Nexus Industries\nCompany:",
-          "Ivy Anderson\nEmployee",
-          "Social Security Number",
-          "PlusFramework Pro\nLocated",
-          "ID",
+          "Employee",
           "IP",
-          "Houston\nServer IP",
-          "OR 97201\nWebsite",
-          "jack.thomas@firm.com\nPhone",
-          "Beta Ventures Inc\nUsing",
+          "OR 97201",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
           "Document ID",
-          "Nexus Industries\nCompany"
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
         ],
         "CURRENCY": [
           "\u00a5500"
         ],
         "DATE": [
           "2025"
-        ],
-        "NAME": [
-          "Charlie Brown\nCompany",
-          "Elm Road"
-        ],
-        "LOCATION": [
-          "Portland"
         ]
       }
     },
@@ -1609,9 +1319,8 @@
           "henry.taylor@business.com"
         ],
         "PHONE": [
-          "+1 555 456 7890",
-          "550000000000",
-          "411111111111"
+          "555 234 5678",
+          "+1 555 456 7890"
         ],
         "SSN": [
           "123-45-6789",
@@ -1630,7 +1339,7 @@
           "02-14-2000"
         ],
         "ADDRESS": [
-          "456 Oak Avenue"
+          "456 Oak Avenue, Springfield, IL 62701"
         ],
         "URL": [
           "https://app.org/settings"
@@ -1638,110 +1347,89 @@
         "CURRENCY": [
           "\u20ac500.00"
         ],
-        "NUMBER": [
-          "2025",
-          "5678",
-          "7890",
-          "6789",
-          "4321",
-          "5500000000000004",
-          "4111111111111111",
-          "2000",
-          "2000",
-          "62701"
-        ],
         "ORGANIZATION": [
-          "5500000000000004\nCredit",
-          "Digital Systems Corp\nCompany",
           "Omega Corporation",
           "UltraPlatform",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Omega Corporation\nUsing",
-          "Los Angeles\nServer IP",
-          "IL 62701\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "IL 62701",
+          "Website",
+          "Amount",
           "ID",
           "IP"
-        ],
-        "NAME": [
-          "Alice Williams\nEmployee",
-          "John Doe\nCompany",
-          "Oak Avenue"
         ],
         "LOCATION": [
           "Los Angeles",
           "Springfield",
           "IL"
         ],
+        "NAME": [
+          "Alice Williams",
+          "John Doe",
+          "Oak Avenue"
+        ],
         "PRODUCT": [
-          "UltraPlatform 2000\nLocated"
+          "Digital Systems Corp",
+          "UltraPlatform 2000"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "555 234 5678"
-        ],
-        "ADDRESS": [
-          "456 Oak Avenue, Springfield, IL 62701"
-        ],
-        "PRODUCT": [
-          "UltraPlatform 2000"
-        ],
         "ORGANIZATION": [
           "Digital Systems Corp"
-        ],
-        "NAME": [
-          "John Doe",
-          "Alice Williams"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "4111111111111111",
-          "6789",
-          "7890",
-          "4321",
-          "5500000000000004",
-          "62701",
-          "2000",
-          "5678"
+        "NAME": [
+          "Oak Avenue"
         ],
-        "PHONE": [
-          "550000000000",
-          "411111111111"
-        ],
-        "ADDRESS": [
-          "456 Oak Avenue"
+        "LOCATION": [
+          "IL",
+          "Springfield"
         ],
         "PRODUCT": [
-          "UltraPlatform 2000\nLocated"
+          "Digital Systems Corp"
         ],
         "ORGANIZATION": [
-          "Digital Systems Corp\nCompany",
-          "Social Security Number",
-          "ID",
+          "Employee",
           "IP",
+          "IL 62701",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
           "UltraPlatform",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
           "Document ID",
-          "5500000000000004\nCredit",
-          "Los Angeles\nServer IP",
-          "Omega Corporation\nUsing",
-          "IL 62701\nWebsite"
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
         ],
         "DATE": [
           "2025",
           "2000"
-        ],
-        "NAME": [
-          "John Doe\nCompany",
-          "Oak Avenue",
-          "Alice Williams\nEmployee"
-        ],
-        "LOCATION": [
-          "Springfield",
-          "IL"
         ]
       }
     },
@@ -1754,9 +1442,7 @@
         ],
         "PHONE": [
           "+1 555 456 7890",
-          "567-8901",
-          "401288888888",
-          "510510510510"
+          "555-567-8901"
         ],
         "SSN": [
           "555-12-3456",
@@ -1771,10 +1457,11 @@
         ],
         "DATE": [
           "2025",
-          "09-10-1988"
+          "09-10-1988",
+          "10"
         ],
         "ADDRESS": [
-          "147 Birch Court"
+          "147 Birch Court, Denver, CO 80201"
         ],
         "URL": [
           "http://platform.co/home"
@@ -1782,34 +1469,36 @@
         "CURRENCY": [
           "$10,000.00"
         ],
-        "NUMBER": [
-          "2025",
-          "7890",
-          "8901",
-          "3456",
-          "7777",
-          "4012888888881881",
-          "5105105105105100",
-          "1988",
-          "80201"
-        ],
         "NAME": [
-          "bob.johnson@test.net\nContact",
           "Emma Davis",
-          "Alice Williams\nCompany:"
+          "Alice Williams"
         ],
         "ORGANIZATION": [
-          "Beta Ventures Inc\nCompany",
           "Quantum Systems",
-          "AdvancedPlatform X\nLocated",
           "Birch Court",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Emma Davis\nEmployee",
-          "Alice Williams\nCompany",
-          "Houston\nServer IP",
-          "CO 80201\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Beta Ventures Inc",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "CO 80201",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "CO"
@@ -1819,72 +1508,39 @@
           "Denver"
         ],
         "PRODUCT": [
-          "Quantum Systems\nUsing"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555-567-8901"
-        ],
-        "ADDRESS": [
-          "147 Birch Court, Denver, CO 80201"
-        ],
-        "PRODUCT": [
           "AdvancedPlatform X"
-        ],
-        "ORGANIZATION": [
-          "Beta Ventures Inc"
-        ],
-        "NAME": [
-          "Alice Williams"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "7777",
-          "7890",
-          "8901",
-          "1988",
-          "80201",
-          "3456",
-          "5105105105105100",
-          "4012888888881881"
-        ],
-        "PHONE": [
-          "567-8901",
-          "401288888888",
-          "510510510510"
-        ],
-        "ADDRESS": [
-          "147 Birch Court"
-        ],
-        "PRODUCT": [
-          "Quantum Systems\nUsing"
-        ],
-        "ORGANIZATION": [
-          "Beta Ventures Inc\nCompany",
-          "Social Security Number",
-          "AdvancedPlatform X\nLocated",
-          "ID",
-          "Birch Court",
-          "Emma Davis\nEmployee",
-          "IP",
-          "Houston\nServer IP",
-          "CO 80201\nWebsite",
-          "Document ID",
-          "CO",
-          "Alice Williams\nCompany"
-        ],
-        "DATE": [
-          "2025"
-        ],
-        "NAME": [
-          "Alice Williams\nCompany:",
-          "bob.johnson@test.net\nContact"
-        ],
         "LOCATION": [
           "Denver"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "CO",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "CO 80201",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Birch Court",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025",
+          "10"
         ]
       }
     },
@@ -1897,9 +1553,7 @@
         ],
         "PHONE": [
           "555-5678",
-          "123-4567",
-          "550000000000",
-          "4532-1234-5678"
+          "(555) 123-4567"
         ],
         "SSN": [
           "111-22-3333",
@@ -1917,7 +1571,7 @@
           "05/17/2018"
         ],
         "ADDRESS": [
-          "123 Main Street"
+          "123 Main Street, Anytown, CA 90210"
         ],
         "URL": [
           "http://www.domain.com/api"
@@ -1925,110 +1579,86 @@
         "CURRENCY": [
           "$999,999.99"
         ],
-        "NUMBER": [
-          "2025",
-          "5678",
-          "4567",
-          "3333",
-          "4321",
-          "5500000000000004",
-          "4532",
-          "1234",
-          "5678",
-          "9010",
-          "2018",
-          "90210"
-        ],
         "ORGANIZATION": [
-          "5500000000000004\nCredit",
-          "Digital Systems Corp\nCompany",
           "Omega Corporation",
-          "MegaTool Plus\nLocated",
           "CA 90210",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Omega Corporation\nUsing",
-          "New York\nServer IP",
-          "CA 90210\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "CA"
         ],
-        "NAME": [
-          "Henry Taylor\nEmployee",
-          "Grace Lee\nCompany",
-          "Main Street"
-        ],
         "LOCATION": [
           "New York",
           "Anytown"
+        ],
+        "NAME": [
+          "Henry Taylor",
+          "Grace Lee",
+          "Main Street"
+        ],
+        "PRODUCT": [
+          "Digital Systems Corp",
+          "MegaTool Plus"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "(555) 123-4567"
-        ],
-        "ADDRESS": [
-          "123 Main Street, Anytown, CA 90210"
-        ],
-        "PRODUCT": [
-          "MegaTool Plus"
-        ],
         "ORGANIZATION": [
           "Digital Systems Corp"
-        ],
-        "NAME": [
-          "Grace Lee",
-          "Henry Taylor"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "2018",
-          "1234",
-          "4567",
-          "4321",
-          "3333",
-          "5500000000000004",
-          "4532",
-          "9010",
-          "90210",
-          "5678"
-        ],
-        "PHONE": [
-          "550000000000",
-          "4532-1234-5678",
-          "123-4567"
-        ],
-        "ADDRESS": [
-          "123 Main Street"
-        ],
-        "ORGANIZATION": [
-          "Digital Systems Corp\nCompany",
-          "MegaTool Plus\nLocated",
-          "CA 90210\nWebsite",
-          "Social Security Number",
-          "ID",
-          "New York\nServer IP",
-          "IP",
-          "CA",
-          "CA 90210",
-          "Omega Corporation\nUsing",
-          "Document ID",
-          "5500000000000004\nCredit"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Henry Taylor\nEmployee",
-          "Grace Lee\nCompany",
           "Main Street"
         ],
         "LOCATION": [
           "Anytown"
+        ],
+        "PRODUCT": [
+          "Digital Systems Corp"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "CA",
+          "Address",
+          "Credit",
+          "Phone",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "CA 90210",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -2041,9 +1671,7 @@
         ],
         "PHONE": [
           "555-5678",
-          "567-8901",
-          "356600202036",
-          "601100000000"
+          "555-567-8901"
         ],
         "SSN": [
           "111-22-3333",
@@ -2058,10 +1686,11 @@
         ],
         "DATE": [
           "2025",
-          "03/22/2010"
+          "03/22/2010",
+          "1"
         ],
         "ADDRESS": [
-          "258 Willow Way"
+          "258 Willow Way, Boston, MA 02101"
         ],
         "URL": [
           "https://portal.net/profile"
@@ -2069,32 +1698,30 @@
         "CURRENCY": [
           "\u00a31,000.50"
         ],
-        "NUMBER": [
-          "2025",
-          "5678",
-          "8901",
-          "3333",
-          "7777",
-          "3566002020360505",
-          "6011000000000012",
-          "2010",
-          "02101"
-        ],
-        "NAME": [
-          "Alice Williams\nEmployee",
-          "Grace Lee\nCompany:",
-          "Willow Way"
-        ],
         "ORGANIZATION": [
-          "Tech Solutions LLC\nCompany",
           "Quantum Systems",
-          "PlusFramework Pro\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Grace Lee\nCompany",
-          "San Jose\nServer IP",
-          "MA 02101\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "MA 02101",
+          "Website",
+          "Amount",
           "ID",
           "LLC",
           "IP",
@@ -2104,74 +1731,56 @@
           "San Jose",
           "Boston"
         ],
+        "NAME": [
+          "Alice Williams",
+          "Grace Lee",
+          "Willow Way"
+        ],
         "PRODUCT": [
-          "Quantum Systems\nUsing"
+          "Tech Solutions LLC",
+          "PlusFramework Pro"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "555-567-8901"
-        ],
-        "ADDRESS": [
-          "258 Willow Way, Boston, MA 02101"
-        ],
-        "PRODUCT": [
-          "PlusFramework Pro"
-        ],
         "ORGANIZATION": [
           "Tech Solutions LLC"
-        ],
-        "NAME": [
-          "Grace Lee",
-          "Alice Williams"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "7777",
-          "6011000000000012",
-          "3566002020360505",
-          "02101",
-          "3333",
-          "8901",
-          "2010",
-          "5678"
-        ],
-        "PHONE": [
-          "567-8901",
-          "356600202036",
-          "601100000000"
-        ],
-        "ADDRESS": [
-          "258 Willow Way"
-        ],
-        "PRODUCT": [
-          "Quantum Systems\nUsing"
-        ],
-        "ORGANIZATION": [
-          "MA",
-          "Grace Lee\nCompany",
-          "Social Security Number",
-          "PlusFramework Pro\nLocated",
-          "LLC",
-          "ID",
-          "Tech Solutions LLC\nCompany",
-          "IP",
-          "Document ID",
-          "San Jose\nServer IP",
-          "MA 02101\nWebsite"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Grace Lee\nCompany:",
-          "Willow Way",
-          "Alice Williams\nEmployee"
+          "Willow Way"
         ],
         "LOCATION": [
           "Boston"
+        ],
+        "PRODUCT": [
+          "Tech Solutions LLC"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "MA",
+          "Amount",
+          "LLC",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "MA 02101",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025",
+          "1"
         ]
       }
     },
@@ -2183,15 +1792,15 @@
           "jane.smith@company.org"
         ],
         "PHONE": [
-          "345-6789",
-          "400 000000 0000",
-          "601100000000"
+          "555 789 0123",
+          "(555)345-6789"
         ],
         "SSN": [
           "444-55-6666",
           "222-33-4444"
         ],
         "CREDIT_CARD": [
+          "3400 000000 00009",
           "6011000000000012"
         ],
         "IP_ADDRESS": [
@@ -2199,10 +1808,11 @@
         ],
         "DATE": [
           "2025",
-          "07/04/1776"
+          "07/04/1776",
+          "1"
         ],
         "ADDRESS": [
-          "987 Cedar Lane"
+          "987 Cedar Lane, Miami, FL 33101"
         ],
         "URL": [
           "http://test.org/page"
@@ -2210,108 +1820,80 @@
         "CURRENCY": [
           "\u00a31,000.50"
         ],
-        "NUMBER": [
-          "2025",
-          "0123",
-          "6789",
-          "6666",
-          "4444",
-          "3400",
-          "000000",
-          "00009",
-          "6011000000000012",
-          "1776",
-          "33101"
-        ],
         "ORGANIZATION": [
           "synthetic_015",
-          "Nexus Industries\nCompany",
           "Nexus Industries",
-          "EliteCloud Suite\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Nexus Industries\nUsing",
-          "Los Angeles\nServer IP",
-          "FL 33101\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Nexus Industries",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "FL 33101",
+          "Website",
+          "Amount",
           "ID",
           "IP"
-        ],
-        "NAME": [
-          "Jack Thomas\nEmployee",
-          "John Doe\nCompany"
         ],
         "LOCATION": [
           "Los Angeles",
           "Cedar Lane",
           "Miami",
           "FL"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555 789 0123",
-          "(555)345-6789"
         ],
-        "ADDRESS": [
-          "987 Cedar Lane, Miami, FL 33101"
+        "NAME": [
+          "Jack Thomas",
+          "John Doe"
         ],
         "PRODUCT": [
           "EliteCloud Suite"
-        ],
-        "CREDIT_CARD": [
-          "3400 000000 00009"
-        ],
-        "NAME": [
-          "John Doe",
-          "Jack Thomas"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "6666",
-          "3400",
-          "6011000000000012",
-          "6789",
-          "33101",
-          "4444",
-          "0123",
-          "1776",
-          "000000",
-          "00009"
-        ],
-        "PHONE": [
-          "345-6789",
-          "400 000000 0000",
-          "601100000000"
-        ],
-        "ADDRESS": [
-          "987 Cedar Lane"
-        ],
-        "ORGANIZATION": [
-          "Social Security Number",
-          "ID",
-          "Los Angeles\nServer IP",
-          "Nexus Industries\nUsing",
-          "EliteCloud Suite\nLocated",
-          "IP",
-          "Document ID",
-          "synthetic_015",
-          "FL 33101\nWebsite",
-          "Nexus Industries\nCompany"
-        ],
-        "DATE": [
-          "2025"
-        ],
-        "NAME": [
-          "John Doe\nCompany",
-          "Jack Thomas\nEmployee"
-        ],
         "LOCATION": [
           "Cedar Lane",
           "Miami",
           "FL"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "synthetic_015",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "FL 33101",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025",
+          "1"
         ]
       }
     },
@@ -2323,16 +1905,15 @@
           "alice.williams@email.com"
         ],
         "PHONE": [
-          "567-8901",
-          "+1 555 456 7890",
-          "782 822463 1000",
-          "411111111111"
+          "555-567-8901",
+          "+1 555 456 7890"
         ],
         "SSN": [
           "555-12-3456",
           "222-33-4444"
         ],
         "CREDIT_CARD": [
+          "3782 822463 10005",
           "4111111111111111"
         ],
         "IP_ADDRESS": [
@@ -2343,7 +1924,7 @@
           "08-25-1990"
         ],
         "ADDRESS": [
-          "369 Spruce Street"
+          "369 Spruce Street, Phoenix, AZ 85001"
         ],
         "URL": [
           "https://www.example.com"
@@ -2351,36 +1932,36 @@
         "CURRENCY": [
           "$999,999.99"
         ],
-        "NUMBER": [
-          "2025",
-          "8901",
-          "7890",
-          "3456",
-          "4444",
-          "3782",
-          "822463",
-          "10005",
-          "4111111111111111",
-          "1990",
-          "85001"
-        ],
         "NAME": [
           "Frank Wilson",
-          "Alice Williams\nCompany:",
+          "Alice Williams",
           "Spruce Street"
         ],
         "ORGANIZATION": [
-          "Global Industries Inc\nCompany",
           "Alpha Partners Ltd",
-          "MaxPortal Ultra\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Frank Wilson\nEmployee",
-          "Alice Williams\nCompany",
-          "Alpha Partners Ltd\nUsing",
-          "Los Angeles\nServer IP",
-          "AZ 85001\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Global Industries Inc",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "AZ 85001",
+          "Website",
+          "Amount",
           "ID",
           "IP"
         ],
@@ -2388,73 +1969,42 @@
           "Los Angeles",
           "Phoenix",
           "AZ"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "555-567-8901"
-        ],
-        "ADDRESS": [
-          "369 Spruce Street, Phoenix, AZ 85001"
         ],
         "PRODUCT": [
           "MaxPortal Ultra"
-        ],
-        "CREDIT_CARD": [
-          "3782 822463 10005"
-        ],
-        "ORGANIZATION": [
-          "Global Industries Inc"
-        ],
-        "NAME": [
-          "Alice Williams"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "822463",
-          "4111111111111111",
-          "7890",
-          "4444",
-          "8901",
-          "10005",
-          "3782",
-          "3456",
-          "1990",
-          "85001"
-        ],
-        "PHONE": [
-          "567-8901",
-          "782 822463 1000",
-          "411111111111"
-        ],
-        "ADDRESS": [
-          "369 Spruce Street"
-        ],
-        "ORGANIZATION": [
-          "Alpha Partners Ltd\nUsing",
-          "Social Security Number",
-          "Los Angeles\nServer IP",
-          "ID",
-          "AZ 85001\nWebsite",
-          "IP",
-          "Alice Williams\nCompany",
-          "Document ID",
-          "Frank Wilson\nEmployee",
-          "Global Industries Inc\nCompany",
-          "MaxPortal Ultra\nLocated"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Alice Williams\nCompany:",
           "Spruce Street"
         ],
         "LOCATION": [
-          "Phoenix",
-          "AZ"
+          "AZ",
+          "Phoenix"
+        ],
+        "ORGANIZATION": [
+          "AZ 85001",
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -2466,16 +2016,15 @@
           "bob.johnson@test.net"
         ],
         "PHONE": [
-          "345-6789",
-          "+1 555 456 7890",
-          "400 000000 0000",
-          "4532-1234-5678"
+          "(555)345-6789",
+          "+1 555 456 7890"
         ],
         "SSN": [
           "888-99-0000",
           "111-22-3333"
         ],
         "CREDIT_CARD": [
+          "3400 000000 00009",
           "4532-1234-5678-9010"
         ],
         "IP_ADDRESS": [
@@ -2486,7 +2035,7 @@
           "07/04/1776"
         ],
         "ADDRESS": [
-          "369 Spruce Street"
+          "369 Spruce Street, Phoenix, AZ 85001"
         ],
         "URL": [
           "http://www.website.com/search"
@@ -2494,39 +2043,36 @@
         "CURRENCY": [
           "\u20ac500.00"
         ],
-        "NUMBER": [
-          "2025",
-          "6789",
-          "7890",
-          "0000",
-          "3333",
-          "3400",
-          "000000",
-          "00009",
-          "4532",
-          "1234",
-          "5678",
-          "9010",
-          "1776",
-          "85001"
-        ],
         "NAME": [
-          "bob.johnson@test.net\nPhone",
           "Bob Johnson",
           "Emma Davis",
           "Spruce Street"
         ],
         "ORGANIZATION": [
           "Prime Solutions Group",
-          "PremiumApp Elite\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Bob Johnson\nEmployee",
-          "Emma Davis\nCompany",
-          "Acme Corporation\nCompany",
-          "San Diego\nServer IP",
-          "AZ 85001\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Acme Corporation",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "AZ 85001",
+          "Website",
+          "Amount",
           "ID",
           "IP"
         ],
@@ -2536,76 +2082,40 @@
           "AZ"
         ],
         "PRODUCT": [
-          "Prime Solutions Group\nUsing"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "(555)345-6789"
-        ],
-        "ADDRESS": [
-          "369 Spruce Street, Phoenix, AZ 85001"
-        ],
-        "PRODUCT": [
           "PremiumApp Elite"
-        ],
-        "CREDIT_CARD": [
-          "3400 000000 00009"
-        ],
-        "ORGANIZATION": [
-          "Acme Corporation"
         ]
       },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "3400",
-          "85001",
-          "6789",
-          "7890",
-          "1234",
-          "0000",
-          "3333",
-          "4532",
-          "9010",
-          "1776",
-          "000000",
-          "5678",
-          "00009"
-        ],
-        "PHONE": [
-          "4532-1234-5678",
-          "345-6789",
-          "400 000000 0000"
-        ],
-        "ADDRESS": [
-          "369 Spruce Street"
-        ],
-        "PRODUCT": [
-          "Prime Solutions Group\nUsing"
-        ],
-        "ORGANIZATION": [
-          "Emma Davis\nCompany",
-          "San Diego\nServer IP",
-          "Social Security Number",
-          "Bob Johnson\nEmployee",
-          "Acme Corporation\nCompany",
-          "ID",
-          "PremiumApp Elite\nLocated",
-          "AZ 85001\nWebsite",
-          "IP",
-          "Document ID"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "bob.johnson@test.net\nPhone",
           "Spruce Street"
         ],
         "LOCATION": [
-          "Phoenix",
-          "AZ"
+          "AZ",
+          "Phoenix"
+        ],
+        "ORGANIZATION": [
+          "AZ 85001",
+          "Employee",
+          "IP",
+          "Amount",
+          "Website",
+          "Address",
+          "Credit",
+          "ID",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "Phone"
+        ],
+        "DATE": [
+          "2025"
         ]
       }
     },
@@ -2617,10 +2127,8 @@
           "charlie.brown@domain.co"
         ],
         "PHONE": [
-          "123-4567",
-          "555-1234",
-          "401288888888",
-          "4532-1234-5678"
+          "(555) 123-4567",
+          "555-1234"
         ],
         "SSN": [
           "333-44-5555",
@@ -2638,7 +2146,7 @@
           "10/31/1995"
         ],
         "ADDRESS": [
-          "789 Elm Road"
+          "789 Elm Road, Portland, OR 97201"
         ],
         "URL": [
           "https://www.example.com"
@@ -2646,113 +2154,84 @@
         "CURRENCY": [
           "\u00a5500"
         ],
-        "NUMBER": [
-          "2025",
-          "4567",
-          "1234",
-          "5555",
-          "2222",
-          "4012888888881881",
-          "4532",
-          "1234",
-          "5678",
-          "9010",
-          "1995",
-          "97201",
-          "5000"
-        ],
-        "NAME": [
-          "Jack Thomas\nEmployee",
-          "David Miller\nCompany:",
-          "Elm Road"
-        ],
-        "ORGANIZATION": [
-          "PlusFramework Pro\nLocated",
-          "Document ID",
-          "Social Security Number",
-          "Social Security Number",
-          "David Miller\nCompany",
-          "Acme Corporation\nCompany",
-          "Acme Corporation\nUsing",
-          "San Diego\nServer IP",
-          "OR 97201\nWebsite",
-          "ID",
-          "IP"
-        ],
         "LOCATION": [
           "San Diego",
           "Portland"
-        ]
-      },
-      "missed_pii": {
-        "PHONE": [
-          "(555) 123-4567"
         ],
-        "ADDRESS": [
-          "789 Elm Road, Portland, OR 97201"
+        "ORGANIZATION": [
+          "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
+          "Social Security Number",
+          "Social Security Number",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Acme Corporation",
+          "Company",
+          "Acme Corporation",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "OR 97201",
+          "Website",
+          "Amount",
+          "ID",
+          "IP"
+        ],
+        "NAME": [
+          "Jack Thomas",
+          "David Miller",
+          "Elm Road"
         ],
         "PRODUCT": [
           "PlusFramework Pro"
-        ],
-        "ORGANIZATION": [
-          "Acme Corporation"
-        ],
+        ]
+      },
+      "missed_pii": {
         "CURRENCY": [
           "\u00a55000"
-        ],
-        "NAME": [
-          "David Miller",
-          "Jack Thomas"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "1234",
-          "4567",
-          "2222",
-          "4532",
-          "9010",
-          "5678",
-          "5000",
-          "1995",
-          "5555",
-          "97201",
-          "4012888888881881"
+        "NAME": [
+          "Elm Road"
         ],
-        "PHONE": [
-          "401288888888",
-          "4532-1234-5678",
-          "123-4567"
-        ],
-        "ADDRESS": [
-          "789 Elm Road"
+        "LOCATION": [
+          "Portland"
         ],
         "ORGANIZATION": [
-          "San Diego\nServer IP",
-          "Social Security Number",
-          "PlusFramework Pro\nLocated",
-          "Acme Corporation\nCompany",
-          "ID",
+          "Employee",
           "IP",
-          "OR 97201\nWebsite",
+          "OR 97201",
+          "Amount",
+          "Website",
+          "Address",
+          "Credit",
+          "ID",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
           "Document ID",
-          "David Miller\nCompany",
-          "Acme Corporation\nUsing"
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "Phone"
         ],
         "CURRENCY": [
           "\u00a5500"
         ],
         "DATE": [
           "2025"
-        ],
-        "NAME": [
-          "David Miller\nCompany:",
-          "Elm Road",
-          "Jack Thomas\nEmployee"
-        ],
-        "LOCATION": [
-          "Portland"
         ]
       }
     },
@@ -2765,26 +2244,26 @@
         ],
         "PHONE": [
           "555-5678",
-          "678-9012",
-          "6011-1234-5678",
-          "400 000000 0000"
+          "(555) 678-9012"
         ],
         "SSN": [
           "987-65-4321",
           "666-77-8888"
         ],
         "CREDIT_CARD": [
-          "6011-1234-5678-9012"
+          "6011-1234-5678-9012",
+          "3400 000000 00009"
         ],
         "IP_ADDRESS": [
           "10.20.30.40"
         ],
         "DATE": [
           "2025",
-          "12/31/2020"
+          "12/31/2020",
+          "25"
         ],
         "ADDRESS": [
-          "147 Birch Court"
+          "147 Birch Court, Denver, CO 80201"
         ],
         "URL": [
           "http://system.com/admin"
@@ -2792,40 +2271,35 @@
         "CURRENCY": [
           "$25,500.99"
         ],
-        "NUMBER": [
-          "2025",
-          "5678",
-          "9012",
-          "4321",
-          "8888",
-          "6011",
-          "1234",
-          "5678",
-          "9012",
-          "3400",
-          "000000",
-          "00009",
-          "2020",
-          "80201"
-        ],
         "NAME": [
-          "synthetic_019\nGenerated",
-          "bob.johnson@test.net\nPhone",
           "Jane Smith",
-          "Henry Taylor\nCompany"
+          "Henry Taylor"
         ],
         "ORGANIZATION": [
-          "Digital Systems Corp\nCompany",
           "Omega Corporation",
-          "PlusFramework Pro\nLocated",
           "Birch Court",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Jane Smith\nEmployee",
-          "Omega Corporation\nUsing",
-          "New York\nServer IP",
-          "CO 80201\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "CO 80201",
+          "Website",
+          "Amount",
           "ID",
           "IP",
           "CO"
@@ -2833,75 +2307,49 @@
         "LOCATION": [
           "New York",
           "Denver"
+        ],
+        "PRODUCT": [
+          "Digital Systems Corp",
+          "PlusFramework Pro"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "(555) 678-9012"
-        ],
-        "ADDRESS": [
-          "147 Birch Court, Denver, CO 80201"
-        ],
-        "PRODUCT": [
-          "PlusFramework Pro"
-        ],
-        "CREDIT_CARD": [
-          "3400 000000 00009"
-        ],
         "ORGANIZATION": [
           "Digital Systems Corp"
-        ],
-        "NAME": [
-          "Henry Taylor"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "3400",
-          "8888",
-          "6011",
-          "1234",
-          "4321",
-          "80201",
-          "5678",
-          "000000",
-          "9012",
-          "00009",
-          "2020"
-        ],
-        "PHONE": [
-          "678-9012",
-          "6011-1234-5678",
-          "400 000000 0000"
-        ],
-        "ADDRESS": [
-          "147 Birch Court"
-        ],
-        "ORGANIZATION": [
-          "Digital Systems Corp\nCompany",
-          "Social Security Number",
-          "PlusFramework Pro\nLocated",
-          "ID",
-          "Birch Court",
-          "New York\nServer IP",
-          "Jane Smith\nEmployee",
-          "IP",
-          "Omega Corporation\nUsing",
-          "CO 80201\nWebsite",
-          "Document ID",
-          "CO"
-        ],
-        "DATE": [
-          "2025"
-        ],
-        "NAME": [
-          "bob.johnson@test.net\nPhone",
-          "synthetic_019\nGenerated",
-          "Henry Taylor\nCompany"
-        ],
         "LOCATION": [
           "Denver"
+        ],
+        "PRODUCT": [
+          "Digital Systems Corp"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "CO",
+          "Amount",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "CO 80201",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Birch Court",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025",
+          "25"
         ]
       }
     },
@@ -2914,9 +2362,7 @@
         ],
         "PHONE": [
           "+1-555-987-6543",
-          "123-4567",
-          "550000000000",
-          "6011-1234-5678"
+          "(555) 123-4567"
         ],
         "SSN": [
           "666-77-8888",
@@ -2931,10 +2377,11 @@
         ],
         "DATE": [
           "2025",
-          "11/05/2015"
+          "11/05/2015",
+          "10"
         ],
         "ADDRESS": [
-          "456 Oak Avenue"
+          "456 Oak Avenue, Springfield, IL 62701"
         ],
         "URL": [
           "https://www.example.com"
@@ -2942,111 +2389,89 @@
         "CURRENCY": [
           "$10,000.00"
         ],
-        "NUMBER": [
-          "2025",
-          "6543",
-          "4567",
-          "8888",
-          "2222",
-          "5500000000000004",
-          "6011",
-          "1234",
-          "5678",
-          "9012",
-          "2015",
-          "62701"
+        "NAME": [
+          "Emma Davis",
+          "Charlie Brown",
+          "Oak Avenue"
         ],
         "ORGANIZATION": [
-          "5500000000000004\nCredit",
-          "Tech Solutions LLC\nCompany",
           "Nexus Industries",
-          "EliteCloud Suite\nLocated",
           "Document ID",
+          "Generated",
+          "Contact",
+          "Contact",
+          "Phone",
+          "Phone",
           "Social Security Number",
           "Social Security Number",
-          "Emma Davis\nCompany",
-          "Nexus Industries\nUsing",
-          "Phoenix\nServer IP",
-          "IL 62701\nWebsite",
+          "Credit",
+          "Credit",
+          "Employee",
+          "Employee",
+          "Company",
+          "Company",
+          "Using",
+          "Located",
+          "Server IP",
+          "Date of",
+          "Address",
+          "IL 62701",
+          "Website",
+          "Amount",
           "ID",
           "LLC",
           "IP"
-        ],
-        "NAME": [
-          "Charlie Brown\nEmployee",
-          "Emma Davis",
-          "Oak Avenue"
         ],
         "LOCATION": [
           "Phoenix",
           "Springfield",
           "IL"
+        ],
+        "PRODUCT": [
+          "Tech Solutions LLC",
+          "EliteCloud Suite"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "(555) 123-4567"
-        ],
-        "ADDRESS": [
-          "456 Oak Avenue, Springfield, IL 62701"
-        ],
-        "PRODUCT": [
-          "EliteCloud Suite"
-        ],
         "ORGANIZATION": [
           "Tech Solutions LLC"
-        ],
-        "NAME": [
-          "Charlie Brown"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "8888",
-          "6011",
-          "1234",
-          "6543",
-          "2015",
-          "4567",
-          "2222",
-          "5500000000000004",
-          "62701",
-          "9012",
-          "5678"
-        ],
-        "PHONE": [
-          "550000000000",
-          "6011-1234-5678",
-          "123-4567"
-        ],
-        "ADDRESS": [
-          "456 Oak Avenue"
-        ],
-        "ORGANIZATION": [
-          "Emma Davis\nCompany",
-          "LLC",
-          "Social Security Number",
-          "ID",
-          "Tech Solutions LLC\nCompany",
-          "Phoenix\nServer IP",
-          "Nexus Industries\nUsing",
-          "EliteCloud Suite\nLocated",
-          "IP",
-          "Document ID",
-          "5500000000000004\nCredit",
-          "IL 62701\nWebsite"
-        ],
-        "DATE": [
-          "2025"
-        ],
         "NAME": [
-          "Charlie Brown\nEmployee",
           "Oak Avenue"
         ],
         "LOCATION": [
-          "Springfield",
-          "IL"
+          "IL",
+          "Springfield"
+        ],
+        "PRODUCT": [
+          "Tech Solutions LLC"
+        ],
+        "ORGANIZATION": [
+          "Employee",
+          "IP",
+          "IL 62701",
+          "Amount",
+          "LLC",
+          "Website",
+          "Address",
+          "Phone",
+          "Credit",
+          "Server IP",
+          "Contact",
+          "Using",
+          "Generated",
+          "Document ID",
+          "Located",
+          "Company",
+          "Social Security Number",
+          "Date of",
+          "ID"
+        ],
+        "DATE": [
+          "2025",
+          "10"
         ]
       }
     },
@@ -3065,19 +2490,12 @@
           "2015",
           "2019",
           "June 2023",
-          "1997"
+          "1997",
+          "1",
+          "20"
         ],
         "URL": [
           "https://bioxcell.com/"
-        ],
-        "NUMBER": [
-          "2024",
-          "2008",
-          "2015",
-          "2019",
-          "2023",
-          "1997",
-          "4455"
         ],
         "LOCATION": [
           "LEBANON",
@@ -3098,20 +2516,30 @@
           "Bio X Cell",
           "Bio X Cell",
           "Nice LLC",
+          "Aug",
+          "PRNewswire",
           "Bio X Cell",
-          "Chief Executive Officer",
-          "Bio X Cell",
-          "Senior Vice President",
-          "June 2023",
-          "About Bio X Cell\nFounded",
-          "Bio X Cell",
-          "Connor Halverson\nThat",
           "LLC",
           "BXC",
+          "Chief Executive Officer",
+          "His",
           "BXC",
+          "President",
           "AMRI",
+          "Curia",
+          "Senior Vice President",
+          "President",
+          "Prior",
+          "Johnson",
+          "Johnson and Dynabil Industries",
           "BXC",
+          "June 2023",
           "BXC",
+          "About Bio X Cell",
+          "Founded",
+          "Bio X Cell",
+          "CONTACT",
+          "That's Nice LLC",
           "LLC"
         ],
         "NAME": [
@@ -3128,37 +2556,35 @@
           "Managing Director"
         ]
       },
-      "missed_pii": {
-        "ORGANIZATION": [
-          "Curia",
-          "That's Nice LLC"
-        ]
-      },
+      "missed_pii": {},
       "false_positives": {
-        "NUMBER": [
-          "2024",
-          "2023",
-          "2008",
-          "4455",
-          "1997",
-          "2015",
-          "2019"
-        ],
         "LOCATION": [
           "Curia"
         ],
-        "ORGANIZATION": [
-          "LLC",
-          "About Bio X Cell\nFounded",
-          "Chief Executive Officer",
-          "Senior Vice President",
-          "Bio X Cell's",
-          "June 2023",
-          "Connor Halverson\nThat",
-          "Nice LLC"
-        ],
         "NAME": [
           "Managing Director"
+        ],
+        "ORGANIZATION": [
+          "Bio X Cell's",
+          "CONTACT",
+          "Senior Vice President",
+          "PRNewswire",
+          "Prior",
+          "His",
+          "About Bio X Cell",
+          "Nice LLC",
+          "June 2023",
+          "LLC",
+          "President",
+          "Founded",
+          "Aug",
+          "Johnson",
+          "Chief Executive Officer",
+          "Johnson and Dynabil Industries"
+        ],
+        "DATE": [
+          "20",
+          "1"
         ]
       }
     },
@@ -3169,14 +2595,10 @@
           "juliana@cisosconnect.io"
         ],
         "PHONE": [
-          "835-9205"
+          "201-835-9205"
         ],
         "DATE": [
           "July 31, 2024"
-        ],
-        "NUMBER": [
-          "2024",
-          "9205"
         ],
         "LOCATION": [
           "NEW YORK"
@@ -3195,9 +2617,6 @@
           "Juliana Teibel",
           "Johann Balaguer",
           "Kevin McKenzie",
-          "Vice President",
-          "Vice President",
-          "Vice President",
           "Black Hat",
           "Security Current"
         ],
@@ -3215,58 +2634,62 @@
           "Security Current\u2122",
           "Security Shark Tank\u00ae",
           "July 31",
+          "PRNewswire",
           "CISOs Connect",
-          "Global Chief Information Security Officer",
+          "Vice President of Global Business Development",
+          "Vice President of Content",
+          "CISO",
+          "Residence",
+          "Vice President and Global Chief Information Security Officer",
+          "President of CISOs Connect",
+          "CEO of CISOs Connect",
+          "Their",
           "CISOs Connect",
-          "About CISOs Connect\nCISOs Connect",
+          "CISO",
+          "About CISOs Connect",
+          "CISOs Connect",
           "Security Shark Tank",
+          "CISO",
           "NEW",
           "YORK",
-          "CISO",
-          "CEO",
-          "CISO",
-          "CISO"
+          "CEO"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "201-835-9205"
-        ],
         "PRODUCT": [
           "Security Shark Tank"
         ],
         "ORGANIZATION": [
-          "Black Hat",
-          "Security Current"
+          "Security Current",
+          "Black Hat"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2024",
-          "9205"
-        ],
-        "PHONE": [
-          "835-9205"
+        "NAME": [
+          "Security Current",
+          "Black Hat"
         ],
         "ORGANIZATION": [
-          "Global Business Development",
-          "NEW",
-          "Global Chief Information Security Officer",
-          "CISO",
-          "Global Chief Information Security",
-          "Content",
+          "Vice President of Global Business Development",
           "Security Current\u2122",
-          "Security Shark Tank\u00ae",
-          "YORK",
+          "CISO",
+          "Vice President and Global Chief Information Security Officer",
+          "Vice President of Content",
+          "July 31",
+          "Content",
+          "Residence",
+          "Their",
+          "About CISOs Connect",
+          "CEO of CISOs Connect",
+          "PRNewswire",
           "Security Shark Tank",
-          "About CISOs Connect\nCISOs Connect",
+          "Global Chief Information Security",
           "CEO",
-          "July 31"
-        ],
-        "NAME": [
-          "Black Hat",
-          "Security Current",
-          "Vice President"
+          "Security Shark Tank\u00ae",
+          "NEW",
+          "YORK",
+          "President of CISOs Connect",
+          "Global Business Development"
         ]
       }
     },
@@ -3277,17 +2700,14 @@
           "info@envistaco.com"
         ],
         "PHONE": [
-          "821\n(714) 817-7000"
+          "(714) 817-7000"
         ],
         "DATE": [
           "April 15, 2024",
           "May 1, 2024"
         ],
-        "NUMBER": [
-          "2024",
-          "2024",
-          "92821",
-          "7000"
+        "ADDRESS": [
+          "200 S. Kraemer Blvd., Building E"
         ],
         "LOCATION": [
           "BREA",
@@ -3313,21 +2733,34 @@
           "Harvard Business School",
           "Envista",
           "Envista",
-          "Communication & Central Marketing\nEnvista Holdings Corporation",
           "April 15",
-          "Chief Executive Officer",
-          "Chief Executive Officer",
-          "Smiths Group",
+          "Chief Executive Officer and",
+          "Board of Directors",
+          "Paul's",
+          "CEO of",
+          "Chairman of Envista's Board of Directors",
+          "His",
+          "Chief Executive Officer of Smiths Group",
           "FTSE 100",
-          "Group President",
-          "Melissa Morrison\nVP Communication",
-          "Central Marketing\nEnvista Holdings Corporation\n200 S",
-          "Building E\nBrea",
+          "Prior",
+          "Group President of the Consumer Business",
+          "President of",
+          "Medical",
+          "President of",
+          "Earlier",
+          "McKinsey",
+          "Company",
+          "Carleton College and",
+          "MBA",
+          "Envista and",
+          "CONTACT",
+          "VP Communication",
+          "Envista Holdings Corporation",
+          "Brea",
           "CA 92821",
           "CEO",
           "FTSE",
           "BA",
-          "MBA",
           "VP",
           "CA",
           "3M",
@@ -3348,62 +2781,63 @@
           "Melissa Morrison",
           "S. Kraemer Blvd.",
           "May 1",
-          "Consumer Business",
           "Specialty Dental",
-          "Kraemer Blvd"
+          "Central Marketing",
+          "Kraemer Blvd",
+          "Building E"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "(714) 817-7000"
+        "LOCATION": [
+          "CA",
+          "Brea"
         ],
         "ADDRESS": [
-          "92821",
-          "200 S. Kraemer Blvd., Building E"
-        ],
-        "LOCATION": [
-          "Brea",
-          "CA"
+          "92821"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2024",
-          "7000",
-          "92821"
-        ],
-        "PHONE": [
-          "821\n(714) 817-7000"
+        "NAME": [
+          "Central Marketing",
+          "May 1",
+          "Kraemer Blvd",
+          "Building E",
+          "S. Kraemer Blvd.",
+          "Specialty Dental"
         ],
         "ORGANIZATION": [
-          "FTSE",
-          "Group President",
-          "Board of Directors",
-          "NVST",
-          "CEO",
-          "NYSE",
-          "Chief Executive Officer",
-          "Communication & Central Marketing\nEnvista Holdings Corporation",
-          "Building E\nBrea",
-          "MBA",
-          "CA",
-          "Smiths Group",
-          "the Consumer Business",
-          "VP",
-          "Melissa Morrison\nVP Communication",
-          "CA 92821",
           "the Board of Directors",
-          "Group",
+          "FTSE",
+          "Carleton College and",
+          "CA",
+          "NYSE",
           "BA",
-          "Central Marketing\nEnvista Holdings Corporation\n200 S",
-          "April 15"
-        ],
-        "NAME": [
-          "S. Kraemer Blvd.",
-          "May 1",
-          "Specialty Dental",
-          "Consumer Business",
-          "Kraemer Blvd"
+          "Group",
+          "April 15",
+          "Prior",
+          "Chief Executive Officer of Smiths Group",
+          "Brea",
+          "President of",
+          "CA 92821",
+          "Company",
+          "Earlier",
+          "Envista and",
+          "McKinsey",
+          "Chairman of Envista's Board of Directors",
+          "Group President of the Consumer Business",
+          "NVST",
+          "His",
+          "MBA",
+          "Chief Executive Officer and",
+          "CEO",
+          "Board of Directors",
+          "CONTACT",
+          "CEO of",
+          "the Consumer Business",
+          "Paul's",
+          "VP Communication",
+          "VP",
+          "Medical"
         ]
       }
     },
@@ -3415,12 +2849,6 @@
           "July 8, 2024",
           "February",
           "June 1, 2024",
-          "1975"
-        ],
-        "NUMBER": [
-          "2024",
-          "2024",
-          "2024",
           "1975"
         ],
         "LOCATION": [
@@ -3448,14 +2876,31 @@
           "Board",
           "The Coca-Cola Company",
           "Vanguard's Board",
-          "Vanguard\nFounded",
           "Vanguard",
           "VALLEY FORGE",
           "May 14",
-          "Chief Executive Officer",
-          "Chief Investment Officer",
-          "Chief Financial Officer",
-          "About Vanguard\nFounded",
+          "Company's",
+          "Chief Executive Officer and",
+          "February",
+          "Chairman of the Board",
+          "Vanguard's",
+          "His",
+          "Ramji",
+          "Most",
+          "Global Head of",
+          "BlackRock",
+          "Prior",
+          "McKinsey",
+          "Company",
+          "University of Toronto and Cambridge University",
+          "Vanguard and",
+          "Vanguard's",
+          "President and Chief Investment Officer",
+          "Board and",
+          "Additionally",
+          "Chief Financial Officer of The Coca",
+          "Cola Company",
+          "Founded",
           "FORGE"
         ],
         "NAME": [
@@ -3469,58 +2914,64 @@
           "Greg Davis",
           "John Murphy",
           "July 8",
-          "Global Head",
           "Index Investing",
           "The Board",
-          "The Coca",
-          "Cola Company",
-          "June 1"
+          "June 1",
+          "About Vanguard"
         ]
       },
       "missed_pii": {
         "LOCATION": [
           "VALLEY FORGE"
         ],
+        "NAME": [
+          "Ramji"
+        ],
         "ORGANIZATION": [
           "University of Toronto",
           "Clifford Chance"
-        ],
-        "NAME": [
-          "Ramji"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2024",
-          "1975"
+        "NAME": [
+          "Index Investing",
+          "July 8",
+          "About Vanguard",
+          "The Board",
+          "Clifford Chance",
+          "June 1"
         ],
         "ORGANIZATION": [
-          "May 14",
-          "VALLEY FORGE",
-          "Company",
-          "Chief Financial Officer",
-          "Board of Directors",
-          "Chief Executive Officer",
+          "Most",
+          "Chairman of the Board",
+          "Additionally",
+          "Vanguard's",
           "Vanguard's Board",
-          "Vanguard\nFounded",
-          "the University of Toronto",
-          "ETF",
-          "About Vanguard\nFounded",
-          "Board",
-          "CFA",
+          "Vanguard and",
+          "Prior",
           "FORGE",
-          "Chief Investment Officer",
-          "Global Head of iShares & Index Investing at BlackRock"
-        ],
-        "NAME": [
-          "Global Head",
-          "June 1",
-          "Index Investing",
-          "The Coca",
-          "The Board",
+          "the University of Toronto",
+          "Company",
+          "Founded",
+          "McKinsey",
+          "Board",
+          "ETF",
+          "CFA",
+          "His",
+          "Board and",
+          "May 14",
           "Cola Company",
-          "July 8",
-          "Clifford Chance"
+          "Chief Financial Officer of The Coca",
+          "University of Toronto and Cambridge University",
+          "February",
+          "Chief Executive Officer and",
+          "Board of Directors",
+          "Global Head of",
+          "President and Chief Investment Officer",
+          "Global Head of iShares & Index Investing at BlackRock",
+          "Ramji",
+          "VALLEY FORGE",
+          "Company's"
         ]
       }
     },
@@ -3532,14 +2983,10 @@
           "January 1, 2025",
           "2011"
         ],
-        "NUMBER": [
-          "2024",
-          "2025",
-          "2011"
-        ],
         "LOCATION": [
           "NEW YORK",
-          "London"
+          "London",
+          "Europe and North America"
         ],
         "ORGANIZATION": [
           "The Est\u00e9e Lauder Companies Inc.",
@@ -3549,15 +2996,25 @@
           "Est\u00e9e Lauder",
           "L'Or\u00e9al",
           "October 30",
-          "Lauder Companies Inc",
-          "Chief Executive Officer",
+          "The Est\u00e9e Lauder Companies Inc",
+          "President and Chief Executive Officer",
+          "Lauder",
+          "Chair of the Board",
+          "Annual Meeting of Stockholders",
+          "St\u00e9phane's",
+          "Lauder",
+          "His",
+          "CEO",
           "Executive Group President",
           "Jo Malone London",
-          "Giorgio Armani Beauty USA",
+          "Prior",
+          "General Manager of Giorgio Armani Beauty USA and",
+          "Lanc\u00f4me",
           "Board Presiding Director",
+          "Company",
+          "His",
           "NEW",
           "YORK",
-          "CEO",
           "USA"
         ],
         "NAME": [
@@ -3572,76 +3029,67 @@
           "St\u00e9phane de La Faverie",
           "Charlene Barshefsky",
           "St\u00e9phane",
-          "Jill Marvin\nInvestor Relations",
           "Rainey Mancini",
-          "La Faverie",
           "January 1",
           "William P",
           "Executive Chairman",
-          "Annual Meeting",
           "William P",
-          "Lauder Companies",
           "The Ordinary",
           "Le Labo",
-          "General Manager",
-          "North America",
-          "La Faverie",
-          "Media Contact"
+          "Media Contact",
+          "Jill Marvin",
+          "Investor Relations"
         ]
       },
       "missed_pii": {
         "LOCATION": [
-          "Europe",
-          "North America"
+          "North America",
+          "Europe"
         ],
         "PRODUCT": [
           "The Ordinary"
         ],
         "ORGANIZATION": [
           "Le Labo",
-          "Lanc\u00f4me"
-        ],
-        "NAME": [
-          "Jill Marvin"
+          "Giorgio Armani Beauty USA"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2024",
-          "2025",
-          "2011"
-        ],
         "LOCATION": [
+          "Europe and North America",
           "London"
         ],
+        "NAME": [
+          "Jo Malone",
+          "Media Contact",
+          "January 1",
+          "The Ordinary",
+          "Investor Relations",
+          "Executive Chairman",
+          "Le Labo",
+          "William P",
+          "Giorgio Armani Beauty"
+        ],
         "ORGANIZATION": [
-          "NEW",
-          "Chief Executive Officer",
-          "USA",
-          "Executive Group President",
-          "Executive Group",
+          "Annual Meeting of Stockholders",
+          "Prior",
+          "Company",
+          "St\u00e9phane's",
+          "The Est\u00e9e Lauder Companies Inc",
           "Board",
-          "Lauder Companies Inc",
-          "YORK",
+          "Executive Group",
+          "Executive Group President",
+          "His",
           "October 30",
           "Board Presiding Director",
-          "CEO"
-        ],
-        "NAME": [
-          "General Manager",
-          "The Ordinary",
-          "Media Contact",
-          "Executive Chairman",
-          "La Faverie",
-          "Giorgio Armani Beauty",
-          "January 1",
-          "William P",
-          "Jo Malone",
-          "Lauder Companies",
-          "North America",
-          "Le Labo",
-          "Jill Marvin\nInvestor Relations",
-          "Annual Meeting"
+          "President and Chief Executive Officer",
+          "CEO",
+          "Lauder",
+          "General Manager of Giorgio Armani Beauty USA and",
+          "NEW",
+          "YORK",
+          "Chair of the Board",
+          "USA"
         ]
       }
     },
@@ -3651,15 +3099,13 @@
         "EMAIL": [
           "fredrik.nihlen@neonode.com"
         ],
+        "PHONE": [
+          "+46 703 97 21 09"
+        ],
         "DATE": [
           "March 24, 2025",
           "March 31, 2025",
-          "2018",
-          "2010"
-        ],
-        "NUMBER": [
-          "2025",
-          "2025",
+          "40",
           "2018",
           "2010"
         ],
@@ -3678,15 +3124,27 @@
           "the Board of Directors",
           "Neonode",
           "KTH Royal Institute of Technology",
+          "STOCKHOLM",
           "March 24",
           "Neonode Inc",
-          "Chief Executive Officer",
-          "March 31",
-          "Executive Global Head",
-          "Ericsson ONE",
-          "KTH Royal Institute",
-          "Neonode Inc",
           "NEON",
+          "President and Chief Executive Officer",
+          "March 31",
+          "CEO and CFO",
+          "Neonode's",
+          "Chairman of Neonode's Board of Directors",
+          "His",
+          "Executive Global Head of Innovation and Founder of Ericsson ONE",
+          "During",
+          "Prior",
+          "Neonode and",
+          "Board of Directors",
+          "Master of Science",
+          "Management",
+          "CEO and CFO",
+          "Source",
+          "Neonode Inc",
+          "Cision",
           "CEO",
           "CFO",
           "LM",
@@ -3704,59 +3162,65 @@
           "Alexus",
           "Daniel Alexus",
           "Alexus",
-          "Freddrik Nihl\u00e9n\nInterim",
           "Interim President",
+          "Freddrik Nihl\u00e9n",
           "Interim President"
         ],
         "LOCATION": [
           "Stockholm"
+        ],
+        "PRODUCT": [
+          "Engineering"
         ]
       },
       "missed_pii": {
-        "PHONE": [
-          "+46 703 97 21 09"
-        ],
         "LOCATION": [
           "STOCKHOLM"
         ],
-        "ORGANIZATION": [
-          "Cision"
-        ],
-        "DATE": [
-          "40"
-        ],
         "NAME": [
           "Daniel"
+        ],
+        "ORGANIZATION": [
+          "Ericsson ONE"
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2025",
-          "2010",
-          "2018"
-        ],
-        "ORGANIZATION": [
-          "March 31",
-          "Neonode's Board of Directors",
-          "LM",
-          "the Board of Directors",
-          "Chief Executive Officer",
-          "March 24",
-          "NEON",
-          "ONE",
-          "Executive Global Head of Innovation",
-          "Daniel",
-          "KTH Royal Institute",
-          "KTH",
-          "Neonode Inc",
-          "NASDAQ",
-          "CFO",
-          "Executive Global Head",
-          "CEO"
+        "PRODUCT": [
+          "Engineering"
         ],
         "NAME": [
-          "Freddrik Nihl\u00e9n\nInterim",
+          "Freddrik Nihl\u00e9n",
           "Interim President"
+        ],
+        "ORGANIZATION": [
+          "the Board of Directors",
+          "March 31",
+          "STOCKHOLM",
+          "ONE",
+          "CEO and CFO",
+          "NASDAQ",
+          "March 24",
+          "CFO",
+          "Prior",
+          "During",
+          "Chairman of Neonode's Board of Directors",
+          "LM",
+          "Master of Science",
+          "Daniel",
+          "His",
+          "NEON",
+          "Executive Global Head of Innovation",
+          "Executive Global Head of Innovation and Founder of Ericsson ONE",
+          "Source",
+          "President and Chief Executive Officer",
+          "CEO",
+          "Neonode Inc",
+          "Board of Directors",
+          "Management",
+          "Neonode's",
+          "Neonode's Board of Directors",
+          "Neonode and",
+          "KTH"
         ]
       }
     },
@@ -3781,18 +3245,6 @@
           "$2.93",
           "$11.11"
         ],
-        "NUMBER": [
-          "2024",
-          "2024",
-          "2013",
-          "1993",
-          "2018",
-          "2021",
-          "2022",
-          "2023",
-          "2013",
-          "2013"
-        ],
         "ORGANIZATION": [
           "NORTH",
           "NYSE",
@@ -3807,12 +3259,27 @@
           "AbbVie",
           "NORTH CHICAGO",
           "February 20",
-          "Chief Operating Officer",
-          "Chief Executive Officer",
-          "Chief Financial Officer",
-          "Chief Operating Officer",
-          "About AbbVie\nAbbVie",
+          "AbbVie",
           "ABBV",
+          "Michael",
+          "President and Chief Operating Officer",
+          "Chief Executive Officer",
+          "Gonzalez",
+          "Gonzalez",
+          "Over",
+          "AbbVie",
+          "Chief Financial Officer",
+          "Vice Chairman of Finance and Commercial Operations",
+          "Vice Chairman and President",
+          "President and Chief Operating Officer",
+          "Board's",
+          "AbbVie",
+          "Michael",
+          "AbbVie",
+          "During",
+          "About AbbVie",
+          "AbbVie",
+          "AbbVie's",
           "NYSE: ABBV"
         ],
         "LOCATION": [
@@ -3833,11 +3300,8 @@
           "Richard A",
           "Executive Chairman",
           "Richard A",
-          "Vice Chairman",
-          "Commercial Operations",
-          "Vice Chairman",
           "Robert A",
-          "Under Gonzalez"
+          "Under Gonzalez's"
         ]
       },
       "missed_pii": {
@@ -3846,47 +3310,44 @@
         ]
       },
       "false_positives": {
-        "NUMBER": [
-          "2024",
-          "2022",
-          "2018",
-          "2013",
-          "2021",
-          "1993",
-          "2023"
-        ],
         "LOCATION": [
           "CHICAGO"
         ],
+        "NAME": [
+          "Richard A",
+          "Executive Chairman",
+          "July 1",
+          "Robert A",
+          "Under Gonzalez's"
+        ],
         "ORGANIZATION": [
+          "Board's",
+          "Gonzalez",
           "ABBV",
-          "Board of Directors",
-          "Chief Financial Officer",
-          "Board",
-          "Executive",
-          "About AbbVie\nAbbVie",
-          "NORTH CHICAGO",
-          "Chief Operating Officer",
-          "February 20",
+          "Michael",
+          "About AbbVie",
+          "President and Chief Operating Officer",
           "NYSE",
-          "Chief Executive Officer",
           "NORTH",
-          "Finance"
+          "February 20",
+          "Chief Financial Officer",
+          "Board of Directors",
+          "Executive",
+          "Vice Chairman of Finance and Commercial Operations",
+          "Vice Chairman and President",
+          "AbbVie's",
+          "Finance",
+          "NORTH CHICAGO",
+          "Over",
+          "During",
+          "Board",
+          "Chief Executive Officer"
         ],
         "CURRENCY": [
-          "$300",
-          "$2.93",
           "$54",
+          "$2.93",
+          "$300",
           "$11.11"
-        ],
-        "NAME": [
-          "Commercial Operations",
-          "July 1",
-          "Executive Chairman",
-          "Under Gonzalez",
-          "Robert A",
-          "Vice Chairman",
-          "Richard A"
         ]
       }
     }
@@ -3936,11 +3397,9 @@
     },
     {
       "document_id": "synthetic_008",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Austin"
-      ],
-      "leakage_count": 1
+      "has_leakage": false,
+      "leaked_pii": [],
+      "leakage_count": 0
     },
     {
       "document_id": "synthetic_009",
@@ -4034,29 +3493,21 @@
     },
     {
       "document_id": "realworld_004",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Ramji"
-      ],
-      "leakage_count": 1
+      "has_leakage": false,
+      "leaked_pii": [],
+      "leakage_count": 0
     },
     {
       "document_id": "realworld_005",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Europe",
-        "Lanc\u00f4me"
-      ],
-      "leakage_count": 2
+      "has_leakage": false,
+      "leaked_pii": [],
+      "leakage_count": 0
     },
     {
       "document_id": "realworld_006",
-      "has_leakage": true,
-      "leaked_pii": [
-        "Cision",
-        "40"
-      ],
-      "leakage_count": 2
+      "has_leakage": false,
+      "leaked_pii": [],
+      "leakage_count": 0
     },
     {
       "document_id": "realworld_007",

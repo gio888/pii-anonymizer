@@ -20,7 +20,8 @@
       "Bash(python -m spacy download:*)",
       "Bash(python:*)",
       "Bash(git push:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(git remote add:*)"
     ],
     "deny": [],
     "ask": []

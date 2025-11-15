@@ -4,9 +4,11 @@ Last updated: 2025-11-15
 
 ## High Priority
 
+- [ ] Analyze remaining 32 false negatives to identify patterns
+- [ ] Consider ML-based entity classification vs regex heuristics
+- [ ] Review DATE pattern (30 false positives suggest overfitting)
 - [ ] Integrate phonenumbers library for robust international phone parsing
 - [ ] Add common name dictionary for single-word name detection
-- [ ] Improve location/GPE detection (Europe, Austin, etc.)
 - [ ] Test web application with real documents (all formats)
 - [ ] Add error handling for malformed files in web UI
 - [ ] Create user guide with screenshots for web interface
@@ -29,6 +31,18 @@ Last updated: 2025-11-15
 
 ## Completed ✅
 
+- [x] Eliminate PII leakage from 4.00% → 0.00% (2025-11-15)
+- [x] Improve detection rate from 79.62% → 93.36% (+13.74pp) (2025-11-15)
+- [x] Remove NUMBER pattern to eliminate 245 false positives (2025-11-15)
+- [x] Enhance PHONE pattern for space-separated and international formats (2025-11-15)
+- [x] Enhance CREDIT_CARD pattern for 15-digit Amex (4-6-5) (2025-11-15)
+- [x] Enhance ADDRESS pattern for city/state/ZIP and building designations (2025-11-15)
+- [x] Enhance CURRENCY pattern for optional decimals (2025-11-15)
+- [x] Fix entity pattern to prevent newline matching (2025-11-15)
+- [x] Add apostrophe support to proper noun pattern (That's Nice LLC) (2025-11-15)
+- [x] Add connector word support (of/and/the) for entity names (2025-11-15)
+- [x] Add accented character support (Lancôme) (2025-11-15)
+- [x] Improve LOCATION vs ORGANIZATION classification (2025-11-15)
 - [x] Add all-caps pattern detection for abbreviations (BXC, IBM, 3M, FTSE, NYSE: ABBV) (2025-11-15)
 - [x] Add alphanumeric abbreviation detection (3M, F5, 401K) (2025-11-15)
 - [x] Add stock ticker pattern detection (NYSE: ABBV, NASDAQ: NEON) (2025-11-15)

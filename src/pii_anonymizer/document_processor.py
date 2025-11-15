@@ -20,17 +20,21 @@ class PiiConfig:
         # Standard regex patterns for PII detection
         self.patterns = {
             'EMAIL': r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',
-            # Improved PHONE: handles all formats including international with spaces/dashes
-            'PHONE': r'\+?\d{1,3}?[-\s]?\(?\d{3}\)?[-\s]?\d{3,4}[-\s]?\d{4}|\b\d{3}[-]\d{4}\b',
+            # Improved PHONE: handles all formats including flexible international numbers
+            # Matches: +46 703 97 21 09, +1-555-890-1234, (555) 234-5678, 555 234 5678, 555-1234
+            'PHONE': r'\(\d{3}\)\s*\d{3}[-\s.]\d{4}\b|\+\d{1,3}(?:[-\s]\d{2,4})+\b|\b\d{3}[-\s.]\d{3}[-\s.]\d{4}\b|\b\d{3}[-]\d{4}\b',
             'SSN': r'\b\d{3}[-]?\d{2}[-]?\d{4}\b',
-            'CREDIT_CARD': r'\b(?:\d{4}[- ]?){3}\d{4}\b',
+            # CREDIT_CARD: handles both 16-digit (4-4-4-4) and 15-digit Amex (4-6-5) formats
+            'CREDIT_CARD': r'\b(?:\d{4}[-\s]?\d{6}[-\s]?\d{5}|\d{4}(?:[-\s]?\d{4}){3})\b',
             'IP_ADDRESS': r'\b(?:\d{1,3}\.){3}\d{1,3}\b',
-            # Improved DATE: handles numeric dates, text-based dates, years, and "Month Year" formats
-            'DATE': r'\b\d{1,2}[/\-]\d{1,2}[/\-]\d{2,4}\b|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}|\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b|\b(?:19|20)\d{2}\b',
-            'ADDRESS': r'\b\d{1,5}\s[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\s(?:Avenue|Road|Street|Blvd|Boulevard|Drive|Lane|Way|Place|Court)\b',
+            # Improved DATE: handles numeric dates, text-based dates, years, ages, and "Month Year" formats
+            'DATE': r'\b\d{1,2}[/\-]\d{1,2}[/\-]\d{2,4}\b|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}|\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b|\b(?:19|20)\d{2}\b|\b\d{1,2}\b(?=\s*,)',
+            # ADDRESS: matches full addresses with optional city, state, ZIP, and building designations
+            # Handles: "123 Main Street", "200 S. Kraemer Blvd., Building E", "123 Main Street, City, ST 12345"
+            'ADDRESS': r'\b\d{1,5}\s+(?:[NSEW]\.?\s+)?[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+(?:Avenue|Ave|Road|Rd|Street|St|Blvd|Boulevard|Drive|Dr|Lane|Ln|Way|Place|Pl|Court|Ct)\.?(?:,\s+(?:Building|Bldg|Suite|Ste|Unit|Apt)\.?\s+[A-Z0-9]+)?(?:,\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*,\s+[A-Z]{2}\s+\d{5}(?:-\d{4})?)?\b',
             'URL': r'https?://(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)',
-            'CURRENCY': r'[\$\€\£\¥]\s?\d{1,3}(?:[,\s]\d{3})*(?:\.\d{2})?',
-            'NUMBER': r'\b\d{4,}\b'
+            # CURRENCY: handles $, €, £, ¥ with optional cents/decimals
+            'CURRENCY': r'[\$\€\£\¥]\s?\d{1,3}(?:[,\s]\d{3})*(?:\.\d{1,2})?'
         }
         
         # Add custom patterns if provided
@@ -127,6 +131,9 @@ class PIIManager:
         for ent in doc.ents:
             # We're interested in: PERSON, ORG, PRODUCT, GPE (locations)
             if ent.label_ in ['PERSON', 'ORG', 'PRODUCT', 'GPE']:
+                # Skip entities that contain newlines (likely spaCy errors)
+                if '\n' in ent.text or '\r' in ent.text:
+                    continue
                 # Normalize entity type using mapping
                 entity_type = self.config.entity_type_mapping.get(ent.label_, ent.label_)
                 entities.append((ent.text, entity_type, ent.start_char, ent.end_char))
@@ -134,9 +141,20 @@ class PIIManager:
 
         # 2. Add pattern-based detection for entities spaCy missed
         # Pattern for proper nouns (capitalized sequences) that might be names/orgs/products
-        # Match: "John Smith", "Acme Corporation", "ProSuite X", "MaxPortal Ultra", etc.
-        # Updated to handle mixed-case multi-word entities
-        proper_noun_pattern = r'\b[A-Z][A-Za-z]*(?:\s+[A-Z][A-Za-z]*|\s+\d+)*\b'
+        # Match: "John Smith", "Acme Corporation", "University of Toronto", "That's Nice LLC", etc.
+        # Updated to handle: accented chars, apostrophes, and common words like "of", "and", "the"
+        # Note: Use [ \t] instead of \s to avoid matching across newlines
+        proper_noun_pattern = r'\b[A-Z][A-Za-zÀ-ÿ\']*(?:[ \t]+(?:[A-Z][A-Za-zÀ-ÿ\']*|of|and|the|de|la|le|du)|[ \t]+\d+)*\b'
+
+        # Blacklist of common single words to exclude (articles, prepositions, common words)
+        single_word_blacklist = {
+            'The', 'A', 'An', 'And', 'Or', 'But', 'For', 'To', 'Of', 'In', 'On', 'At',
+            'By', 'With', 'From', 'As', 'Is', 'Was', 'Are', 'Were', 'Be', 'Been',
+            'He', 'She', 'It', 'They', 'We', 'I', 'You', 'This', 'That', 'These', 'Those',
+            'Have', 'Has', 'Had', 'Do', 'Does', 'Did', 'Will', 'Would', 'Could', 'Should',
+            'Can', 'May', 'Might', 'Must', 'Shall'
+        }
+
         for match in re.finditer(proper_noun_pattern, text):
             start, end = match.span()
             # Skip if already detected by spaCy
@@ -144,26 +162,38 @@ class PIIManager:
                 continue
 
             matched_text = match.group(0)
-            # Skip single words that are likely not entities
-            if ' ' not in matched_text:
-                continue
 
-            # Heuristic: if it's multi-word capitalized, it's likely a NAME, ORG, or PRODUCT
-            # We'll classify as ORGANIZATION by default (can be refined)
-            entity_type = 'ORGANIZATION'
+            # For single words, apply blacklist filter
+            if ' ' not in matched_text:
+                if matched_text in single_word_blacklist:
+                    continue
+                # Also skip very short single words (2 chars or less) unless they have special chars
+                if len(matched_text) <= 2 and not any(c in matched_text for c in 'À-ÿ'):
+                    continue
+
+            # Heuristic: classify as NAME, ORG, PRODUCT, or LOCATION based on patterns
+            entity_type = 'ORGANIZATION'  # Default
 
             # Check if it looks like a product name (has product keywords)
             if any(keyword in matched_text for keyword in ['Suite', 'Platform', 'System', 'Tool', 'App', 'Service', 'Solution', 'Engine', 'Framework', 'Hub', 'Portal', 'Cloud', 'Pro', 'Ultra', 'Premium', 'Plus', 'Advanced', 'Elite', 'Mega', 'Super', 'Max', 'Turbo', 'Power', 'Smart']):
                 entity_type = 'PRODUCT'
             # Check if it looks like an organization (has org keywords)
-            elif any(suffix in matched_text for suffix in ['Inc', 'LLC', 'Corp', 'Corporation', 'Ltd', 'Limited', 'Group', 'Industries', 'Solutions', 'Systems', 'Technologies', 'Enterprises', 'Partners', 'Ventures']):
+            elif any(suffix in matched_text for suffix in ['Inc', 'LLC', 'Corp', 'Corporation', 'Ltd', 'Limited', 'Group', 'Industries', 'Solutions', 'Systems', 'Technologies', 'Enterprises', 'Partners', 'Ventures', 'Company', 'Enterprises', 'Associates']):
                 entity_type = 'ORGANIZATION'
             # Check if it looks like a person name (2-3 simple capitalized words)
-            else:
+            elif ' ' in matched_text:
                 words = matched_text.split()
                 if len(words) == 2 and all(w[0].isupper() and w[1:].islower() for w in words if len(w) > 1):
                     # Likely a person name (First Last)
                     entity_type = 'NAME'
+                # Check if it looks like a location (contains location keywords)
+                elif any(locword in words for locword in ['America', 'Europe', 'Asia', 'Africa', 'North', 'South', 'East', 'West', 'City', 'Town', 'Island', 'Mountain', 'River', 'Lake', 'Valley']):
+                    entity_type = 'LOCATION'
+            # Single-word entities: check if it looks like a location
+            elif ' ' not in matched_text:
+                # Check for 2-letter state/country codes (e.g., CA, NY, US, UK)
+                if len(matched_text) == 2 and matched_text.isupper():
+                    entity_type = 'LOCATION'
 
             entities.append((matched_text, entity_type, start, end))
             detected_spans.add((start, end))
