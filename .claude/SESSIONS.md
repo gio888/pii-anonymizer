@@ -2,7 +2,7 @@
 
 ## 2025-11-15: PII Detection Improvements - Zero Leakage Achieved
 **Status**: ✅ Complete
-**Commit**: (pending)
+**Commit**: 2fc479b
 **What**: Iteratively improved regex patterns and entity classification to eliminate PII leakage and boost detection rate
 **Result**: Detection 79.62% → 93.36% (+13.74pp), leakage 4.00% → 0.00% (zero leakage achieved), 32 FN remaining
 **Next**: Analyze remaining 32 false negatives, consider ML-based entity classification, review DATE pattern false positives
